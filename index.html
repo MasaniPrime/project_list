@@ -11,139 +11,118 @@
 <body>
     <header>
         <h1>Projects</h1>
-        <p>A collection of ideas and work-in-progress projects.</p>
+        <p>Select a category to view projects.</p>
+        <nav>
+            <button onclick="filterProjects('data')">Data</button>
+            <button onclick="filterProjects('cybersecurity')">Cybersecurity</button>
+            <button onclick="filterProjects('webdev')">Web Dev</button>
+            <button onclick="filterProjects('outofthebox')">Out-of-the-box</button>
+        </nav>
     </header>
 
     <section class="projects">
-        <!-- Example project card -->
-        <div class="card">
-            <h3>OSINT-Driven Local Risk Intelligence Dashboard</h3>
-            <p>Aggregate open-source data (crime reports, weather alerts, traffic incidents, social media signals) into
-                a live dashboard for situational awareness.</p>
-        </div>
-
-        <div class="card">
-            <h3>Smart Resume Analyzer for ATS & Bias Detection</h3>
-            <p>Evaluates resumes for ATS compatibility and flags biased language.</p>
-        </div>
-
-        <div class="card">
-            <h3>Geospatial Urban Growth Visualizer (GIS)</h3>
-            <p>Analyze satellite imagery + census data to show urban expansion or infrastructure gaps.</p>
-        </div>
-
-        <div class="card">
-            <h3>IT Incident Prediction System</h3>
-            <p>Use historical IT ticket data to predict likely outages or incidents.</p>
-        </div>
-
-        <div class="card">
-            <h3>AI-Powered Meeting Intelligence Tool</h3>
-            <p>Record meetings and extract action items, sentiment, and decision summaries.</p>
-        </div>
-
-        <div class="card">
-            <h3>Privacy-Aware Personal Data Vault</h3>
-            <p>Tracks what personal data you share with apps and websites.</p>
-        </div>
-
-        <div class="card">
-            <h3>Cyber Threat News Aggregator with Risk Scoring</h3>
-            <p>Scrape cyber news and score threats based on severity and relevance.</p>
-        </div>
-
-        <div class="card">
-            <h3>IT Asset Lifecycle Management Tool</h3>
-            <p>Track hardware/software lifecycles, licenses, and depreciation.</p>
-        </div>
-
-        <div class="card">
-            <h3>National-Scale Cyber Risk Digital Twin</h3>
-            <p>Simulated model of a country's cyber infrastructure and cascading failures.</p>
-        </div>
-
-        <div class="card">
-            <h3>AI-Driven Disaster Response GIS Platform</h3>
-            <p>Real-time integration of satellite imagery, IoT sensors, and emergency services.</p>
-        </div>
-
-        <!-- Projects 11–25 -->
-        <div class="card">
+        <!-- Data Projects -->
+        <div class="card" data-category="data">
             <h3>Local Economic Indicator Tracker</h3>
             <p>Predict inflation or unemployment trends using public data.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="data">
             <h3>Consumer Behavior Analysis Using Camera Data</h3>
             <p>Analyze foot traffic or movement patterns (ethically, anonymized).</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="data">
             <h3>Social Media Misinformation Detection Model</h3>
             <p>Detect misinformation trends in real time.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="data">
             <h3>Energy Consumption Optimization Model</h3>
             <p>Analyze household energy usage and suggest reductions.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="data">
             <h3>Public Health Trend Analysis Dashboard</h3>
             <p>Track disease or wellness indicators from open datasets.</p>
         </div>
 
-        <div class="card">
+        <!-- Web Dev Projects -->
+        <div class="card" data-category="webdev">
             <h3>Secure Authentication Microservice</h3>
             <p>Implement OAuth2, JWT, and RBAC from scratch.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="webdev">
             <h3>Offline-First Progressive Web App</h3>
             <p>App that works fully offline and syncs later.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="webdev">
             <h3>Low-Code Internal Tool Builder</h3>
             <p>Create a tool for generating CRUD apps quickly.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="webdev">
             <h3>API Performance Monitoring Tool</h3>
             <p>Monitor latency, errors, and uptime.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="webdev">
             <h3>Open-Source Contribution with Architectural Refactor</h3>
             <p>Take an existing project and significantly improve architecture.</p>
         </div>
 
-        <div class="card">
+        <!-- Cybersecurity Projects -->
+        <div class="card" data-category="cybersecurity">
             <h3>Home Network Intrusion Detection System</h3>
             <p>Detect anomalies on a local network.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="cybersecurity">
             <h3>Phishing Simulation & Detection Platform</h3>
             <p>Simulate phishing attacks and analyze results.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="cybersecurity">
             <h3>Password Hygiene Audit Tool</h3>
             <p>Analyze password strength and reuse patterns (ethically).</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="cybersecurity">
             <h3>Malware Behavior Analysis Sandbox</h3>
             <p>Safely analyze malware behavior using virtual environments.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="cybersecurity">
             <h3>Security Compliance Checker</h3>
             <p>Assess systems against ISO 27001 or NIST controls.</p>
         </div>
 
+        <!-- Out-of-the-box Projects -->
+        <div class="card" data-category="outofthebox">
+            <h3>National-Scale Cyber Risk Digital Twin</h3>
+            <p>Simulated model of a country’s cyber infrastructure and cascading failures.</p>
+        </div>
+
+        <div class="card" data-category="outofthebox">
+            <h3>AI-Driven Disaster Response GIS Platform</h3>
+            <p>Real-time integration of satellite imagery, IoT sensors, and emergency services.</p>
+        </div>
     </section>
+
+    <script>
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
