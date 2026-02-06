@@ -25,12 +25,18 @@ nav button {
   color: #4a90e2;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 nav button:hover {
   background: #ddd;
 }
+
+nav button.active {
+  background: #4a90e2;
+  color: white;
+}
+
 
 .projects {
   display: grid;
@@ -44,7 +50,7 @@ nav button:hover {
 .card {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   transition: transform 0.2s ease;
 }
@@ -61,3 +67,117 @@ nav button:hover {
 .card p {
   color: #666;
 }
+
+
+/* BADGES STYLE AND MORE */
+
+.badges {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badges span {
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* --- Projects 1–10 --- */
+.skill-osint { background: #c8e6c9; color: #1b5e20; }        /* light green bg, dark green text */
+.tool-apis { background: #bbdefb; color: #0d47a1; }          /* light blue bg, dark blue text */
+.tool-powerbi { background: #fff9c4; color: #f57f17; }       /* light yellow bg, dark yellow text */
+.tool-tableau { background: #d7ccc8; color: #3e2723; }       /* light brown bg, dark brown text */
+.tool-webscraping { background: #ffe0b2; color: #e65100; }   /* light orange bg, dark orange text */
+
+.skill-nlp { background: #e1bee7; color: #6a1b9a; }          /* light violet bg, dark violet text */
+.skill-dataparsing { background: #cfd8dc; color: #263238; }  /* light gray bg, dark gray text */
+.skill-modeleval { background: #c5cae9; color: #1a237e; }    /* light indigo bg, dark indigo text */
+.tool-spacy { background: #bbdefb; color: #0d47a1; }         /* light blue bg, dark blue text */
+.tool-scikit { background: #f8bbd0; color: #880e4f; }        /* light pink bg, dark magenta text */
+
+.skill-gis { background: #f0f4c3; color: #827717; }          /* light lime bg, dark lime text */
+.skill-spatial { background: #c8e6c9; color: #1b5e20; }      /* light green bg, dark green text */
+.skill-datafusion { background: #ffe0b2; color: #e65100; }   /* light orange bg, dark orange text */
+.tool-qgis { background: #c5cae9; color: #1a237e; }          /* light indigo bg, dark indigo text */
+.tool-opensat { background: #bbdefb; color: #0d47a1; }       /* light blue bg, dark blue text */
+
+.skill-timeseries { background: #f8bbd0; color: #880e4f; }   /* light pink bg, dark magenta text */
+.skill-itsm { background: #d7ccc8; color: #3e2723; }         /* light brown bg, dark brown text */
+.tool-prophet { background: #c8e6c9; color: #1b5e20; }       /* light green bg, dark green text */
+.tool-lstm { background: #e1bee7; color: #6a1b9a; }          /* light violet bg, dark violet text */
+
+.skill-speechtotext { background: #bbdefb; color: #0d47a1; } /* light blue bg, dark blue text */
+.skill-dataengineering { background: #cfd8dc; color: #263238; } /* light gray bg, dark gray text */
+.tool-whisper { background: #ffe0b2; color: #e65100; }       /* light orange bg, dark orange text */
+
+.skill-security { background: #ffcdd2; color: #b71c1c; }     /* light red bg, dark red text */
+.skill-privacy { background: #f8bbd0; color: #880e4f; }      /* light pink bg, dark magenta text */
+.tool-sqlite { background: #d7ccc8; color: #3e2723; }        /* light brown bg, dark brown text */
+
+.skill-datapipelines { background: #c8e6c9; color: #1b5e20; } /* light green bg, dark green text */
+.skill-securitydomain { background: #bbdefb; color: #0d47a1; } /* light blue bg, dark blue text */
+.tool-rss { background: #cfd8dc; color: #263238; }           /* light gray bg, dark gray text */
+.tool-nlp { background: #e1bee7; color: #6a1b9a; }           /* light violet bg, dark violet text */
+
+.skill-systemsdesign { background: #ffe0b2; color: #e65100; } /* light orange bg, dark orange text */
+.skill-itgovernance { background: #c5cae9; color: #1a237e; }  /* light indigo bg, dark indigo text */
+.tool-postgresql { background: #bbdefb; color: #0d47a1; }     /* light blue bg, dark blue text */
+
+.skill-systemsmodeling { background: #f0f4c3; color: #827717; } /* light lime bg, dark lime text */
+.skill-cyberstrategy { background: #c8e6c9; color: #1b5e20; }   /* light green bg, dark green text */
+.skill-simulation { background: #cfd8dc; color: #263238; }      /* light gray bg, dark gray text */
+
+.skill-gisai { background: #e1bee7; color: #6a1b9a; }           /* light violet bg, dark violet text */
+.skill-systemsarch { background: #c5cae9; color: #1a237e; }     /* light indigo bg, dark indigo text */
+
+/* Example categories with lighter backgrounds + dark text */
+.skill-econometrics { background: #ffcdd2; color: #b71c1c; }   /* light red bg, dark red text */
+.skill-forecasting { background: #c8e6c9; color: #1b5e20; }   /* light green bg, dark green text */
+.tool-python { background: #bbdefb; color: #0d47a1; }         /* light blue bg, dark blue text */
+.tool-pandas { background: #e1bee7; color: #4a148c; }         /* light purple bg, dark purple text */
+
+.skill-computervision { background: #ffe0b2; color: #e65100; } /* light orange bg, dark orange text */
+.tool-opencv { background: #b2dfdb; color: #004d40; }          /* light teal bg, dark teal text */
+
+.skill-nlp { background: #e1bee7; color: #6a1b9a; }            /* light violet bg, dark violet text */
+.tool-transformers { background: #c5cae9; color: #1a237e; }    /* light indigo bg, dark indigo text */
+
+.skill-regression { background: #efdcf5; color: #7c0da1; }     /* light blue bg, dark blue text */
+.skill-optimization { background: #f8dddf; color: #880e1a; }   /* light pink bg, dark magenta text */
+.tool-excel { background: #c8e6c9; color: #1b5e20; }           /* light green bg, dark green text */
+
+.skill-dataviz { background: #f8bbd0; color: #880e4f; }        /* light pink bg, dark pink text */
+.tool-powerbi { background: #fff9c4; color: #f57f17; }         /* light yellow bg, dark yellow text */
+.tool-tableau { background: #d7ccc8; color: #3e2723; }         /* light brown bg, dark brown text */
+
+.skill-backendsecurity { background: #ffcdd2; color: #b71c1c; } /* light red bg, dark red text */
+.tool-nodejs { background: #c8e6c9; color: #1b5e20; }           /* light green bg, dark green text */
+
+.skill-pwa { background: #ffccbc; color: #bf360c; }             /* light coral bg, dark coral text */
+.tool-javascript { background: #fff9c4; color: #f57f17; }       /* light yellow bg, dark yellow text */
+
+.skill-frameworkdesign { background: #e1bee7; color: #4a148c; } /* light violet bg, dark violet text */
+.tool-django { background: #bbdefb; color: #0d47a1; }           /* light blue bg, dark blue text */
+.tool-flask { background: #e1bee7; color: #6a1b9a; }            /* light purple bg, dark purple text */
+
+.skill-devops { background: #cfd8dc; color: #263238; }          /* light slate bg, dark slate text */
+.tool-prometheus { background: #ffe0b2; color: #e65100; }       /* light orange bg, dark orange text */
+
+.skill-codequality { background: #c8e6c9; color: #1b5e20; }     /* light green bg, dark green text */
+.skill-collaboration { background: #b3e5fc; color: #01579b; }   /* light cyan bg, dark cyan text */
+
+.skill-networksecurity { background: #f8bbd0; color: #880e4f; } /* light pink bg, dark pink text */
+.tool-wireshark { background: #b2ebf2; color: #006064; }        /* light aqua bg, dark aqua text */
+
+.skill-socialengineering { background: #fff9c4; color: #f57f17; } /* light yellow bg, dark yellow text */
+.tool-emailparsing { background: #c5cae9; color: #1a237e; }       /* light indigo bg, dark indigo text */
+
+.skill-cryptography { background: #d7ccc8; color: #3e2723; }      /* light brown bg, dark brown text */
+
+.skill-reverseengineering { background: #f0f4c3; color: #827717; } /* light lime bg, dark lime text */
+.tool-virtualbox { background: #cfd8dc; color: #37474f; }          /* light gray bg, dark gray text */
+
+.skill-grc { background: #e1bee7; color: #6a1b9a; }                /* light purple bg, dark purple text */
+.tool-checklists { background: #d7ccc8; color: #3e2723; }          /* light brown bg, dark brown text */
