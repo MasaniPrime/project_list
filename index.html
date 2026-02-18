@@ -21,6 +21,47 @@
     </header>
 
     <section class="projects">
+
+        <!-- TEST CARD -->
+        <!-- Card -->
+        <div class="card" data-category="data" onclick="openModal('modal1')">
+            <h3>Local Economic Indicator Tracker</h3>
+            <p>Predict inflation or unemployment trends using public data.</p>
+            <div class="badges">
+                <span class="skill-econometrics">Econometrics</span>
+                <span class="skill-forecasting">Forecasting</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-pandas">pandas</span>
+            </div>
+        </div>
+
+        <!-- Container for modals -->
+
+
+
+
+
+        <!-- <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h2>Local Economic Indicator Tracker</h2>
+                <p>This project uses public datasets (e.g., government statistics, financial reports) to track local
+                    economic indicators such as inflation, unemployment, and consumer spending. The goal is to provide
+                    predictive insights for policymakers and businesses.</p>
+                <ul>
+                    <li><strong>Skills:</strong> Econometrics, Forecasting</li>
+                    <li><strong>Tools:</strong> Python, pandas</li>
+                    <li><strong>Challenge:</strong> Handling noisy and incomplete data sources.</li>
+                </ul>
+            </div>
+        </div> -->
+
+
+
+
+
+        <!-- END TEST CARD -->
+
         <!-- Project 1 -->
         <div class="card" data-category="data">
             <h3>OSINT-Driven Local Risk Intelligence Dashboard</h3>
@@ -318,45 +359,16 @@
 
     </section>
 
+
+    <div id="modal-container"></div>
+
+    <script src="scripts.js"></script>
+    <script src="modals.js"></script>
     <script>
-        let activeCategory = null;
-
-        function filterProjects(category) {
-            const cards = document.querySelectorAll('.card');
-            const buttons = document.querySelectorAll('nav button');
-
-            // If the same category is clicked again, reset to show all
-            if (activeCategory === category) {
-                cards.forEach(card => card.style.display = 'block');
-                activeCategory = null;
-
-                // Remove active styling from all buttons
-                buttons.forEach(btn => btn.classList.remove('active'));
-                return;
-            }
-
-            // Otherwise filter by category
-            cards.forEach(card => {
-                if (card.getAttribute('data-category') === category) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-
-            // Update active category
-            activeCategory = category;
-
-            // Update button styling
-            buttons.forEach(btn => {
-                if (btn.textContent.toLowerCase().replace(/\s+/g, '') === category) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-        }
+        // Generate modals dynamically
+        loadModals();
     </script>
+
 </body>
 
 </html>
