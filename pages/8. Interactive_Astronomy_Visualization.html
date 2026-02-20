@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Astronomy Visualization - Project Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         * {
             margin: 0;
@@ -45,59 +46,7 @@
         }
 
         .badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .badges span {
-            display: inline-block;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            font-weight: 500;
-            color: white;
-        }
-
-        .skill-dataviz {
-            background-color: #27ae60;
-        }
-
-        .skill-3dgraphics {
-            background-color: #2980b9;
-        }
-
-        .skill-interactive {
-            background-color: #8e44ad;
-        }
-
-        .skill-geo {
-            background-color: #16a085;
-        }
-
-        .tool-threejs {
-            background-color: #000000;
-        }
-
-        .tool-d3js {
-            background-color: #f57c00;
-        }
-
-        .tool-javascript {
-            background-color: #f1c40f;
-            color: #333;
-        }
-
-        .tool-python {
-            background-color: #3776ab;
-        }
-
-        .tool-apis {
-            background-color: #e74c3c;
-        }
-
-        .tool-github {
-            background-color: #24292e;
+            margin: 1.5rem 0;
         }
 
         .content-section {
@@ -212,7 +161,8 @@
         <div class="content-section">
             <h3>Overview</h3>
             <p>This project transforms astronomy into an interactive experience. Instead of static diagrams, users
-                explore real planetary systems, zoom into star maps, and toggle overlays showing temperature, brightness,
+                explore real planetary systems, zoom into star maps, and toggle overlays showing temperature,
+                brightness,
                 and habitability. The visualization combines NASA/ESA data with Three.js for 3D rendering and D3.js for
                 star maps, creating a stunning, educational interface.</p>
         </div>
@@ -311,7 +261,8 @@
                 <h4>Phase 5: Deployment and Demo (2–4 days)</h4>
                 <ul style="margin-left: 20px;">
                     <li>Host on GitHub Pages or Heroku</li>
-                    <li>Prepare demo datasets (Milky Way star cluster, Proxima Centauri system, habitable exoplanets)</li>
+                    <li>Prepare demo datasets (Milky Way star cluster, Proxima Centauri system, habitable exoplanets)
+                    </li>
                     <li>Record demo video showing zooming into a planetary system and toggling overlays</li>
                     <li>Optimize performance for web browsers</li>
                 </ul>
