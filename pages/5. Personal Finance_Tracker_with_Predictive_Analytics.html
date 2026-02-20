@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Personal Finance Tracker with Predictive Analytics</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+        }
+
+        .project-header {
+            margin-bottom: 2rem;
+        }
+
+        .project-header h1 {
+            margin: 0 0 0.5rem 0;
+            color: #333;
+        }
+
+        .project-header h2 {
+            margin: 0;
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin: 3rem 0;
+        }
+
+        .content-section h3 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section h4 {
+            color: #555;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0.8rem 0;
+        }
+
+        .content-section ul {
+            color: #666;
+            line-height: 1.8;
+            margin-left: 1.5rem;
+        }
+
+        .content-section li {
+            margin: 0.5rem 0;
+        }
+
+        .content-section strong {
+            color: #333;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #4a90e2;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+        }
+
+        .checklist {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .checklist li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #4a90e2;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .code-block {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body style="background: #f5f7fa;">
+    <div class="container">
+        <div class="project-header">
+            <h1>Personal Finance Tracker with Predictive Analytics</h1>
+            <h2>Track spending, visualize trends, and forecast future expenses using machine learning</h2>
+            <div class="badges">
+                <span class="skill-regression">Regression</span>
+                <span class="skill-timeseries">Time-Series Forecasting</span>
+                <span class="skill-dataviz">Data Visualization</span>
+                <span class="skill-dataengineering">Data Engineering</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-flask">Flask</span>
+                <span class="tool-prophet">Prophet</span>
+                <span class="tool-pandas">Pandas</span>
+                <span class="tool-sqlite">SQLite</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Project Overview</h3>
+            <p><strong>Personal Finance Tracker with Predictive Analytics</strong> — a web application that helps users
+                visualize spending patterns, categorize expenses, and forecast future spending using time-series
+                forecasting and regression models. This project demonstrates <strong>data ingestion, visualization,
+                    predictive modeling, and practical machine learning</strong>, all in a relatable domain anyone can
+                understand.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Key Considerations and Goals</h3>
+            <ul>
+                <li><strong>Primary goal:</strong> Build a finance tracker that logs transactions, visualizes spending,
+                    and predicts future expenses.</li>
+                <li><strong>Secondary goals:</strong> Detect anomalies (unusual spending), provide budget alerts, and
+                    allow CSV data imports.</li>
+                <li><strong>Constraints:</strong> Laptop-only build; no integration with real banking APIs (use manual
+                    entry/CSV upload).</li>
+                <li><strong>Success criteria:</strong> Accurate forecasts (MAPE ≤ 15%), smooth UI, and real-time
+                    dashboard updates.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Tech Stack and Tools</h3>
+            <ul>
+                <li><strong>Python</strong> (backend, forecasting, data processing)</li>
+                <li><strong>Flask / Streamlit</strong> (web application framework)</li>
+                <li><strong>Pandas / NumPy</strong> (data manipulation and analysis)</li>
+                <li><strong>SQLite</strong> (lightweight transaction storage)</li>
+                <li><strong>Prophet / ARIMA / scikit-learn</strong> (time-series and regression forecasting)</li>
+                <li><strong>Plotly / Seaborn</strong> (interactive visualizations)</li>
+                <li><strong>CSV support</strong> (for bulk data import from bank statements)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Step‑by‑Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <ul>
+                    <li>Define scope: expense tracking, income logging, visualization, forecasting.</li>
+                    <li>Decide input method: manual entry (form) or CSV upload (bank statements).</li>
+                    <li>Define outputs: monthly spending chart, category breakdown, forecast for next 3 months.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Ingestion (2–3 days)</h4>
+                <ul>
+                    <li>Build a simple form/UI for entering transactions (date, category, amount).</li>
+                    <li>Allow CSV upload for bulk data.</li>
+                    <li>Store data in SQLite with schema:
+                        <div class="code-block">
+                            transactions(id, date, category, amount, type[income/expense])
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Data Processing (2–3 days)</h4>
+                <ul>
+                    <li>Clean and normalize categories (e.g., "Groceries" vs "Food").</li>
+                    <li>Aggregate monthly totals for income and expenses.</li>
+                    <li>Compute savings (income – expenses).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Visualization (3–4 days)</h4>
+                <p>Build charts:</p>
+                <ul>
+                    <li>Line chart of monthly expenses vs income.</li>
+                    <li>Pie chart of spending categories.</li>
+                    <li>Bar chart of savings over time.</li>
+                </ul>
+                <p>Use Plotly or Seaborn for interactive visuals.</p>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Predictive Analytics (3–5 days)</h4>
+                <ul>
+                    <li>Apply time-series forecasting (Prophet or ARIMA) to predict next 3 months of expenses.</li>
+                    <li>Train regression model to estimate spending based on categories.</li>
+                    <li>Add anomaly detection (flag unusually high spending).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <p>Build Streamlit/Flask app with tabs:</p>
+                <ul>
+                    <li><strong>Transactions</strong> (input/upload).</li>
+                    <li><strong>Visualizations</strong> (charts).</li>
+                    <li><strong>Forecasts</strong> (predicted expenses).</li>
+                    <li><strong>Alerts</strong> (overspending warnings).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul>
+                    <li>Host locally or on Streamlit Cloud/Heroku.</li>
+                    <li>Prepare demo dataset (simulate 12 months of expenses).</li>
+                    <li>Record a short demo video showing forecasts and alerts.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <ul>
+                <li><strong>Data:</strong> User-generated (manual entry or CSV upload).</li>
+                <li><strong>Evaluation:</strong>
+                    <ul>
+                        <li>Forecast accuracy (compare predicted vs actual for test months).</li>
+                        <li>Usability (smooth input and visualization).</li>
+                        <li>Responsiveness (dashboard updates instantly after new entry).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <ul>
+                <li><strong>Pitch line:</strong> "I built a finance tracker that not only visualizes your spending but
+                    predicts future expenses — helping you budget smarter."</li>
+                <li><strong>Demo:</strong> Show past 12 months of expenses, then forecast next 3 months.</li>
+                <li><strong>Networking impact:</strong> Practical, relatable, and demonstrates predictive analytics in a
+                    way anyone can understand.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <div class="checklist">
+                <ul>
+                    <li>Build SQLite schema for transactions.</li>
+                    <li>Create input form + CSV upload.</li>
+                    <li>Aggregate and clean data.</li>
+                    <li>Build visualizations (line, pie, bar charts).</li>
+                    <li>Implement forecasting model (Prophet/ARIMA).</li>
+                    <li>Add anomaly detection for overspending.</li>
+                    <li>Deploy dashboard with Streamlit/Flask.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

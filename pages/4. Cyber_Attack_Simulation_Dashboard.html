@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Cyber Attack Simulation Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+        }
+
+        .project-header {
+            margin-bottom: 2rem;
+        }
+
+        .project-header h1 {
+            margin: 0 0 0.5rem 0;
+            color: #333;
+        }
+
+        .project-header h2 {
+            margin: 0;
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin: 3rem 0;
+        }
+
+        .content-section h3 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section h4 {
+            color: #555;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0.8rem 0;
+        }
+
+        .content-section ul {
+            color: #666;
+            line-height: 1.8;
+            margin-left: 1.5rem;
+        }
+
+        .content-section li {
+            margin: 0.5rem 0;
+        }
+
+        .content-section strong {
+            color: #333;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #4a90e2;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+        }
+
+        .checklist {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .checklist li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #4a90e2;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body style="background: #f5f7fa;">
+    <div class="container">
+        <div class="project-header">
+            <h1>Cyber Attack Simulation Dashboard</h1>
+            <h2>Interactive visualization of common cyber threats and defense strategies</h2>
+            <div class="badges">
+                <span class="skill-cyberstrategy">Cybersecurity</span>
+                <span class="skill-dataviz">Data Visualization</span>
+                <span class="skill-simulation">Simulation</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-flask">Flask</span>
+                <span class="tool-sqlite">SQLite</span>
+                <span class="tool-javascript">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Project Overview</h3>
+            <p><strong>Cyber Attack Simulation Dashboard</strong> — an interactive tool that simulates common cyber
+                threats (brute-force attacks, phishing attempts, ransomware spread) and visualizes them in real time.
+                The dashboard helps demonstrate how attacks unfold, their impact, and potential defenses. This project
+                is highly engaging for networking because it combines <strong>cybersecurity awareness, data
+                    visualization, and simulation modeling</strong> — all achievable from a laptop.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Key Considerations and Goals</h3>
+            <ul>
+                <li><strong>Primary goal:</strong> Create a dashboard that simulates different attack scenarios and
+                    shows their progression visually.</li>
+                <li><strong>Secondary goals:</strong> Provide educational context (attack type, detection methods,
+                    mitigation strategies), and allow users to toggle between scenarios.</li>
+                <li><strong>Constraints:</strong> Laptop-only build; use simulated data (no real attacks); focus on
+                    visualization and awareness.</li>
+                <li><strong>Success criteria:</strong> Smooth interactive dashboard, clear attack progression visuals,
+                    and educational explanations.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Tech Stack and Tools</h3>
+            <ul>
+                <li><strong>Python</strong> (simulation logic + backend)</li>
+                <li><strong>Flask / FastAPI</strong> (API backend)</li>
+                <li><strong>JavaScript + D3.js / Plotly</strong> (visualizations)</li>
+                <li><strong>SQLite</strong> (store simulated logs)</li>
+                <li><strong>NetworkX</strong> (simulate network graphs for ransomware spread)</li>
+                <li><strong>Matplotlib / Seaborn</strong> (basic charts)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Step‑by‑Step Build Guide</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <p>Define attack scenarios:</p>
+                <ol>
+                    <li><strong>Brute-force login attempts</strong> (failed vs successful).</li>
+                    <li><strong>Phishing campaign</strong> (emails sent, clicked, compromised).</li>
+                    <li><strong>Ransomware spread</strong> (infected nodes in a network graph).</li>
+                </ol>
+                <p>Decide on visualization style (line charts, counters, animated graphs).</p>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Simulation Logic (2–3 days)</h4>
+                <ul>
+                    <li>Write Python scripts to generate synthetic logs for each attack type.</li>
+                    <li>Example: Brute-force → generate 100 login attempts with random success/failure.</li>
+                    <li>Store logs in SQLite for easy retrieval.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Visualization (3–4 days)</h4>
+                <p>Build interactive charts:</p>
+                <ul>
+                    <li>Line chart showing brute-force attempts over time.</li>
+                    <li>Funnel chart for phishing (emails sent → clicked → compromised).</li>
+                    <li>Network graph showing ransomware spread across nodes.</li>
+                </ul>
+                <p>Use D3.js or Plotly for dynamic visuals.</p>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Dashboard Integration (2–3 days)</h4>
+                <ul>
+                    <li>Create a Flask/FastAPI backend to serve simulated data.</li>
+                    <li>Build a simple frontend with buttons to toggle scenarios.</li>
+                    <li>Display attack type, progression, and mitigation tips alongside visuals.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Educational Layer (2–3 days)</h4>
+                <p>Add text explanations for each scenario:</p>
+                <ul>
+                    <li>What the attack is.</li>
+                    <li>How it's detected.</li>
+                    <li>Common defenses.</li>
+                </ul>
+                <p>Provide "Mitigation Tips" panel (e.g., strong passwords, MFA, employee training).</p>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Demo and Deployment (2–4 days)</h4>
+                <ul>
+                    <li>Host locally or on Heroku/Streamlit for demo.</li>
+                    <li>Prepare 3 demo runs (brute-force, phishing, ransomware).</li>
+                    <li>Record a short demo video showing attack progression.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <ul>
+                <li><strong>Synthetic data:</strong> Generate logs programmatically (no real attacks).</li>
+                <li><strong>Evaluation:</strong>
+                    <ul>
+                        <li>Test dashboard responsiveness with 1,000+ simulated events.</li>
+                        <li>Ensure visuals update smoothly.</li>
+                        <li>Validate educational content with cybersecurity best practices.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <ul>
+                <li><strong>Pitch line:</strong> "I built a dashboard that simulates cyber attacks in real time — you
+                    can see how brute-force, phishing, and ransomware unfold and how to defend against them."</li>
+                <li><strong>Demo:</strong> Toggle between scenarios, show attack progression, highlight defenses.</li>
+                <li><strong>Networking impact:</strong> Visually striking, educational, and demonstrates cybersecurity +
+                    visualization skills.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <div class="checklist">
+                <ul>
+                    <li>Define attack scenarios and simulation rules.</li>
+                    <li>Generate synthetic logs with Python.</li>
+                    <li>Store logs in SQLite.</li>
+                    <li>Build interactive charts with D3.js/Plotly.</li>
+                    <li>Integrate backend + frontend.</li>
+                    <li>Add educational explanations and mitigation tips.</li>
+                    <li>Deploy demo and prepare showcase.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

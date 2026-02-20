@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Fake News Detector</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+        }
+
+        .project-header {
+            margin-bottom: 2rem;
+        }
+
+        .project-header h1 {
+            margin: 0 0 0.5rem 0;
+            color: #333;
+        }
+
+        .project-header h2 {
+            margin: 0;
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin: 3rem 0;
+        }
+
+        .content-section h3 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section h4 {
+            color: #555;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0.8rem 0;
+        }
+
+        .content-section ul {
+            color: #666;
+            line-height: 1.8;
+            margin-left: 1.5rem;
+        }
+
+        .content-section li {
+            margin: 0.5rem 0;
+        }
+
+        .content-section strong {
+            color: #333;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #4a90e2;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+        }
+
+        .checklist {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .checklist li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #4a90e2;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body style="background: #f5f7fa;">
+    <div class="container">
+        <div class="project-header">
+            <h1>Fake News Detector</h1>
+            <h2>Classify online articles and posts as credible or suspicious using NLP and explainability</h2>
+            <div class="badges">
+                <span class="skill-nlp">NLP</span>
+                <span class="skill-classification">Classification</span>
+                <span class="skill-modeleval">Model Evaluation</span>
+                <span class="skill-dataviz">Visualization</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-scikit">scikit-learn</span>
+                <span class="tool-transformers">Transformers</span>
+                <span class="tool-spacy">spaCy</span>
+                <span class="tool-pandas">Pandas</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Project Overview</h3>
+            <p><strong>Fake News Detector</strong> — a machine learning/NLP project that classifies online articles or
+                social media posts as credible or suspicious. It leverages linguistic cues, sentiment, and semantic
+                similarity to known reliable sources. This project demonstrates your ability to combine <strong>data
+                    science, NLP, and explainability</strong> into a socially relevant tool.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Key Considerations and Goals</h3>
+            <ul>
+                <li><strong>Primary goal:</strong> Build a classifier that distinguishes between reliable and unreliable
+                    text sources.</li>
+                <li><strong>Secondary goals:</strong> Provide explainability (highlight words/phrases that influenced
+                    classification), visualize results, and create a demo interface.</li>
+                <li><strong>Constraints:</strong> Laptop-only build; use free datasets and pretrained models; keep
+                    compute light.</li>
+                <li><strong>Success criteria:</strong> Achieve ≥70% accuracy on a balanced dataset, provide clear visual
+                    explanations, and demo classification in under 5 seconds per article.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Tech Stack and Tools</h3>
+            <ul>
+                <li><strong>Python</strong> (core language)</li>
+                <li><strong>scikit-learn / TensorFlow / PyTorch</strong> (ML frameworks)</li>
+                <li><strong>spaCy / NLTK</strong> (text preprocessing, tokenization)</li>
+                <li><strong>Hugging Face Transformers</strong> (pretrained models like BERT for classification)</li>
+                <li><strong>Pandas / NumPy</strong> (data handling)</li>
+                <li><strong>Matplotlib / Seaborn / Plotly</strong> (visualization)</li>
+                <li><strong>Flask / Streamlit</strong> (demo UI)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Step‑by‑Step Build Guide</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Setup and Data Collection (1–2 days)</h4>
+                <ul>
+                    <li><strong>Datasets:</strong> Use Kaggle's "Fake News Detection" dataset or LIAR dataset (political
+                        statements labeled true/false).</li>
+                    <li><strong>Preprocessing:</strong> Clean text (remove HTML tags, punctuation, stopwords).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Text Preprocessing (2–3 days)</h4>
+                <ul>
+                    <li>Tokenize text using spaCy or NLTK.</li>
+                    <li>Convert text to numerical features:
+                        <ul>
+                            <li><strong>Bag of Words / TF-IDF</strong> for baseline.</li>
+                            <li><strong>Word embeddings (Word2Vec, GloVe, or BERT)</strong> for advanced models.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Model Building (3–5 days)</h4>
+                <ul>
+                    <li><strong>Baseline model:</strong> Logistic Regression or Naive Bayes with TF-IDF features.</li>
+                    <li><strong>Advanced model:</strong> Fine-tune BERT or DistilBERT for classification.</li>
+                    <li><strong>Evaluation:</strong> Use accuracy, precision, recall, and F1-score.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Explainability (2–3 days)</h4>
+                <ul>
+                    <li>Use <strong>LIME</strong> or <strong>SHAP</strong> to highlight words/phrases that influenced
+                        classification.</li>
+                    <li>Display "Top 10 suspicious words" vs "Top 10 credible words" per article.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Visualization and UI (2–4 days)</h4>
+                <ul>
+                    <li>Build a simple web app with Streamlit or Flask.</li>
+                    <li>Input: Paste an article or upload text file.</li>
+                    <li>Output: Classification (credible/suspicious), confidence score, highlighted text.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Demo and Networking (ongoing)</h4>
+                <ul>
+                    <li>Prepare 3 demo cases:
+                        <ol>
+                            <li>Clearly credible article (e.g., BBC/Reuters).</li>
+                            <li>Clearly suspicious article (from dataset).</li>
+                            <li>Ambiguous case (to show explainability).</li>
+                        </ol>
+                    </li>
+                    <li>Share GitHub repo with README and demo video.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <ul>
+                <li><strong>Datasets:</strong> Kaggle Fake News dataset, LIAR dataset, BuzzFeed news credibility
+                    dataset.</li>
+                <li><strong>Evaluation:</strong>
+                    <ul>
+                        <li>Split dataset into train/test (80/20).</li>
+                        <li>Compare baseline (Naive Bayes) vs advanced (BERT).</li>
+                        <li>Aim for F1-score ≥0.75.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <ul>
+                <li><strong>Pitch line:</strong> "I built a tool that detects misinformation using NLP and
+                    explainability — it highlights why an article looks suspicious."</li>
+                <li><strong>Demo:</strong> Paste a short article live, show classification + highlighted suspicious
+                    words.</li>
+                <li><strong>Networking impact:</strong> This project is socially relevant, sparks conversation about AI
+                    ethics, and shows technical depth.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <div class="checklist">
+                <ul>
+                    <li>Collect dataset (Kaggle/LIAR).</li>
+                    <li>Preprocess text (clean + tokenize).</li>
+                    <li>Train baseline classifier (Naive Bayes).</li>
+                    <li>Fine-tune BERT for classification.</li>
+                    <li>Add explainability layer (LIME/SHAP).</li>
+                    <li>Build demo UI with Streamlit.</li>
+                    <li>Prepare 3 demo cases for networking.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

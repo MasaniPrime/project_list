@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Astronomy Visualization - Project Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .project-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #4a90e2;
+        }
+
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #4a90e2;
+            margin-bottom: 10px;
+        }
+
+        .project-header p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badges span {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: white;
+        }
+
+        .skill-dataviz {
+            background-color: #27ae60;
+        }
+
+        .skill-3dgraphics {
+            background-color: #2980b9;
+        }
+
+        .skill-interactive {
+            background-color: #8e44ad;
+        }
+
+        .skill-geo {
+            background-color: #16a085;
+        }
+
+        .tool-threejs {
+            background-color: #000000;
+        }
+
+        .tool-d3js {
+            background-color: #f57c00;
+        }
+
+        .tool-javascript {
+            background-color: #f1c40f;
+            color: #333;
+        }
+
+        .tool-python {
+            background-color: #3776ab;
+        }
+
+        .tool-apis {
+            background-color: #e74c3c;
+        }
+
+        .tool-github {
+            background-color: #24292e;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h3 {
+            font-size: 1.5em;
+            color: #4a90e2;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a90e2;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .phase {
+            border-left: 4px solid #4a90e2;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            padding-left: 20px;
+        }
+
+        .phase h4 {
+            color: #4a90e2;
+            margin-bottom: 8px;
+        }
+
+        .phase p {
+            margin-bottom: 10px;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .phase li {
+            margin-bottom: 5px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="project-header">
+            <h1>Interactive Astronomy Visualization</h1>
+            <p>A web-based tool that brings the cosmos to life by visualizing planetary systems, star maps, and galaxies
+                in interactive 3D. Users can explore the universe, zoom into planetary orbits, filter by properties like
+                habitability, and discover fun astronomical facts in real time.</p>
+            <div class="badges">
+                <span class="skill-dataviz">Data Visualization</span>
+                <span class="skill-3dgraphics">3D Graphics</span>
+                <span class="skill-interactive">Interactive Design</span>
+                <span class="skill-geo">Geospatial Data</span>
+                <span class="tool-threejs">Three.js</span>
+                <span class="tool-d3js">D3.js</span>
+                <span class="tool-javascript">JavaScript</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-apis">APIs</span>
+                <span class="tool-github">GitHub Pages</span>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="content-section">
+            <h3>Overview</h3>
+            <p>This project transforms astronomy into an interactive experience. Instead of static diagrams, users
+                explore real planetary systems, zoom into star maps, and toggle overlays showing temperature, brightness,
+                and habitability. The visualization combines NASA/ESA data with Three.js for 3D rendering and D3.js for
+                star maps, creating a stunning, educational interface.</p>
+        </div>
+
+        <!-- Goals -->
+        <div class="content-section">
+            <h3>Goals</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Goal 1:</strong> Visualize planetary systems and star maps using 3D graphics and interactive
+                    controls.</li>
+                <li><strong>Goal 2:</strong> Integrate NASA Exoplanet Archive and ESA Gaia DR3 data into the
+                    visualization.</li>
+                <li><strong>Goal 3:</strong> Implement filters and overlays for exploring exoplanets by properties
+                    (Earth-like, habitable, etc.).</li>
+                <li><strong>Goal 4:</strong> Create an educational layer with scientific details and fun facts.</li>
+                <li><strong>Goal 5:</strong> Deploy an accessible, performant visualization that handles 1,000+ stars
+                    smoothly.</li>
+            </ul>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="content-section">
+            <h3>Tech Stack</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                <li><strong>3D Visualization:</strong> Three.js (for orbital mechanics and planetary systems)</li>
+                <li><strong>2D Visualization:</strong> D3.js (for star maps and constellation overlays)</li>
+                <li><strong>Backend (optional):</strong> Python Flask for data preprocessing and serving APIs</li>
+                <li><strong>Data Sources:</strong> NASA Exoplanet Archive, ESA Gaia DR3, Open Astronomy APIs</li>
+                <li><strong>Deployment:</strong> GitHub Pages, Heroku, or static hosting</li>
+            </ul>
+        </div>
+
+        <!-- Build Plan -->
+        <div class="content-section">
+            <h3>Step-by-Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <p>Define scope and core features:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Planetary system visualization with zoomable orbits</li>
+                    <li>Star map with constellation overlays</li>
+                    <li>Galaxy overview or Milky Way visualization</li>
+                </ul>
+                <p style="margin-top: 10px;"><strong>Example features to implement:</strong></p>
+                <ul style="margin-left: 20px;">
+                    <li>Zoomable star map with constellations</li>
+                    <li>Planetary system view with orbits, distances, and relative sizes</li>
+                    <li>Toggle overlays (temperature, brightness, habitability index)</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Collection (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Download datasets from NASA Exoplanet Archive</li>
+                    <li>Fetch star data from ESA Gaia DR3 (positions, brightness, distances)</li>
+                    <li>Normalize all data into standardized JSON format</li>
+                    <li>Validate data accuracy and coverage</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Visualization Setup (3–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Set up Three.js scene with camera, lighting, and renderers</li>
+                    <li>Implement planetary orbit mechanics (calculate positions over time)</li>
+                    <li>Use D3.js for 2D star map and constellation overlays</li>
+                    <li>Implement zoom, pan, and rotate controls</li>
+                    <li>Add hover tooltips for stars and planets</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Interactive Features (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Add filter controls (show only Earth-like planets, habitable zone, etc.)</li>
+                    <li>Implement overlay toggles (temperature heatmap, brightness levels, habitability index)</li>
+                    <li>Build search bar for finding specific stars or exoplanets</li>
+                    <li>Add preset views (Solar System, Alpha Centauri, nearest exoplanets)</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Educational Layer (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Create info panels displaying planet/star details (mass, radius, distance, age)</li>
+                    <li>Add fun facts (e.g., "This star is 10x brighter than the Sun")</li>
+                    <li>Implement toggle for "scientific mode" vs "casual mode"</li>
+                    <li>Add comparison tools (e.g., "Compare this planet to Earth")</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Deployment and Demo (2–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Host on GitHub Pages or Heroku</li>
+                    <li>Prepare demo datasets (Milky Way star cluster, Proxima Centauri system, habitable exoplanets)</li>
+                    <li>Record demo video showing zooming into a planetary system and toggling overlays</li>
+                    <li>Optimize performance for web browsers</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Sources & Evaluation -->
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <p><strong>Data Sources:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank" rel="noopener noreferrer">NASA
+                        Exoplanet Archive</a> - Exoplanet and planetary system data</li>
+                <li><a href="https://www.esa.int/gaia" target="_blank" rel="noopener noreferrer">ESA Gaia DR3</a> - Star
+                    positions, brightness, distances</li>
+                <li>Open Astronomy APIs (SIMBAD, NED)</li>
+            </ul>
+            <p><strong>Evaluation Metrics:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Test accuracy of visualizations against official NASA/ESA charts</li>
+                <li>Ensure smooth rendering performance with 1,000+ stars</li>
+                <li>Validate educational content for clarity and scientific accuracy</li>
+                <li>Measure user interaction smoothness (zoom, pan, filter responsiveness)</li>
+            </ul>
+        </div>
+
+        <!-- Demo & Networking Tips -->
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <p><strong>Pitch line:</strong><br>
+                "I built an interactive astronomy visualization where you can explore planetary systems and star maps
+                in real time — zoom into a distant system, toggle data overlays, and discover exoplanets."
+            </p>
+            <p style="margin-top: 15px;"><strong>Demo walkthrough:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Load the Solar System and show smooth orbital mechanics</li>
+                <li>Zoom into a nearby exoplanet system (Proxima Centauri or TRAPPIST-1)</li>
+                <li>Toggle overlays (temperature, habitability, brightness)</li>
+                <li>Use the filter to show only "Earth-like" planets</li>
+                <li>Click on a planet to display detailed info and fun facts</li>
+            </ul>
+            <p><strong>Networking impact:</strong> Visually stunning and immediately impressive. Demonstrates skills in
+                3D graphics, data visualization, and combining scientific data with beautiful UI. Valuable for gaming
+                studios, data visualization companies, science communication platforms, and astronomy apps.</p>
+        </div>
+
+        <!-- Checklist -->
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <ul class="checklist">
+                <li>Define visualization scope and required features</li>
+                <li>Collect and normalize astronomy datasets (NASA, ESA)</li>
+                <li>Set up Three.js scene and implement orbital mechanics</li>
+                <li>Create D3.js star map with constellation overlays</li>
+                <li>Add interactive filters and overlay toggles</li>
+                <li>Implement search bar and preset views</li>
+                <li>Build info panels with scientific details and fun facts</li>
+                <li>Optimize performance for 1,000+ stars</li>
+                <li>Deploy to GitHub Pages or Heroku</li>
+                <li>Record demo video and prepare pitch</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Real-Time Weather & Pollution GIS Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+        }
+
+        .project-header {
+            margin-bottom: 2rem;
+        }
+
+        .project-header h1 {
+            margin: 0 0 0.5rem 0;
+            color: #333;
+        }
+
+        .project-header h2 {
+            margin: 0;
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin: 3rem 0;
+        }
+
+        .content-section h3 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section h4 {
+            color: #555;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0.8rem 0;
+        }
+
+        .content-section ul {
+            color: #666;
+            line-height: 1.8;
+            margin-left: 1.5rem;
+        }
+
+        .content-section li {
+            margin: 0.5rem 0;
+        }
+
+        .content-section strong {
+            color: #333;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #4a90e2;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+        }
+
+        .checklist {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .checklist li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #4a90e2;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body style="background: #f5f7fa;">
+    <div class="container">
+        <div class="project-header">
+            <h1>Real-Time Weather & Pollution GIS Dashboard</h1>
+            <h2>Interactive mapping of live weather and air quality data with real-time analytics</h2>
+            <div class="badges">
+                <span class="skill-gis">GIS</span>
+                <span class="skill-dataviz">Data Visualization</span>
+                <span class="skill-datafusion">Data Integration</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-apis">APIs</span>
+                <span class="tool-flask">Flask</span>
+                <span class="tool-opensat">Open Data</span>
+                <span class="tool-pandas">Pandas</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Project Overview</h3>
+            <p><strong>Real-Time Weather & Pollution GIS Dashboard</strong> — an interactive web application that pulls
+                live weather and air quality data from public APIs, overlays it on a geographic map, and allows users to
+                explore conditions by location. This project demonstrates <strong>GIS integration, API handling, data
+                    visualization, and real-time analytics</strong>, all achievable from a laptop.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Key Considerations and Goals</h3>
+            <ul>
+                <li><strong>Primary goal:</strong> Build a dashboard that shows weather (temperature, humidity, wind)
+                    and pollution (AQI, PM2.5, CO₂) data on a map.</li>
+                <li><strong>Secondary goals:</strong> Enable filtering by city/region, visualize trends over time, and
+                    provide alerts for poor air quality.</li>
+                <li><strong>Constraints:</strong> Laptop-only build; use free APIs and open-source libraries; keep
+                    resource usage light.</li>
+                <li><strong>Success criteria:</strong> Interactive map with real-time updates, clear visualizations, and
+                    smooth performance.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Tech Stack and Tools</h3>
+            <ul>
+                <li><strong>Python</strong> (backend data handling)</li>
+                <li><strong>JavaScript + Leaflet.js / Mapbox</strong> (GIS visualization)</li>
+                <li><strong>Flask / FastAPI</strong> (API backend)</li>
+                <li><strong>OpenWeatherMap API</strong> (weather data)</li>
+                <li><strong>World Air Quality Index API / OpenAQ</strong> (pollution data)</li>
+                <li><strong>Pandas / NumPy</strong> (data processing)</li>
+                <li><strong>Plotly / D3.js</strong> (charts for trends)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Step‑by‑Step Build Guide</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Setup and Planning (1–2 days)</h4>
+                <ul>
+                    <li>Register for free API keys (OpenWeatherMap, OpenAQ).</li>
+                    <li>Define dashboard features: map view, city search, pollution alerts, trend charts.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Collection (2–3 days)</h4>
+                <ul>
+                    <li>Write Python scripts to fetch weather and pollution data via APIs.</li>
+                    <li>Normalize data into a consistent schema (location, timestamp, metrics).</li>
+                    <li>Store recent data in SQLite for quick retrieval.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: GIS Map Integration (3–4 days)</h4>
+                <ul>
+                    <li>Use Leaflet.js or Mapbox to render a world map.</li>
+                    <li>Overlay markers for cities with weather/pollution data.</li>
+                    <li>Color-code markers (e.g., green = good AQI, red = hazardous).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Visualization and Trends (2–3 days)</h4>
+                <ul>
+                    <li>Add charts (Plotly/D3.js) showing AQI trends over the past 24 hours.</li>
+                    <li>Include weather overlays (temperature gradients, wind arrows).</li>
+                    <li>Implement filters (by pollutant type, by region).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Alerts and UX (2–3 days)</h4>
+                <ul>
+                    <li>Add alert system: highlight cities with AQI > 150 (unhealthy).</li>
+                    <li>Provide tooltips with detailed metrics when hovering over markers.</li>
+                    <li>Build a simple search bar for city lookup.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Deployment and Demo (2–4 days)</h4>
+                <ul>
+                    <li>Host locally or on GitHub Pages/Heroku for demo.</li>
+                    <li>Prepare sample cities (Johannesburg, Cape Town, New York, Beijing) to showcase global reach.
+                    </li>
+                    <li>Record a short demo video showing real-time updates.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <ul>
+                <li><strong>Weather:</strong> OpenWeatherMap API (free tier supports multiple cities).</li>
+                <li><strong>Pollution:</strong> OpenAQ or WAQI API.</li>
+                <li><strong>Evaluation:</strong>
+                    <ul>
+                        <li>Test accuracy by comparing API data with local weather reports.</li>
+                        <li>Measure responsiveness (data refresh every 10–15 minutes).</li>
+                        <li>Ensure map loads smoothly with 50+ markers.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <ul>
+                <li><strong>Pitch line:</strong> "I built a real-time GIS dashboard that overlays weather and pollution
+                    data globally — you can see which cities are safe or hazardous right now."</li>
+                <li><strong>Demo:</strong> Show the map, click on a city, highlight AQI trends, and demonstrate alerts.
+                </li>
+                <li><strong>Networking impact:</strong> This project is visually striking, socially relevant, and
+                    demonstrates technical breadth (APIs, GIS, visualization).</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <div class="checklist">
+                <ul>
+                    <li>Get API keys (OpenWeatherMap, OpenAQ).</li>
+                    <li>Build Python scripts for data ingestion.</li>
+                    <li>Normalize and store data in SQLite.</li>
+                    <li>Create Leaflet.js map with markers.</li>
+                    <li>Add AQI/Weather visualizations.</li>
+                    <li>Implement alerts and search bar.</li>
+                    <li>Deploy demo and prepare showcase.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

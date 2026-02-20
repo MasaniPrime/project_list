@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Voice-Controlled Data Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+        }
+
+        .project-header {
+            margin-bottom: 2rem;
+        }
+
+        .project-header h1 {
+            margin: 0 0 0.5rem 0;
+            color: #333;
+        }
+
+        .project-header h2 {
+            margin: 0;
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin: 3rem 0;
+        }
+
+        .content-section h3 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section h4 {
+            color: #555;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0.8rem 0;
+        }
+
+        .content-section ul {
+            color: #666;
+            line-height: 1.8;
+            margin-left: 1.5rem;
+        }
+
+        .content-section li {
+            margin: 0.5rem 0;
+        }
+
+        .content-section strong {
+            color: #333;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #4a90e2;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+        }
+
+        .checklist {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .checklist li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #4a90e2;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .code-block {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body style="background: #f5f7fa;">
+    <div class="container">
+        <div class="project-header">
+            <h1>Voice-Controlled Data Dashboard</h1>
+            <h2>Interact with your data using natural voice commands</h2>
+            <div class="badges">
+                <span class="skill-speechtotext">Speech-to-Text</span>
+                <span class="skill-nlp">NLP</span>
+                <span class="skill-dataviz">Data Visualization</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-flask">Flask</span>
+                <span class="tool-pandas">Pandas</span>
+                <span class="tool-whisper">Speech Recognition</span>
+                <span class="tool-javascript">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Project Overview</h3>
+            <p><strong>Voice-Controlled Data Dashboard</strong> — a unique interactive dashboard where users can query
+                and visualize data using voice commands. Instead of clicking buttons or typing SQL, users simply speak
+                natural commands like "Show me sales by month" or "Filter expenses for 2025." This project demonstrates
+                <strong>speech processing, NLP, command parsing, and real-time visualization</strong> — all highly
+                engaging for networking and demos.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Key Considerations and Goals</h3>
+            <ul>
+                <li><strong>Primary goal:</strong> Build a dashboard where voice commands trigger data queries and chart
+                    generation.</li>
+                <li><strong>Secondary goals:</strong> Support multiple command types (filtering, aggregation,
+                    visualization), provide command feedback, and ensure smooth user experience.</li>
+                <li><strong>Constraints:</strong> Laptop-only build; use free/open-source speech-to-text APIs; keep
+                    latency low.</li>
+                <li><strong>Success criteria:</strong> ≥85% speech recognition accuracy, chart generation within 2–3
+                    seconds, and support for ≥10 distinct commands.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Tech Stack and Tools</h3>
+            <ul>
+                <li><strong>Python</strong> (backend logic and command parsing)</li>
+                <li><strong>SpeechRecognition / Vosk</strong> (convert speech to text)</li>
+                <li><strong>NLP processing</strong> (normalize and parse commands)</li>
+                <li><strong>Pandas</strong> (data filtering and aggregation)</li>
+                <li><strong>Plotly / Seaborn</strong> (dynamic chart generation)</li>
+                <li><strong>Flask / Streamlit</strong> (dashboard and web interface)</li>
+                <li><strong>JavaScript / Web Audio API</strong> (browser-based microphone input)</li>
+                <li><strong>SQLite</strong> (store datasets and command logs)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Step‑by‑Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <ul>
+                    <li>Define scope: voice commands for filtering datasets, generating charts, and switching views.
+                    </li>
+                    <li>Example commands:
+                        <ul>
+                            <li>"Show me sales by month."</li>
+                            <li>"Filter data for 2025 only."</li>
+                            <li>"Create a pie chart of expenses."</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Voice Input (2–3 days)</h4>
+                <ul>
+                    <li>Use <strong>SpeechRecognition</strong> library with a microphone to capture voice.</li>
+                    <li>Convert speech to text using Google Speech API or offline models like Vosk.</li>
+                    <li>Normalize text (lowercase, remove filler words).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Command Parsing (2–3 days)</h4>
+                <ul>
+                    <li>Build a simple parser to map text commands to actions.</li>
+                    <li>Example:
+                        <div class="code-block">
+                            "show sales by month" → generate line chart of monthly sales.<br>
+                            "filter 2025" → apply filter on dataset.
+                        </div>
+                    </li>
+                    <li>Store mappings in a dictionary for easy extension.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Data Handling (2–3 days)</h4>
+                <ul>
+                    <li>Load dataset (CSV or SQLite).</li>
+                    <li>Use Pandas to filter, aggregate, and prepare data.</li>
+                    <li>Ensure commands trigger correct queries.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Visualization (3–4 days)</h4>
+                <ul>
+                    <li>Use Plotly or Seaborn to generate charts dynamically.</li>
+                    <li>Display charts in a Streamlit or Flask dashboard.</li>
+                    <li>Update visuals in real time when new voice commands are given.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <p>Build a dashboard with:</p>
+                <ul>
+                    <li><strong>Voice input button</strong> (start listening).</li>
+                    <li><strong>Visualization panel</strong> (charts).</li>
+                    <li><strong>Command log</strong> (show interpreted commands).</li>
+                </ul>
+                <p>Add error handling (e.g., "Sorry, I didn't understand that command").</p>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul>
+                    <li>Host locally or on Streamlit Cloud.</li>
+                    <li>Prepare demo dataset (e.g., sales, expenses, or personal finance).</li>
+                    <li>Record a demo video showing voice commands generating charts.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <ul>
+                <li><strong>Data:</strong> Any structured dataset (CSV of sales, expenses, or public datasets).</li>
+                <li><strong>Evaluation:</strong>
+                    <ul>
+                        <li>Test accuracy of speech recognition (≥85% command accuracy).</li>
+                        <li>Test responsiveness (chart updates within 2–3 seconds).</li>
+                        <li>Ensure dashboard handles at least 10 different commands.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <ul>
+                <li><strong>Pitch line:</strong> "I built a voice-controlled dashboard — you can literally talk to your
+                    data and watch it respond in real time."</li>
+                <li><strong>Demo:</strong> Speak commands like "Show me sales by month" and watch the chart update
+                    instantly.</li>
+                <li><strong>Networking impact:</strong> Futuristic, accessible, and highly engaging — people will want
+                    to try it themselves.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <div class="checklist">
+                <ul>
+                    <li>Set up microphone input with SpeechRecognition/Vosk.</li>
+                    <li>Convert speech to text.</li>
+                    <li>Build command parser with mappings.</li>
+                    <li>Load dataset with Pandas.</li>
+                    <li>Generate charts with Plotly/Seaborn.</li>
+                    <li>Integrate into Streamlit/Flask dashboard.</li>
+                    <li>Test demo commands and prepare showcase.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

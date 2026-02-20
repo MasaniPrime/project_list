@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Catalogue</title>
+    <title>Project IdeaList</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
     <header>
         <h1>Projects</h1>
-        <p>Select a category to view projects.</p>
+        <p>Select a category to filter projects.</p>
         <nav>
             <button onclick="filterProjects('data')">Data</button>
             <button onclick="filterProjects('cybersecurity')">Cybersecurity</button>
@@ -21,353 +22,213 @@
     </header>
 
     <section class="projects">
-
-        <!-- TEST CARD -->
-        <!-- Card -->
-        <div class="card" data-category="data" onclick="openModal('modal1')">
-            <h3>Local Economic Indicator Tracker</h3>
-            <p>Predict inflation or unemployment trends using public data.</p>
-            <div class="badges">
-                <span class="skill-econometrics">Econometrics</span>
-                <span class="skill-forecasting">Forecasting</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-pandas">pandas</span>
+        <!-- AI-Powered Resume Analyzer -->
+        <a href="pages/1. AI_Powered_Resume_Analyzer.html" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit;">
+            <div class="card" data-category="data">
+                <h3>1. AI-Powered Resume Analyzer</h3>
+                <p>A tool that ingests resumes (PDF/DOCX/TXT), extracts skills and experience using NLP, and compares
+                    them against job descriptions to generate a compatibility score, highlight missing skills, and
+                    suggest tailored rewrites.</p>
+                <div class="badges">
+                    <span class="skill-nlp">NLP</span>
+                    <span class="skill-dataparsing">Text Extraction</span>
+                    <span class="skill-modeleval">Semantic Similarity</span>
+                    <span class="tool-python">Python</span>
+                    <span class="tool-spacy">spaCy</span>
+                    <span class="tool-transformers">Transformers</span>
+                    <span class="tool-flask">Flask</span>
+                    <span class="tool-sqlite">SQLite</span>
+                </div>
             </div>
-        </div>
+        </a>
 
-        <!-- Container for modals -->
-
-
-
-
-
-        <!-- <div id="modal1" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('modal1')">&times;</span>
-                <h2>Local Economic Indicator Tracker</h2>
-                <p>This project uses public datasets (e.g., government statistics, financial reports) to track local
-                    economic indicators such as inflation, unemployment, and consumer spending. The goal is to provide
-                    predictive insights for policymakers and businesses.</p>
-                <ul>
-                    <li><strong>Skills:</strong> Econometrics, Forecasting</li>
-                    <li><strong>Tools:</strong> Python, pandas</li>
-                    <li><strong>Challenge:</strong> Handling noisy and incomplete data sources.</li>
-                </ul>
+        <!-- Fake News Detector -->
+        <a href="pages/2. Fake_News_Detector.html" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit;">
+            <div class="card" data-category="data">
+                <h3>2. Fake News Detector</h3>
+                <p>A machine learning tool that analyzes online articles or social media posts to classify them as
+                    credible or suspicious. It uses natural language processing to detect linguistic patterns,
+                    sentiment, and metadata signals that often distinguish misinformation from reliable reporting.</p>
+                <div class="badges">
+                    <span class="skill-nlp">NLP</span>
+                    <span class="skill-classification">Classification</span>
+                    <span class="skill-modeleval">Model Evaluation</span>
+                    <span class="skill-dataviz">Visualization</span>
+                    <span class="tool-python">Python</span>
+                    <span class="tool-scikit">scikit-learn</span>
+                    <span class="tool-transformers">Transformers</span>
+                    <span class="tool-spacy">spaCy</span>
+                    <span class="tool-pandas">Pandas</span>
+                </div>
             </div>
-        </div> -->
+        </a>
 
-
-
-
-
-        <!-- END TEST CARD -->
-
-        <!-- Project 1 -->
-        <div class="card" data-category="data">
-            <h3>OSINT-Driven Local Risk Intelligence Dashboard</h3>
-            <p>Aggregate open-source data (crime reports, weather alerts, traffic incidents, social media signals) into
-                a live dashboard for situational awareness.</p>
-            <div class="badges">
-                <span class="skill-osint">OSINT</span>
-                <span class="tool-apis">APIs</span>
-                <span class="tool-powerbi">Power BI</span>
-                <span class="tool-tableau">Tableau</span>
-                <span class="tool-webscraping">Web Scraping</span>
+        <!-- Real-Time Weather & Pollution GIS Dashboard -->
+        <a href="pages/3. Real-Time_Weather_&_Pollution_GIS_Dashboard.html" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit;">
+            <div class="card" data-category="data">
+                <h3>3. Real-Time Weather & Pollution GIS Dashboard</h3>
+                <p>An interactive dashboard that integrates live weather and air quality data from public APIs, overlays
+                    it on a geographic map, and allows users to explore conditions by city or region. It provides visual
+                    alerts for poor air quality and trend charts for pollution and weather metrics.</p>
+                <div class="badges">
+                    <span class="skill-gis">GIS</span>
+                    <span class="skill-dataviz">Data Visualization</span>
+                    <span class="skill-datafusion">Data Integration</span>
+                    <span class="tool-python">Python</span>
+                    <span class="tool-apis">APIs</span>
+                    <span class="tool-flask">Flask</span>
+                    <span class="tool-pandas">Pandas</span>
+                    <span class="tool-sqlite">SQLite</span>
+                </div>
             </div>
-        </div>
+        </a>
 
-        <!-- Project 2 -->
-        <div class="card" data-category="data">
-            <h3>Smart Resume Analyzer for ATS & Bias Detection</h3>
-            <p>Build a system that evaluates resumes for ATS compatibility and flags biased language.</p>
-            <div class="badges">
-                <span class="skill-nlp">NLP</span>
-                <span class="skill-dataparsing">Data Parsing</span>
-                <span class="skill-modeleval">Model Evaluation</span>
-                <span class="tool-spacy">spaCy</span>
-                <span class="tool-scikit">scikit-learn</span>
+        <!-- Cyber Attack Simulation Dashboard -->
+        <a href="pages/4. Cyber_Attack_Simulation_Dashboard.html" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit;">
+            <div class="card" data-category="cybersecurity">
+                <h3>4. Cyber Attack Simulation Dashboard</h3>
+                <p>An interactive dashboard that simulates common cyber threats such as brute-force login attempts,
+                    phishing campaigns, and ransomware spread. It generates synthetic attack data, visualizes
+                    progression in real time, and provides educational insights into detection and mitigation
+                    strategies.</p>
+                <div class="badges">
+                    <span class="skill-cyberstrategy">Cybersecurity</span>
+                    <span class="skill-simulation">Simulation</span>
+                    <span class="skill-dataviz">Data Visualization</span>
+                    <span class="tool-python">Python</span>
+                    <span class="tool-flask">Flask</span>
+                    <span class="tool-sqlite">SQLite</span>
+                    <span class="tool-javascript">JavaScript</span>
+                </div>
             </div>
-        </div>
+        </a>
 
-        <!-- Project 3 -->
-        <div class="card" data-category="data">
-            <h3>Geospatial Urban Growth Visualizer (GIS)</h3>
-            <p>Analyze satellite imagery + census data to show urban expansion or infrastructure gaps.</p>
-            <div class="badges">
-                <span class="skill-gis">GIS</span>
-                <span class="skill-spatial">Spatial Analysis</span>
-                <span class="skill-datafusion">Data Fusion</span>
-                <span class="tool-qgis">QGIS</span>
-                <span class="tool-opensat">Open Satellite Data</span>
+        <!-- Personal Finance Tracker with Predictive Analytics -->
+        <a href="pages/5. Personal Finance_Tracker_with_Predictive_Analytics.html" target="_blank"
+            rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+            <div class="card" data-category="data">
+                <h3>5. Personal Finance Tracker with Predictive Analytics</h3>
+                <p>A data-driven application that helps users track their expenses and income, visualize spending
+                    patterns, and forecast future financial trends using predictive models. It provides insights into
+                    budgeting, savings goals, and potential overspending risks.</p>
+                <div class="badges">
+                    <span class="skill-timeseries">Time-Series Forecasting</span>
+                    <span class="skill-regression">Regression</span>
+                    <span class="skill-dataviz">Data Visualization</span>
+                    <span class="tool-python">Python</span>
+                    <span class="tool-pandas">Pandas</span>
+                    <span class="tool-prophet">Prophet</span>
+                    <span class="tool-flask">Flask</span>
+                    <span class="tool-sqlite">SQLite</span>
+                </div>
             </div>
-        </div>
+        </a>
 
-        <!-- Project 4 -->
-        <div class="card" data-category="data">
-            <h3>IT Incident Prediction System</h3>
-            <p>Use historical IT ticket data to predict likely outages or incidents.</p>
-            <div class="badges">
-                <span class="skill-timeseries">Time-Series Forecasting</span>
-                <span class="skill-itsm">ITSM Concepts</span>
-                <span class="tool-prophet">Prophet</span>
-                <span class="tool-lstm">LSTM</span>
+        <!-- Voice-Controlled Data Dashboard -->
+        <a href="pages/6. Voice-Controlled_Data_Dashboard.html" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit;">
+            <div class="card" data-category="data">
+                <h3>6. Voice-Controlled Data Dashboard</h3>
+                <p>An interactive dashboard that responds to voice commands, allowing users to query datasets, filter
+                    results, and generate visualizations hands-free. It combines speech recognition with data
+                    visualization to create a futuristic, accessible interface.</p>
+                <div class="badges">
+                    <span class="skill-speechtotext">Speech-to-Text</span>
+                    <span class="skill-nlp">NLP</span>
+                    <span class="skill-dataviz">Data Visualization</span>
+                    <span class="skill-collaboration">Accessibility</span>
+                    <span class="tool-python">Python</span>
+                    <span class="tool-flask">Flask</span>
+                    <span class="tool-pandas">Pandas</span>
+                    <span class="tool-javascript">JavaScript</span>
+                </div>
             </div>
-        </div>
+        </a>
 
-        <!-- Project 5 -->
-        <div class="card" data-category="data">
-            <h3>AI-Powered Meeting Intelligence Tool</h3>
-            <p>Record meetings and extract action items, sentiment, and decision summaries.</p>
-            <div class="badges">
-                <span class="skill-speechtotext">Speech-to-Text</span>
-                <span class="skill-nlp">NLP</span>
-                <span class="skill-dataengineering">Data Engineering</span>
-                <span class="tool-whisper">Whisper</span>
-                <span class="tool-python">Python</span>
+        <!-- AI Chatbot for Career Guidance -->
+        <a href="pages/7. AI_Chatbot_for_Career_Guidance.html" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit;">
+            <div class="card" data-category="data">
+                <h3>7. AI Chatbot for Career Guidance</h3>
+                <p>A conversational AI chatbot that helps job seekers by analyzing job postings, answering
+                    career-related questions, and suggesting tailored advice on resumes, skills, and interview
+                    preparation. It leverages NLP and machine learning to provide personalized guidance in real time.
+                </p>
+                <div class="badges">
+                    <span class="skill-nlp">NLP</span>
+                    <span class="skill-conversational">Conversational AI</span>
+                    <span class="skill-textclass">Text Classification</span>
+                    <span class="skill-semantics">Semantic Similarity</span>
+                    <span class="tool-python">Python</span>
+                    <span class="tool-rasa">Rasa</span>
+                    <span class="tool-spacy">spaCy</span>
+                    <span class="tool-transformers">Transformers</span>
+                    <span class="tool-flask">Flask</span>
+                    <span class="tool-streamlit">Streamlit</span>
+                    <span class="tool-sqlite">SQLite</span>
+                </div>
             </div>
-        </div>
+        </a>
 
-        <!-- Project 6 -->
-        <div class="card" data-category="cybersecurity">
-            <h3>Privacy-Aware Personal Data Vault</h3>
-            <p>A local system that tracks what personal data you share with apps and websites.</p>
-            <div class="badges">
-                <span class="skill-security">Security</span>
-                <span class="skill-privacy">Privacy Engineering</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-sqlite">SQLite</span>
+        <!-- Interactive Astronomy Visualization -->
+        <a href="pages/8. Interactive_Astronomy_Visualization.html" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit;">
+            <div class="card" data-category="data">
+                <h3>8. Interactive Astronomy Visualization</h3>
+                <p>A web-based interactive tool that visualizes planetary systems, star maps, or galaxies. Users can
+                    explore celestial bodies, zoom into regions of interest, and toggle overlays like constellations,
+                    distances, or orbital paths. It combines astronomy data with engaging visualizations to make space
+                    exploration accessible and educational.</p>
+                <div class="badges">
+                    <span class="skill-dataviz">Data Visualization</span>
+                    <span class="skill-interactive">Interactive Design</span>
+                    <span class="skill-3dgraphics">3D Graphics</span>
+                    <span class="skill-geo">Geospatial Data</span>
+                    <span class="tool-python">Python</span>
+                    <span class="tool-javascript">JavaScript</span>
+                    <span class="tool-d3js">D3.js</span>
+                    <span class="tool-threejs">Three.js</span>
+                    <span class="tool-apis">APIs</span>
+                    <span class="tool-flask">Flask</span>
+                </div>
             </div>
-        </div>
+        </a>
 
-        <!-- Project 7 -->
-        <div class="card" data-category="cybersecurity">
-            <h3>Cyber Threat News Aggregator with Risk Scoring</h3>
-            <p>Scrape cyber news and score threats based on severity and relevance.</p>
-            <div class="badges">
-                <span class="skill-datapipelines">Data Pipelines</span>
-                <span class="skill-securitydomain">Security Domain Knowledge</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-rss">RSS</span>
-                <span class="tool-nlp">NLP</span>
+        <!-- Smart Portfolio Site -->
+        <a href="pages/9. Smart_Portfolio_Site.html" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit;">
+            <div class="card" data-category="webdev">
+                <h3>9. Smart Portfolio Site</h3>
+                <p>A personal portfolio website that showcases projects in an interactive catalogue. Users can filter
+                    projects by category, toggle views, and explore polished badges with refined colors and styling. It
+                    demonstrates both technical competence and design sensibility, making it a strong networking tool.
+                </p>
+                <div class="badges">
+                    <span class="skill-webdesign">Web Design</span>
+                    <span class="skill-frontend">Frontend Development</span>
+                    <span class="skill-ux">UX/UI Design</span>
+                    <span class="skill-responsive">Responsive Design</span>
+                    <span class="skill-filtering">Dynamic Filtering</span>
+                    <span class="tool-html">HTML5</span>
+                    <span class="tool-css">CSS3</span>
+                    <span class="tool-javascript">JavaScript</span>
+                    <span class="tool-react">React</span>
+                    <span class="tool-vue">Vue.js</span>
+                    <span class="tool-bootstrap">Bootstrap</span>
+                    <span class="tool-tailwind">TailwindCSS</span>
+                    <span class="tool-github">GitHub Pages</span>
+                    <span class="tool-netlify">Netlify</span>
+                    <span class="tool-figma">Figma</span>
+                </div>
             </div>
-        </div>
-
-        <!-- Project 8 -->
-        <div class="card" data-category="webdev">
-            <h3>IT Asset Lifecycle Management Tool</h3>
-            <p>Track hardware/software lifecycles, licenses, and depreciation.</p>
-            <div class="badges">
-                <span class="skill-systemsdesign">Systems Design</span>
-                <span class="skill-itgovernance">IT Governance</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-postgresql">PostgreSQL</span>
-            </div>
-        </div>
-
-        <!-- Project 9 -->
-        <div class="card" data-category="outofthebox">
-            <h3>National-Scale Cyber Risk Digital Twin</h3>
-            <p>A simulated model of a country’s cyber infrastructure and cascading failures.</p>
-            <div class="badges">
-                <span class="skill-systemsmodeling">Systems Modeling</span>
-                <span class="skill-cyberstrategy">Cybersecurity Strategy</span>
-                <span class="skill-simulation">Simulation</span>
-            </div>
-        </div>
-
-        <!-- Project 10 -->
-        <div class="card" data-category="outofthebox">
-            <h3>AI-Driven Disaster Response GIS Platform</h3>
-            <p>Real-time integration of satellite imagery, IoT sensors, and emergency services.</p>
-            <div class="badges">
-                <span class="skill-gisai">GIS</span>
-                <span class="skill-ai">AI</span>
-                <span class="skill-systemsarch">Systems Architecture</span>
-            </div>
-        </div>
-
-
-        <!-- Project 11 -->
-        <div class="card" data-category="data">
-            <h3>Local Economic Indicator Tracker</h3>
-            <p>Predict inflation or unemployment trends using public data.</p>
-            <div class="badges">
-                <span class="skill-econometrics">Econometrics</span>
-                <span class="skill-forecasting">Forecasting</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-pandas">pandas</span>
-            </div>
-        </div>
-
-        <!-- Project 12 -->
-        <div class="card" data-category="data">
-            <h3>Consumer Behavior Analysis Using Camera Data</h3>
-            <p>Analyze foot traffic or movement patterns (ethically, anonymized).</p>
-            <div class="badges">
-                <span class="skill-computervision">Computer Vision</span>
-                <span class="skill-dataanalysis">Analytics</span>
-                <span class="tool-opencv">OpenCV</span>
-            </div>
-        </div>
-
-        <!-- Project 13 -->
-        <div class="card" data-category="data">
-            <h3>Social Media Misinformation Detection Model</h3>
-            <p>Detect misinformation trends in real time.</p>
-            <div class="badges">
-                <span class="skill-nlp">NLP</span>
-                <span class="skill-classification">Classification</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-transformers">Transformers</span>
-            </div>
-        </div>
-
-        <!-- Project 14 -->
-        <div class="card" data-category="data">
-            <h3>Energy Consumption Optimization Model</h3>
-            <p>Analyze household energy usage and suggest reductions.</p>
-            <div class="badges">
-                <span class="skill-regression">Regression</span>
-                <span class="skill-optimization">Optimization</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-excel">Excel</span>
-            </div>
-        </div>
-
-        <!-- Project 15 -->
-        <div class="card" data-category="data">
-            <h3>Public Health Trend Analysis Dashboard</h3>
-            <p>Track disease or wellness indicators from open datasets.</p>
-            <div class="badges">
-                <span class="skill-dataviz">Data Visualization</span>
-                <span class="skill-analytics">Analytics</span>
-                <span class="tool-powerbi">Power BI</span>
-                <span class="tool-tableau">Tableau</span>
-            </div>
-        </div>
-
-        <!-- Project 16 -->
-        <div class="card" data-category="webdev">
-            <h3>Secure Authentication Microservice</h3>
-            <p>Implement OAuth2, JWT, and RBAC from scratch.</p>
-            <div class="badges">
-                <span class="skill-backendsecurity">Backend Security</span>
-                <span class="skill-apis">APIs</span>
-                <span class="tool-nodejs">Node.js</span>
-                <span class="tool-python">Python</span>
-            </div>
-        </div>
-
-        <!-- Project 17 -->
-        <div class="card" data-category="webdev">
-            <h3>Offline-First Progressive Web App</h3>
-            <p>App that works fully offline and syncs later.</p>
-            <div class="badges">
-                <span class="skill-pwa">PWA</span>
-                <span class="skill-caching">Caching</span>
-                <span class="skill-sync">Sync Strategies</span>
-                <span class="tool-javascript">JavaScript</span>
-            </div>
-        </div>
-
-        <!-- Project 18 -->
-        <div class="card" data-category="webdev">
-            <h3>Low-Code Internal Tool Builder</h3>
-            <p>Create a tool for generating CRUD apps quickly.</p>
-            <div class="badges">
-                <span class="skill-frameworkdesign">Framework Design</span>
-                <span class="tool-django">Django</span>
-                <span class="tool-flask">Flask</span>
-            </div>
-        </div>
-
-        <!-- Project 19 -->
-        <div class="card" data-category="webdev">
-            <h3>API Performance Monitoring Tool</h3>
-            <p>Monitor latency, errors, and uptime.</p>
-            <div class="badges">
-                <span class="skill-devops">DevOps Fundamentals</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-prometheus">Prometheus-style Metrics</span>
-            </div>
-        </div>
-
-        <!-- Project 20 -->
-        <div class="card" data-category="webdev">
-            <h3>Open-Source Contribution with Architectural Refactor</h3>
-            <p>Take an existing project and significantly improve architecture.</p>
-            <div class="badges">
-                <span class="skill-codequality">Code Quality</span>
-                <span class="skill-collaboration">Collaboration</span>
-            </div>
-        </div>
-
-        <!-- Project 21 -->
-        <div class="card" data-category="cybersecurity">
-            <h3>Home Network Intrusion Detection System</h3>
-            <p>Detect anomalies on a local network.</p>
-            <div class="badges">
-                <span class="skill-networksecurity">Network Security</span>
-                <span class="skill-ids">IDS Concepts</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-wireshark">Wireshark</span>
-            </div>
-        </div>
-
-        <!-- Project 22 -->
-        <div class="card" data-category="cybersecurity">
-            <h3>Phishing Simulation & Detection Platform</h3>
-            <p>Simulate phishing attacks and analyze results.</p>
-            <div class="badges">
-                <span class="skill-socialengineering">Social Engineering Defense</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-emailparsing">Email Parsing</span>
-            </div>
-        </div>
-
-        <!-- Project 23 -->
-        <div class="card" data-category="cybersecurity">
-            <h3>Password Hygiene Audit Tool</h3>
-            <p>Analyze password strength and reuse patterns (ethically).</p>
-            <div class="badges">
-                <span class="skill-cryptography">Cryptography Basics</span>
-                <span class="tool-python">Python</span>
-            </div>
-        </div>
-
-        <!-- Project 24 -->
-        <div class="card" data-category="cybersecurity">
-            <h3>Malware Behavior Analysis Sandbox</h3>
-            <p>Safely analyze malware behavior using virtual environments.</p>
-            <div class="badges">
-                <span class="skill-reverseengineering">Reverse Engineering Fundamentals</span>
-                <span class="tool-virtualbox">VirtualBox</span>
-                <span class="tool-python">Python</span>
-            </div>
-        </div>
-
-        <!-- Project 25 -->
-        <div class="card" data-category="cybersecurity">
-            <h3>Security Compliance Checker</h3>
-            <p>Assess systems against ISO 27001 or NIST controls.</p>
-            <div class="badges">
-                <span class="skill-grc">Governance, Risk, Compliance (GRC)</span>
-                <span class="tool-python">Python</span>
-                <span class="tool-checklists">Checklists</span>
-            </div>
-        </div>
-
+        </a>
     </section>
 
-
-    <div id="modal-container"></div>
-
     <script src="scripts.js"></script>
-    <script src="modals.js"></script>
-    <script>
-        // Generate modals dynamically
-        loadModals();
-    </script>
 
 </body>
 

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot for Career Guidance - Project Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .project-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #4a90e2;
+        }
+
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #4a90e2;
+            margin-bottom: 10px;
+        }
+
+        .project-header p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badges span {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: white;
+        }
+
+        .skill-nlp {
+            background-color: #6c63ff;
+        }
+
+        .skill-conversational {
+            background-color: #7b68ee;
+        }
+
+        .skill-textclass {
+            background-color: #8a7cff;
+        }
+
+        .skill-semantics {
+            background-color: #7b68ee;
+        }
+
+        .skill-uxdesign {
+            background-color: #9d84ff;
+        }
+
+        .tool-python {
+            background-color: #3776ab;
+        }
+
+        .tool-rasa {
+            background-color: #00ac9e;
+        }
+
+        .tool-spacy {
+            background-color: #09a3d5;
+        }
+
+        .tool-transformers {
+            background-color: #ffa500;
+        }
+
+        .tool-flask {
+            background-color: #000000;
+        }
+
+        .tool-streamlit {
+            background-color: #ff2b2b;
+        }
+
+        .tool-sqlite {
+            background-color: #003b57;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h3 {
+            font-size: 1.5em;
+            color: #4a90e2;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a90e2;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .phase {
+            border-left: 4px solid #4a90e2;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            padding-left: 20px;
+        }
+
+        .phase h4 {
+            color: #4a90e2;
+            margin-bottom: 8px;
+        }
+
+        .phase p {
+            margin-bottom: 10px;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .phase li {
+            margin-bottom: 5px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="project-header">
+            <h1>AI Chatbot for Career Guidance</h1>
+            <p>A conversational AI chatbot that helps job seekers by analyzing job postings, answering career-related
+                questions, and suggesting tailored advice on resumes, skills, and interview preparation. It leverages
+                NLP and machine learning to provide personalized guidance in real time.</p>
+            <div class="badges">
+                <span class="skill-nlp">NLP</span>
+                <span class="skill-conversational">Conversational AI</span>
+                <span class="skill-textclass">Text Classification</span>
+                <span class="skill-semantics">Semantic Similarity</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-rasa">Rasa</span>
+                <span class="tool-spacy">spaCy</span>
+                <span class="tool-transformers">Transformers</span>
+                <span class="tool-flask">Flask</span>
+                <span class="tool-streamlit">Streamlit</span>
+                <span class="tool-sqlite">SQLite</span>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="content-section">
+            <h3>Overview</h3>
+            <p>This project builds a smart chatbot that understands job seekers' needs and provides actionable advice.
+                Instead of generic responses, the chatbot analyzes job postings, compares skills to requirements, and
+                offers tailored guidance on resume improvements, interview preparation, and career growth. Users can
+                chat conversationally or paste a job description for instant analysis.</p>
+        </div>
+
+        <!-- Goals -->
+        <div class="content-section">
+            <h3>Goals</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Goal 1:</strong> Build a conversational AI that understands career-related intents (resume
+                    advice, interview prep, job analysis).</li>
+                <li><strong>Goal 2:</strong> Analyze job postings to extract required skills and compare against
+                    user-provided resumes.</li>
+                <li><strong>Goal 3:</strong> Provide personalized, context-aware responses using semantic similarity and
+                    NLP techniques.</li>
+                <li><strong>Goal 4:</strong> Deploy a user-friendly interface where users can interact naturally with
+                    the chatbot.</li>
+            </ul>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="content-section">
+            <h3>Tech Stack</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Backend:</strong> Python, Flask or Streamlit</li>
+                <li><strong>Chatbot Framework:</strong> Rasa, Dialogflow, or custom logic</li>
+                <li><strong>NLP:</strong> spaCy, NLTK, Hugging Face Transformers</li>
+                <li><strong>Database:</strong> SQLite (conversations, job data, FAQs)</li>
+                <li><strong>Frontend:</strong> Streamlit or Flask + HTML/CSS/JavaScript</li>
+            </ul>
+        </div>
+
+        <!-- Build Plan -->
+        <div class="content-section">
+            <h3>Step-by-Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <p>Define chatbot scope and use case scenarios:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Career advice and resume tips</li>
+                    <li>Job posting analysis</li>
+                    <li>Interview preparation guidance</li>
+                </ul>
+                <p style="margin-top: 10px;"><strong>Example queries:</strong></p>
+                <ul style="margin-left: 20px;">
+                    <li>"What skills are missing in my resume for this job?"</li>
+                    <li>"How should I prepare for a data analyst interview?"</li>
+                    <li>"Summarize this job posting."</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Collection (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Gather sample job postings (from Kaggle datasets or scraped job boards)</li>
+                    <li>Collect FAQs about career guidance (resume tips, interview prep)</li>
+                    <li>Create training data for intent classification</li>
+                    <li>Store data in SQLite for quick retrieval</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: NLP Preprocessing (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Tokenize and clean text using spaCy</li>
+                    <li>Build intent categories: resume advice, interview prep, job analysis, general career tips</li>
+                    <li>Train intent classifier using scikit-learn or fine-tune a lightweight transformer</li>
+                    <li>Validate intent classification on holdout test set</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Chatbot Logic (3–4 days)</h4>
+                <p>Map intents to responses:</p>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Resume advice:</strong> Analyze resume text vs job posting</li>
+                    <li><strong>Interview prep:</strong> Return curated tips from knowledge base</li>
+                    <li><strong>Job analysis:</strong> Summarize posting and highlight required skills</li>
+                    <li><strong>General tips:</strong> Provide career growth advice</li>
+                    <li>Add fallback responses for unknown queries</li>
+                </ul>
+                <p style="margin-top: 10px;">Use <strong>Rasa, Dialogflow, or custom Python logic</strong> with intent
+                    classification and entity extraction.</p>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Integration with Job Postings (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Allow users to paste or upload a job description</li>
+                    <li>Extract required skills using NLP (spaCy, transformers)</li>
+                    <li>Compare against user-provided resume using semantic similarity</li>
+                    <li>Calculate and display a "match score" and missing skills list</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Interface (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build web UI with Streamlit or Flask</li>
+                    <li>Chat window for natural conversation</li>
+                    <li>Upload/paste fields for job description and resume</li>
+                    <li>Display chatbot responses with visual highlights (missing skills, match score)</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Host locally or on Streamlit Cloud/Heroku</li>
+                    <li>Prepare demo conversations (resume advice, interview prep, job analysis)</li>
+                    <li>Record a short demo video showing chatbot interactions</li>
+                    <li>Test with real job postings and resumes</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Sources & Evaluation -->
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <p><strong>Data:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Kaggle job posting datasets</li>
+                <li>Career FAQ datasets</li>
+                <li>Anonymized resumes</li>
+            </ul>
+            <p><strong>Evaluation Metrics:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Intent classification accuracy ≥80%</li>
+                <li>Resume-job match scoring validated against human judgments</li>
+                <li>Smooth conversation flow with minimal fallback triggers</li>
+                <li>User satisfaction on answer relevance and helpfulness</li>
+            </ul>
+        </div>
+
+        <!-- Demo & Networking Tips -->
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <p><strong>Pitch line:</strong><br>
+                "I built a career guidance chatbot that analyzes job postings and resumes — it gives tailored advice
+                on missing skills and interview prep."
+            </p>
+            <p style="margin-top: 15px;"><strong>Demo walkthrough:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Paste a real job posting into the chatbot</li>
+                <li>Upload or type in a sample resume</li>
+                <li>Show the chatbot's skill gap analysis and match score</li>
+                <li>Ask the chatbot follow-up questions (e.g., "How do I learn Python?", "Interview tips for product
+                    manager?")</li>
+            </ul>
+            <p><strong>Networking impact:</strong> Highly practical, relatable, and demonstrates NLP + conversational
+                AI skills. Valuable for HR tech, career development platforms, and AI companies.</p>
+        </div>
+
+        <!-- Checklist -->
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <ul class="checklist">
+                <li>Collect job postings and career FAQs</li>
+                <li>Preprocess text with spaCy and create intent labels</li>
+                <li>Train intent classifier (scikit-learn or transformers)</li>
+                <li>Build chatbot logic (Rasa, Dialogflow, or custom Python)</li>
+                <li>Implement resume-job comparison using semantic similarity</li>
+                <li>Build web UI with Streamlit or Flask</li>
+                <li>Test chatbot on real conversations and job postings</li>
+                <li>Deploy demo (Streamlit Cloud, Heroku, or local)</li>
+                <li>Record demo video and prepare pitch</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

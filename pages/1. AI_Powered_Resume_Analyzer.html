@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | AI-Powered Resume Analyzer</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+        }
+
+        .project-header {
+            margin-bottom: 2rem;
+        }
+
+        .project-header h1 {
+            margin: 0 0 0.5rem 0;
+            color: #333;
+        }
+
+        .project-header h2 {
+            margin: 0;
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin: 3rem 0;
+        }
+
+        .content-section h3 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section h4 {
+            color: #555;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0.8rem 0;
+        }
+
+        .content-section ul {
+            color: #666;
+            line-height: 1.8;
+            margin-left: 1.5rem;
+        }
+
+        .content-section li {
+            margin: 0.5rem 0;
+        }
+
+        .content-section strong {
+            color: #333;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #4a90e2;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+        }
+
+        .checklist {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .checklist li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #4a90e2;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .math {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body style="background: #f5f7fa;">
+    <div class="container">
+        <div class="project-header">
+            <h1>AI-Powered Resume Analyzer</h1>
+            <h2>Parse resumes, extract skills, score fit against job descriptions, and produce explainable
+                recommendations</h2>
+            <div class="badges">
+                <span class="skill-nlp">NLP</span>
+                <span class="skill-dataparsing">Text Extraction</span>
+                <span class="skill-modeleval">Semantic Similarity</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-spacy">spaCy</span>
+                <span class="tool-transformers">Transformers</span>
+                <span class="tool-flask">Flask</span>
+                <span class="tool-sqlite">SQLite</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Project Overview</h3>
+            <p><strong>AI Resume Analyzer</strong> — an end-to-end laptop‑buildable tool that <strong>parses resumes,
+                    extracts skills and experience, scores fit against job descriptions, and produces explainable
+                    recommendations</strong> (match score, missing skills, suggested rewrites). This is a high-impact
+                portfolio piece: it demonstrates NLP, information extraction, ranking, UX, and systems thinking. Similar
+                systems exist in research and open-source projects.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Key Considerations and Goals</h3>
+            <ul>
+                <li><strong>Primary goal:</strong> Turn a raw resume (PDF/DOCX/TXT) and a job description (text) into a
+                    clear compatibility report with a numeric score and actionable suggestions.</li>
+                <li><strong>Secondary goals:</strong> Provide <strong>explainability</strong> (why the score is what it
+                    is), <strong>skill extraction</strong>, and a small web UI for demonstrations.</li>
+                <li><strong>Constraints:</strong> Laptop-only build; use free or open datasets and libraries; keep
+                    compute light (fine-tune only if you have GPU access).</li>
+                <li><strong>Success criteria:</strong> Accurate skill extraction (precision/recall ≥ reasonable
+                    baseline), intuitive UI, and a demo-ready web app that processes 1–2 resumes in under 10 seconds.
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Tech Stack and Tools</h3>
+            <h4>Languages and frameworks</h4>
+            <ul>
+                <li><strong>Python</strong> for backend and NLP.</li>
+                <li><strong>FastAPI</strong> or <strong>Flask</strong> for a lightweight API.</li>
+                <li><strong>React</strong> or plain <strong>HTML/CSS/JS</strong> for a demo UI.</li>
+            </ul>
+
+            <h4>NLP libraries</h4>
+            <ul>
+                <li><strong>spaCy</strong> for parsing, NER, and rule-based matching.</li>
+                <li><strong>Hugging Face Transformers</strong> for semantic similarity (sentence‑BERT / SBERT).</li>
+                <li><strong>pdfminer.six</strong> or <strong>PyMuPDF (fitz)</strong> for PDF text extraction.</li>
+            </ul>
+
+            <h4>Utilities</h4>
+            <ul>
+                <li><strong>GitHub</strong> for version control and portfolio hosting.</li>
+                <li><strong>Docker</strong> optional for reproducible demos.</li>
+                <li><strong>Local SQLite</strong> for storing examples and logs.</li>
+            </ul>
+
+            <p><strong>Why these choices:</strong> spaCy and SBERT give a good balance of speed and accuracy on a
+                laptop; many open-source resume analyzers use similar components.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Step‑by‑Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0 — Prepare and Plan (1–2 days)</h4>
+                <ul>
+                    <li><strong>Define deliverables:</strong> CLI script to parse a resume, an API endpoint to score
+                        resume vs job, and a simple web UI showing results.</li>
+                    <li><strong>Collect sample data:</strong> 20–50 public resumes and 20–50 job descriptions (use
+                        Kaggle, public datasets, or anonymized samples). Save them in a <code>data/</code> folder.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1 — Resume Ingestion and Parsing (2–3 days)</h4>
+                <ul>
+                    <li><strong>Implement file ingestion:</strong> Accept PDF, DOCX, and TXT. Use
+                        <code>pdfminer.six</code> or <code>PyMuPDF</code> for PDFs; <code>python-docx</code> for DOCX.
+                    </li>
+                    <li><strong>Normalize text:</strong> remove headers/footers, fix encoding, split into sections
+                        (Experience, Education, Skills) using heuristics and regex.</li>
+                    <li><strong>Output:</strong> structured JSON with fields <code>name</code>, <code>contact</code>,
+                        <code>sections: {experience: [...], skills: [...], education: [...]}</code>.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2 — Skill and Entity Extraction (3–5 days)</h4>
+                <ul>
+                    <li><strong>Rule-based extraction:</strong> Build a skills dictionary (start with lists from O*NET,
+                        GitHub topics, and job boards). Use spaCy's matcher for multi-word skills.</li>
+                    <li><strong>NER and role extraction:</strong> Use spaCy to extract organizations, dates, and job
+                        titles. Create heuristics to map experience bullets to skills.</li>
+                    <li><strong>Confidence scores:</strong> Assign confidence per extracted item (exact match = high;
+                        fuzzy match = lower).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3 — Semantic Matching and Scoring (3–5 days)</h4>
+                <ul>
+                    <li><strong>Embed text:</strong> Use SBERT to embed job description and resume sections (skills,
+                        summary, experience bullets).</li>
+                    <li><strong>Compute similarity:</strong> For each required skill in the job description, compute
+                        cosine similarity to resume skill embeddings; aggregate into a <strong>skill coverage
+                            score</strong>.</li>
+                    <li><strong>Experience and seniority matching:</strong> Compare years and titles (simple rules:
+                        years in role, seniority keywords).</li>
+                    <li><strong>Final score:</strong> Weighted combination, e.g.,<br>
+                        <div class="math">score = 0.6 × skill_coverage + 0.3 × experience_match + 0.1 × soft_match</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4 — Explainability and Suggestions (2–3 days)</h4>
+                <ul>
+                    <li><strong>Highlight gaps:</strong> List top 5 required skills missing or weakly matched.</li>
+                    <li><strong>Rewrite suggestions:</strong> For weak matches, suggest phrasing (e.g., convert "worked
+                        on data pipelines" → "built ETL pipelines using Airflow and Python" if those tools appear
+                        elsewhere).</li>
+                    <li><strong>Confidence explanations:</strong> Show which sentences contributed most to the match
+                        (use similarity scores).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5 — UI and Demo (2–4 days)</h4>
+                <ul>
+                    <li><strong>Build a simple UI:</strong> Upload resume + paste job description → show score,
+                        extracted skills, gap list, and suggested rewrites.</li>
+                    <li><strong>Add sample mode:</strong> Preload a few job descriptions so you can demo quickly at
+                        meetups.</li>
+                    <li><strong>Polish:</strong> Add download report (PDF) or shareable link (optional).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6 — Evaluation and Iteration (ongoing)</h4>
+                <ul>
+                    <li><strong>Metrics:</strong> Precision/recall for skill extraction; correlation of score with human
+                        judgments (ask peers to rate matches).</li>
+                    <li><strong>Improvements:</strong> Add more rules, expand skills dictionary, or fine-tune a
+                        lightweight classifier if needed.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Data Sources, Models, and Evaluation</h3>
+            <ul>
+                <li><strong>Datasets:</strong> Public resume datasets on Kaggle; job postings from Indeed/LinkedIn for
+                    scraping (respect terms of service) or use sample job descriptions.</li>
+                <li><strong>Pretrained models:</strong> Use SBERT models from Hugging Face for semantic similarity;
+                    spaCy's medium models for NER.</li>
+                <li><strong>Evaluation plan:</strong>
+                    <ul>
+                        <li><strong>Extraction:</strong> Manually label 50 resumes for skills and compute
+                            precision/recall.</li>
+                        <li><strong>Scoring:</strong> Have 10 human raters score resume-job pairs and compute Spearman
+                            correlation with your score.</li>
+                    </ul>
+                </li>
+                <li><strong>Caveat:</strong> Resume datasets and job postings vary by region and domain; tune your
+                    skills dictionary for the industries you want to target.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Deployment, Demo, Networking, and Risks</h3>
+
+            <h4>Demo tips</h4>
+            <ul>
+                <li>Prepare 3 short demos: (1) perfect match, (2) near miss with suggested rewrites, (3) surprising
+                    mismatch that shows explainability.</li>
+                <li>Put the app on GitHub with a clear README and a short demo video or GIF in the repo.</li>
+                <li>Create a one‑page PDF "case study" showing before/after resume improvements and metrics.</li>
+            </ul>
+
+            <h4>Networking script</h4>
+            <ul>
+                <li>Lead with a quick value statement: "I built a tool that turns a resume and job posting into a clear
+                    match score and actionable rewrites — it saved our test users 30% time in tailoring applications."
+                </li>
+                <li>Show the UI, then hand over a laptop or let them paste their job posting for an on-the-spot demo.
+                </li>
+            </ul>
+
+            <h4>Risks and limitations</h4>
+            <ul>
+                <li><strong>Bias and fairness:</strong> Automated scoring can amplify bias; avoid using demographic
+                    features and be transparent about limitations.</li>
+                <li><strong>Legal and privacy:</strong> Don't store personal data without consent; anonymize samples.
+                </li>
+                <li><strong>Data quality:</strong> Parsing PDFs is noisy; expect edge cases.</li>
+                <li><strong>Overclaiming:</strong> Present the tool as an assistant, not a final arbiter of hiring
+                    decisions.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <div class="checklist">
+                <ul>
+                    <li>Collect sample resumes and job descriptions.</li>
+                    <li>Implement PDF/DOCX ingestion and section splitting.</li>
+                    <li>Build skills dictionary and spaCy matchers.</li>
+                    <li>Integrate SBERT for semantic similarity.</li>
+                    <li>Create scoring function and explainability layer.</li>
+                    <li>Build a minimal web UI and demo flows.</li>
+                    <li>Evaluate with human raters and iterate.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
