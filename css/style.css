@@ -538,6 +538,186 @@ nav button.active {
 
 /* light brown bg, dark brown text */
 
+/* --- Missing Badge Styles --- */
+
+/* Project 2: Fake News Detector */
+.skill-classification {
+  background: #ffccbc;
+  color: #bf360c;
+}
+
+/* light coral bg, dark coral text */
+.tool-scikit {
+  background: #f8bbd0;
+  color: #880e4f;
+}
+
+/* light pink bg, dark magenta text */
+.tool-spacy {
+  background: #bbdefb;
+  color: #0d47a1;
+}
+
+/* light blue bg, dark blue text */
+
+/* Project 5: Personal Finance Tracker */
+.tool-prophet {
+  background: #c8e6c9;
+  color: #1b5e20;
+}
+
+/* light green bg, dark green text */
+
+/* Project 7: AI Chatbot for Career Guidance */
+.skill-conversational {
+  background: #b2dfdb;
+  color: #004d40;
+}
+
+/* light teal bg, dark teal text */
+.skill-textclass {
+  background: #c5cae9;
+  color: #1a237e;
+}
+
+/* light indigo bg, dark indigo text */
+.skill-semantics {
+  background: #f0f4c3;
+  color: #827717;
+}
+
+/* light lime bg, dark lime text */
+.tool-rasa {
+  background: #ffcdd2;
+  color: #b71c1c;
+}
+
+/* light red bg, dark red text */
+.tool-streamlit {
+  background: #e1bee7;
+  color: #6a1b9a;
+}
+
+/* light purple bg, dark purple text */
+
+/* Project 8: Interactive Astronomy Visualization */
+.skill-interactive {
+  background: #ffccbc;
+  color: #bf360c;
+}
+
+/* light coral bg, dark coral text */
+.skill-3dgraphics {
+  background: #b2dfdb;
+  color: #004d40;
+}
+
+/* light teal bg, dark teal text */
+.skill-geo {
+  background: #f0f4c3;
+  color: #827717;
+}
+
+/* light lime bg, dark lime text */
+.tool-d3js {
+  background: #ffcdd2;
+  color: #b71c1c;
+}
+
+/* light red bg, dark red text */
+.tool-threejs {
+  background: #c5cae9;
+  color: #1a237e;
+}
+
+/* light indigo bg, dark indigo text */
+
+/* Project 9: Smart Portfolio Site */
+.skill-webdesign {
+  background: #f8bbd0;
+  color: #880e4f;
+}
+
+/* light pink bg, dark magenta text */
+.skill-frontend {
+  background: #fff9c4;
+  color: #f57f17;
+}
+
+/* light yellow bg, dark yellow text */
+.skill-ux {
+  background: #e1bee7;
+  color: #6a1b9a;
+}
+
+/* light purple bg, dark purple text */
+.skill-responsive {
+  background: #bbdefb;
+  color: #0d47a1;
+}
+
+/* light blue bg, dark blue text */
+.skill-filtering {
+  background: #b3e5fc;
+  color: #01579b;
+}
+
+/* light cyan bg, dark cyan text */
+.tool-html {
+  background: #ffccbc;
+  color: #bf360c;
+}
+
+/* light coral bg, dark coral text */
+.tool-css {
+  background: #bbdefb;
+  color: #0d47a1;
+}
+
+/* light blue bg, dark blue text */
+.tool-react {
+  background: #b2dfdb;
+  color: #004d40;
+}
+
+/* light teal bg, dark teal text */
+.tool-vue {
+  background: #c8e6c9;
+  color: #1b5e20;
+}
+
+/* light green bg, dark green text */
+.tool-bootstrap {
+  background: #d7ccc8;
+  color: #3e2723;
+}
+
+/* light brown bg, dark brown text */
+.tool-tailwind {
+  background: #f0f4c3;
+  color: #827717;
+}
+
+/* light lime bg, dark lime text */
+.tool-github {
+  background: #cfd8dc;
+  color: #263238;
+}
+
+/* light gray bg, dark gray text */
+.tool-netlify {
+  background: #ffe0b2;
+  color: #e65100;
+}
+
+/* light orange bg, dark orange text */
+.tool-figma {
+  background: #f8bbd0;
+  color: #880e4f;
+}
+
+/* light pink bg, dark magenta text */
+
 
 /* MODEL */
 
