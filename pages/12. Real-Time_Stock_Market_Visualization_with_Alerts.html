@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Stock Market Visualization with Alerts - Project Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .project-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #27ae60;
+        }
+
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+
+        .project-header p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h3 {
+            font-size: 1.5em;
+            color: #27ae60;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #27ae60;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .phase {
+            border-left: 4px solid #27ae60;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            padding-left: 20px;
+        }
+
+        .phase h4 {
+            color: #27ae60;
+            margin-bottom: 8px;
+        }
+
+        .phase p {
+            margin-bottom: 10px;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .phase li {
+            margin-bottom: 5px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="project-header">
+            <h1>Real-Time Stock Market Visualization with Alerts</h1>
+            <p>A dynamic financial dashboard that tracks live stock prices, visualizes market movements with advanced
+                charting techniques, and alerts users to significant price changes and technical indicators. This
+                project combines real-time data streaming, financial analytics, and interactive visualization to
+                provide actionable market insights at your fingertips.</p>
+            <div class="badges">
+                <span class="skill-financedata">Financial Data Analysis</span>
+                <span class="skill-realtimedata">Real-Time Data Streaming</span>
+                <span class="skill-dataviz">Data Visualization</span>
+                <span class="skill-technicalanalysis">Technical Analysis</span>
+                <span class="skill-alertsystems">Alert Systems</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-pandas">Pandas</span>
+                <span class="tool-plotly">Plotly</span>
+                <span class="tool-streamlit">Streamlit</span>
+                <span class="tool-sqlite">SQLite</span>
+                <span class="tool-apis">APIs (Alpha Vantage, Yahoo Finance)</span>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="content-section">
+            <h3>Overview</h3>
+            <p>The stock market moves in real time, and informed investors need tools to track those movements
+                instantly. This project teaches you to fetch live market data from financial APIs, process it
+                efficiently, visualize complex patterns, and implement smart alerts that catch opportunities and
+                risks as they happen.</p>
+            <p>You'll build a professional-grade financial dashboard that traders and analysts actually use: one that
+                combines multiple data sources, computes technical indicators on the fly, and surfaces actionable
+                signals through clear, interactive visualizations.</p>
+        </div>
+
+        <!-- Goals -->
+        <div class="content-section">
+            <h3>Goals</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Goal 1:</strong> Connect to financial APIs (Alpha Vantage, Yahoo Finance) and fetch live
+                    stock data.</li>
+                <li><strong>Goal 2:</strong> Process and normalize stock data, handling missing or delayed values
+                    gracefully.</li>
+                <li><strong>Goal 3:</strong> Compute technical indicators (moving averages, volatility, RSI) in real
+                    time.</li>
+                <li><strong>Goal 4:</strong> Create interactive charts (line, candlestick) with zoom/pan capabilities.
+                </li>
+                <li><strong>Goal 5:</strong> Implement a rule-based alert system for price changes and indicator
+                    crossovers.</li>
+                <li><strong>Goal 6:</strong> Deploy a responsive dashboard that updates every 1–5 minutes.</li>
+            </ul>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="content-section">
+            <h3>Tech Stack</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Data Fetching:</strong> Alpha Vantage API, Yahoo Finance API, requests library</li>
+                <li><strong>Data Processing:</strong> Pandas, NumPy (moving averages, technical indicators)</li>
+                <li><strong>Database:</strong> SQLite for historical data logging</li>
+                <li><strong>Visualization:</strong> Plotly (interactive line/candlestick charts)</li>
+                <li><strong>Dashboard:</strong> Streamlit for real-time UI</li>
+                <li><strong>Alerts:</strong> Python threading or task scheduling (optional: email via SMTP)</li>
+                <li><strong>Deployment:</strong> Streamlit Cloud, Heroku, or local VPS</li>
+            </ul>
+        </div>
+
+        <!-- Build Plan -->
+        <div class="content-section">
+            <h3>Step-by-Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <p>Define scope and feature set:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Decide which stocks to track: Apple, Tesla, Microsoft, etc. (start with 3–5)</li>
+                    <li>Define key visualizations: live price chart, moving average overlay, candlestick view</li>
+                    <li>Specify alert conditions:
+                        <ul style="margin-left: 20px;">
+                            <li>"Stock price dropped more than 5% today."</li>
+                            <li>"Stock crossed 50-day moving average."</li>
+                            <li>"Volatility exceeded threshold."</li>
+                        </ul>
+                    </li>
+                    <li>Plan dashboard layout: ticker selector, main chart, alerts panel, indicators</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Collection (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Register for free API keys:
+                        <ul style="margin-left: 20px;">
+                            <li>Alpha Vantage (free tier: 5 calls/minute, 500/day)</li>
+                            <li>Yahoo Finance (via yfinance Python library, no key required)</li>
+                        </ul>
+                    </li>
+                    <li>Write Python functions to fetch intraday and daily price data</li>
+                    <li>Store data in Pandas DataFrames with proper timestamps and OHLCV (open, high, low, close,
+                        volume)</li>
+                    <li>Implement caching to minimize API calls</li>
+                    <li>Optionally log historical data to SQLite for backtesting</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Data Processing (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Clean data:
+                        <ul style="margin-left: 20px;">
+                            <li>Handle missing values (forward-fill or interpolation)</li>
+                            <li>Validate OHLC relationships (high ≥ close, low ≤ close)</li>
+                            <li>Remove outliers from volume spikes (if needed)</li>
+                        </ul>
+                    </li>
+                    <li>Compute technical indicators:
+                        <ul style="margin-left: 20px;">
+                            <li>Simple Moving Average (SMA): 20-day, 50-day, 200-day</li>
+                            <li>Exponential Moving Average (EMA)</li>
+                            <li>Relative Strength Index (RSI)</li>
+                            <li>Bollinger Bands (volatility measure)</li>
+                            <li>Daily % change</li>
+                        </ul>
+                    </li>
+                    <li>Use pandas rolling windows for efficient computation</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Visualization (3–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build interactive charts with Plotly:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Line Chart:</strong> Daily closing prices with overlay moving averages</li>
+                            <li><strong>Candlestick Chart:</strong> OHLC bars for detailed intraday/daily view</li>
+                            <li><strong>Bollinger Bands:</strong> Shaded area showing volatility envelope</li>
+                            <li><strong>Volume Chart:</strong> Bar chart below price showing trading volume</li>
+                        </ul>
+                    </li>
+                    <li>Add interactivity:
+                        <ul style="margin-left: 20px;">
+                            <li>Zoom and pan controls</li>
+                            <li>Toggle moving averages on/off</li>
+                            <li>Hover tooltips showing price, date, indicators</li>
+                        </ul>
+                    </li>
+                    <li>Use color coding: Green for up days, red for down days</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Alerts (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Define alert rules:
+                        <ul style="margin-left: 20px;">
+                            <li>Daily percentage change > 5% (price alert)</li>
+                            <li>Price crosses 20-day moving average (technical alert)</li>
+                            <li>RSI enters overbought (>70) or oversold (<30) territory</li>
+                            <li>Volume spike (abnormal trading activity)</li>
+                        </ul>
+                    </li>
+                    <li>Implement alert logic:
+                        <ul style="margin-left: 20px;">
+                            <li>Check rules every data update</li>
+                            <li>Store triggered alerts in memory or database</li>
+                            <li>Display notifications in dashboard (pop-up or banner)</li>
+                        </ul>
+                    </li>
+                    <li>Optional: implement email alerts (using SMTP for free email services)</li>
+                    <li>Alert history: log all triggered events for review</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build Streamlit app with multiple tabs:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Live Prices:</strong> Main interactive chart(s) with ticker selector</li>
+                            <li><strong>Indicators:</strong> Technical analysis details (moving averages, RSI, Bollinger
+                                Bands)</li>
+                            <li><strong>Alerts:</strong> Current and historical alert log</li>
+                            <li><strong>Portfolio (optional):</strong> Track watchlist of stocks across tabs</li>
+                        </ul>
+                    </li>
+                    <li>Add controls:
+                        <ul style="margin-left: 20px;">
+                            <li>Dropdown to select stock ticker</li>
+                            <li>Time range selector (1 week, 1 month, 3 months, 1 year)</li>
+                            <li>Toggle for showing/hiding indicators</li>
+                            <li>Refresh button for forcing a manual update</li>
+                        </ul>
+                    </li>
+                    <li>Responsive design: ensure charts are readable on mobile</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Prepare demo dataset:
+                        <ul style="margin-left: 20px;">
+                            <li>Sample 3–5 popular stocks (Tesla, Apple, Nvidia, Amazon, etc.)</li>
+                            <li>Include 1–3 months of historical data for richness</li>
+                        </ul>
+                    </li>
+                    <li>Test robustness:
+                        <ul style="margin-left: 20px;">
+                            <li>Verify updates every 1–5 minutes during market hours</li>
+                            <li>Test with different time ranges and stocks</li>
+                            <li>Validate alert triggers against actual price data</li>
+                            <li>Check dashboard performance with multiple concurrent views</li>
+                        </ul>
+                    </li>
+                    <li>Deploy options:
+                        <ul style="margin-left: 20px;">
+                            <li>Streamlit Cloud for easiest deployment</li>
+                            <li>Heroku or Render for more control</li>
+                            <li>Local server (VPS) for production use</li>
+                        </ul>
+                    </li>
+                    <li>Record demo video showing:
+                        <ul style="margin-left: 20px;">
+                            <li>Live chart updates for a volatile stock (e.g., Tesla)</li>
+                            <li>Moving average indicators overlaid on price</li>
+                            <li>Alert triggered when price crosses a threshold</li>
+                            <li>Toggling between different stocks and time ranges</li>
+                            <li>Zoom/pan on interactive chart</li>
+                        </ul>
+                    </li>
+                    <li>Write comprehensive README with:
+                        <ul style="margin-left: 20px;">
+                            <li>API key setup instructions</li>
+                            <li>Installation steps</li>
+                            <li>Configuration options for alert thresholds</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Sources & Evaluation -->
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <p><strong>Data Sources:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Alpha Vantage API:</strong> Free tier provides intraday and daily stock data</li>
+                <li><strong>Yahoo Finance:</strong> Free via yfinance library, no API key required</li>
+                <li><strong>IEX Cloud:</strong> Alternative with free tier and historical data</li>
+            </ul>
+            <p><strong>Evaluation Metrics:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Data freshness: Updates within 1–5 minutes of market movement</li>
+                <li>Accuracy: Validated against official stock exchange data</li>
+                <li>Alert accuracy: Alerts trigger at correct price/indicator thresholds</li>
+                <li>Dashboard responsiveness: Page loads in < 2 seconds, interactions instantaneous</li>
+                <li>Handles multiple stocks: Dashboard smooth with 5+ concurrent stocks</li>
+                <li>Robustness: Graceful degradation if API is temporarily down</li>
+            </ul>
+        </div>
+
+        <!-- Demo & Networking Tips -->
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <p><strong>Pitch line:</strong><br>
+                "I built a real-time stock visualization tool that tracks live prices, overlays technical indicators,
+                and alerts you to sudden changes. It's like having a personal market analyst watching multiple stocks."
+            </p>
+            <p style="margin-top: 15px;"><strong>Demo walkthrough:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Open the dashboard and show the main chart with a volatile stock (Tesla, for example)</li>
+                <li>Show moving average overlays — highlight crossovers</li>
+                <li>Zoom into a specific date range to show candlestick details</li>
+                <li>Trigger an alert (or show a historical alert) — highlight the condition that was met</li>
+                <li>Switch stocks using the dropdown — show how the chart and indicators update instantly</li>
+                <li>View the Alerts tab and explain the rules that generated each notification</li>
+                <li>Optional: Show email alert functionality if implemented</li>
+            </ul>
+            <p><strong>Networking impact:</strong> Demonstrates real-time data handling, financial analytics knowledge,
+                and professional-grade dashboard design. Relevant for fintech, investment firms, and any data-driven
+                company. Shows you understand the intersection of data engineering, visualization, and domain
+                expertise.</p>
+        </div>
+
+        <!-- Checklist -->
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <ul class="checklist">
+                <li>Set up API credentials (Alpha Vantage, Yahoo Finance)</li>
+                <li>Write data fetching functions with error handling</li>
+                <li>Implement data caching to reduce API calls</li>
+                <li>Process data and compute moving averages</li>
+                <li>Calculate technical indicators (RSI, Bollinger Bands)</li>
+                <li>Build interactive line chart with Plotly</li>
+                <li>Add candlestick chart view</li>
+                <li>Implement alert rule logic</li>
+                <li>Display alerts in dashboard (visual indicators)</li>
+                <li>Create Streamlit app with tab structure</li>
+                <li>Add stock ticker selector dropdown</li>
+                <li>Add time range picker</li>
+                <li>Test with 5+ different stocks</li>
+                <li>Verify alert triggers and accuracy</li>
+                <li>Deploy to Streamlit Cloud or local server</li>
+                <li>Record demo video and prepare pitch</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

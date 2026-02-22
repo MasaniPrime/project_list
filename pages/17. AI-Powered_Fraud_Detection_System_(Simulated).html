@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Fraud Detection System (Simulated)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-left: 6px solid #c0392b;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #c0392b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #c0392b;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #c0392b;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #c0392b;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #c0392b;
+            font-size: 1.1em;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        ul,
+        ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            border-left: 4px solid #c0392b;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+            color: #c0392b;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            background: #fadbd8;
+            color: #c0392b;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+            border: 1px solid #c0392b;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tool {
+            background: #fadbd8;
+            color: #c0392b;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+            border: 1px solid #c0392b;
+        }
+
+        .checklist {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .checklist ol {
+            margin-left: 25px;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #c0392b;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        a {
+            color: #c0392b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .overview {
+            background: #fef5e7;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #c0392b;
+        }
+
+        .summary-section {
+            background: #fef5e7;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #c0392b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>17. AI-Powered Fraud Detection System (Simulated)</h1>
+            <p>A machine learning–based system that simulates financial transactions and detects suspicious activity
+                patterns using anomaly detection and classification models.</p>
+        </header>
+
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>The AI-Powered Fraud Detection System is a FinTech and cybersecurity solution that demonstrates how
+                intelligent systems can identify fraudulent activity in financial transactions. Rather than using real
+                banking data, the system generates synthetic transaction datasets and applies machine learning models to
+                detect anomalies such as unusually large transfers, repeated failed login attempts, and abnormal
+                spending
+                behavior patterns.</p>
+            <p>This project showcases anomaly detection techniques, classification models (Logistic Regression, Random
+                Forest, Isolation Forest), and real-time alerting. Users can interact with a dashboard that displays
+                simulated transactions, flags suspicious activity with confidence scores, and visualizes fraud patterns.
+                It's an excellent demonstration of applied data science in a security context.</p>
+        </section>
+
+        <section class="summary-section">
+            <h2>Project Summary</h2>
+            <h3>Industry</h3>
+            <p>FinTech / Cybersecurity / Data Science</p>
+            <h3>Skills</h3>
+            <div class="skills">
+                <span class="skill">Data Preprocessing</span>
+                <span class="skill">Feature Engineering</span>
+                <span class="skill">Anomaly Detection</span>
+                <span class="skill">Classification Models</span>
+                <span class="skill">Simulation & Synthetic Data</span>
+                <span class="skill">Dashboard Design</span>
+                <span class="skill">Data Visualization</span>
+            </div>
+            <h3>Tools</h3>
+            <div class="tools">
+                <span class="tool">Python</span>
+                <span class="tool">Pandas</span>
+                <span class="tool">NumPy</span>
+                <span class="tool">scikit-learn</span>
+                <span class="tool">PyCaret</span>
+                <span class="tool">Matplotlib</span>
+                <span class="tool">Seaborn</span>
+                <span class="tool">Plotly</span>
+                <span class="tool">Flask</span>
+                <span class="tool">Streamlit</span>
+                <span class="tool">SQLite</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Goals</h2>
+            <ol>
+                <li><strong>Synthetic Data Generation:</strong> Create realistic simulated financial transactions with
+                    known fraud patterns for testing and demonstration purposes.</li>
+                <li><strong>Feature Engineering:</strong> Extract meaningful features from raw transaction data
+                    (temporal patterns, spending velocity, location anomalies) to improve model performance.</li>
+                <li><strong>Anomaly Detection:</strong> Implement multiple anomaly detection algorithms (Isolation
+                    Forest, Local Outlier Factor, PyCaret AutoML) to identify suspicious transactions.</li>
+                <li><strong>Classification Accuracy:</strong> Train supervised classification models (Random Forest,
+                    Logistic Regression) to distinguish fraudulent from legitimate transactions with high precision.
+                </li>
+                <li><strong>Real-Time Alerting:</strong> Provide immediate fraud alerts with confidence scores and
+                    suspicious pattern summaries for customer notification.</li>
+                <li><strong>Interactive Visualization:</strong> Build a comprehensive dashboard showing transaction
+                    flows, fraud heatmaps, model performance metrics, and alert history.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Tech Stack</h2>
+            <ul>
+                <li><strong>Backend:</strong> Python (core logic), Flask or FastAPI for API, Streamlit for dashboard
+                </li>
+                <li><strong>Data Processing:</strong> Pandas (data manipulation), NumPy (numerical operations)</li>
+                <li><strong>Machine Learning:</strong> scikit-learn (Isolation Forest, Random Forest, Logistic
+                    Regression), PyCaret (AutoML for model selection)</li>
+                <li><strong>Data Generation:</strong> Faker library (synthetic data), NumPy (random sampling)</li>
+                <li><strong>Visualization:</strong> Matplotlib, Seaborn (static plots), Plotly (interactive charts)</li>
+                <li><strong>Data Storage:</strong> SQLite (store simulated transactions, fraud labels, model metadata)
+                </li>
+                <li><strong>Deployment:</strong> Streamlit Cloud, Heroku, or AWS Lambda</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Build Plan</h2>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <ul>
+                    <li>Define scope: simulate transactions and detect anomalies.</li>
+                    <li>Identify suspicious activity patterns:
+                        <ul>
+                            <li>Transactions above amount thresholds.</li>
+                            <li>Multiple failed login attempts.</li>
+                            <li>Unusual spending compared to user historical baseline.</li>
+                            <li>Geographic inconsistencies (location jumping).</li>
+                        </ul>
+                    </li>
+                    <li>Research fraud detection datasets (e.g., Kaggle Credit Card Fraud Detection).</li>
+                    <li>Plan dashboard layout and alert mechanisms.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Simulation (2–3 days)</h4>
+                <ul>
+                    <li>Generate synthetic transaction dataset with attributes:
+                        <ul>
+                            <li>Transaction ID, user ID, amount, merchant category, location, timestamp.</li>
+                            <li>User profile data (average spend, preferred merchants, geographic range).</li>
+                        </ul>
+                    </li>
+                    <li>Add random anomalies (e.g., sudden large transfers, late-night transactions from unusual
+                        locations, velocity spikes).</li>
+                    <li>Create labeled dataset (fraud=1, legitimate=0) with ~2-5% fraud rate (realistic proportion).
+                    </li>
+                    <li>Store in SQLite for easy retrieval and batch processing.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Preprocessing (2–3 days)</h4>
+                <ul>
+                    <li>Clean and normalize data:
+                        <ul>
+                            <li>Normalize transaction amounts (scaling to 0-1 range).</li>
+                            <li>Handle missing values (if any).</li>
+                            <li>Remove outliers (extreme values that skew analysis).</li>
+                        </ul>
+                    </li>
+                    <li>Encode categorical features:
+                        <ul>
+                            <li>One-hot encode location, merchant category.</li>
+                            <li>Ordinal encode user risk tier (if applicable).</li>
+                        </ul>
+                    </li>
+                    <li>Create derived features:
+                        <ul>
+                            <li>Average spending per user per day/week.</li>
+                            <li>Transaction frequency per user.</li>
+                            <li>Time since last transaction (temporal distance).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Fraud Detection Models (3–5 days)</h4>
+                <ul>
+                    <li><strong>Baseline Model (Rule-Based):</strong>
+                        <ul>
+                            <li>If amount > threshold → flag as fraud.</li>
+                            <li>If location jump > distance threshold → flag as fraud.</li>
+                            <li>Evaluate baseline accuracy.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Unsupervised Anomaly Detection:</strong>
+                        <ul>
+                            <li>Isolation Forest (identifies isolated anomalies).</li>
+                            <li>Local Outlier Factor (detects local density deviations).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Supervised Classification Models:</strong>
+                        <ul>
+                            <li>Logistic Regression (baseline classifier).</li>
+                            <li>Random Forest (captures complex patterns).</li>
+                            <li>Optionally: Gradient Boosting (XGBoost, LightGBM for best performance).</li>
+                        </ul>
+                    </li>
+                    <li>Train on 80% of data, validate on 20%.</li>
+                    <li>Compute metrics: precision, recall, F1-score, ROC-AUC.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Visualization (2–3 days)</h4>
+                <ul>
+                    <li>Build charts showing fraud patterns:
+                        <ul>
+                            <li>Time series line chart (transaction amounts over time, with fraud highlighted in red).
+                            </li>
+                            <li>Scatter plot (amount vs. transaction frequency, colored by fraud label).</li>
+                            <li>Heatmap (fraud rate by merchant category and location).</li>
+                            <li>Pie chart (fraud vs. legitimate transaction counts).</li>
+                            <li>Confusion matrix (model performance visualized as heatmap).</li>
+                        </ul>
+                    </li>
+                    <li>Create interactive plots with Plotly for dashboard interactivity.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <ul>
+                    <li>Build Streamlit app with tabs:
+                        <ul>
+                            <li><strong>Transaction Feed:</strong> Display live simulated transactions with real-time
+                                fraud scoring.</li>
+                            <li><strong>Fraud Alerts:</strong> List flagged anomalies with confidence scores and
+                                suspicious pattern descriptions.</li>
+                            <li><strong>Visualizations:</strong> Show time series, heatmaps, confusion matrix.</li>
+                            <li><strong>Model Metrics:</strong> Display precision, recall, F1-score, ROC curve.</li>
+                        </ul>
+                    </li>
+                    <li>Add interactive features:
+                        <ul>
+                            <li>"Resimulate" button to generate new synthetic dataset.</li>
+                            <li>Slider to adjust fraud detection threshold (sensitivity/specificity trade-off).</li>
+                            <li>Export transaction log as CSV.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul>
+                    <li>Host locally or on Streamlit Cloud.</li>
+                    <li>Prepare demo simulation with 1,000+ transactions:
+                        <ul>
+                            <li>Run simulation showing real-time fraud detection.</li>
+                            <li>Highlight flagged anomalies and explain detection rationale.</li>
+                            <li>Show model performance metrics and visualizations.</li>
+                        </ul>
+                    </li>
+                    <li>Record demo video showing:
+                        <ul>
+                            <li>Data generation process.</li>
+                            <li>Real-time fraud alerts appearing in dashboard.</li>
+                            <li>Visualization of fraud patterns.</li>
+                        </ul>
+                    </li>
+                    <li>Deploy to Heroku or AWS for public access.</li>
+                    <li>Create documentation and networking materials.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data Sources and Evaluation</h2>
+            <h3>Data</h3>
+            <ul>
+                <li>Synthetic transaction data generated programmatically using Faker library and NumPy.</li>
+                <li>Reference datasets: Kaggle "Credit Card Fraud Detection" dataset (for understanding real patterns).
+                </li>
+                <li>Simulated user profiles with spending patterns, preferred merchants, and geographic baselines.</li>
+            </ul>
+            <h3>Evaluation Metrics</h3>
+            <ul>
+                <li><strong>Detection Accuracy:</strong> Aim for ≥80% accuracy on synthetic fraud cases.</li>
+                <li><strong>Precision & Recall:</strong> Balance false positives (annoying users) vs false negatives
+                    (missing fraud). Target: precision ≥85%, recall ≥75%.</li>
+                <li><strong>ROC-AUC Score:</strong> Measure model's ability to distinguish fraud from legitimate
+                    transactions (target ≥0.85).</li>
+                <li><strong>Dashboard Responsiveness:</strong> Ensure dashboard handles large datasets (10,000+
+                    transactions) without lagging.</li>
+                <li><strong>Alert Clarity:</strong> Validate that fraud alerts are clear, actionable, and reduce
+                    confusion.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Demo and Networking Tips</h2>
+            <h3>Pitch</h3>
+            <p><strong>"I built a fraud detection system that simulates financial transactions and flags suspicious
+                    activity in real time using machine learning."</strong></p>
+            <h3>Demo Walkthrough</h3>
+            <ol>
+                <li>Open Streamlit dashboard.</li>
+                <li>Generate synthetic transaction dataset (click "Resimulate").</li>
+                <li>Show real-time fraud detection in action as new transactions are processed.</li>
+                <li>Highlight flagged anomalies with explanations (e.g., "Large amount + unusual location").</li>
+                <li>Display visualizations (heatmaps, confusion matrix, ROC curve).</li>
+                <li>Show model performance metrics (precision, recall, F1-score).</li>
+                <li>Demonstrate threshold adjustment and its impact on alert sensitivity.</li>
+            </ol>
+            <h3>Networking Impact</h3>
+            <ul>
+                <li>Highly relevant to FinTech founders, cybersecurity professionals, and data scientists.</li>
+                <li>Demonstrates hands-on expertise in anomaly detection, classification, and real-time alerting.</li>
+                <li>Shows understanding of practical ML challenges (precision/recall trade-offs, model deployment).</li>
+                <li>Visually compelling demo that captures attention in networking events.</li>
+                <li>Potential business application: could be pitched as a fraud detection service for small financial
+                    institutions.</li>
+            </ul>
+        </section>
+
+        <section class="checklist">
+            <h2>Quick Implementation Checklist</h2>
+            <ol>
+                <li>Generate synthetic transaction dataset with realistic patterns and anomalies.</li>
+                <li>Preprocess data with Pandas (normalization, encoding, feature engineering).</li>
+                <li>Implement rule-based fraud detection baseline.</li>
+                <li>Train Isolation Forest for unsupervised anomaly detection.</li>
+                <li>Train supervised classification models (Logistic Regression, Random Forest).</li>
+                <li>Evaluate models and compute precision, recall, F1-score, ROC-AUC.</li>
+                <li>Create visualizations (time series, heatmaps, confusion matrix, ROC curve).</li>
+                <li>Build Streamlit dashboard with transaction feed and fraud alerts tabs.</li>
+                <li>Integrate real-time fraud scoring into dashboard.</li>
+                <li>Add interactive features (resimulate, threshold adjustment, export).</li>
+                <li>Test with large datasets (10,000+ transactions).</li>
+                <li>Deploy to Streamlit Cloud or Heroku.</li>
+                <li>Record demo video and prepare networking materials.</li>
+            </ol>
+        </section>
+    </div>
+</body>
+
+</html>

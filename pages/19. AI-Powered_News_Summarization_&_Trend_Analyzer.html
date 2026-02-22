@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered News Summarization & Trend Analyzer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-left: 6px solid #3498db;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #3498db;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #3498db;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #3498db;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #3498db;
+            font-size: 1.1em;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        ul,
+        ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+            color: #3498db;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            background: #d6eaf8;
+            color: #3498db;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+            border: 1px solid #3498db;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tool {
+            background: #d6eaf8;
+            color: #3498db;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+            border: 1px solid #3498db;
+        }
+
+        .checklist {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .checklist ol {
+            margin-left: 25px;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #3498db;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .overview {
+            background: #eaf2f8;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #3498db;
+        }
+
+        .summary-section {
+            background: #eaf2f8;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>19. AI-Powered News Summarization & Trend Analyzer</h1>
+            <p>A tool that collects news articles from multiple sources, summarizes them into concise insights, and
+                identifies emerging trends across topics.</p>
+        </header>
+
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>The AI-Powered News Summarization & Trend Analyzer is an information systems solution designed to help
+                users navigate the overwhelming volume of news and information available daily. By combining automated
+                text summarization with trend detection, this tool transforms raw articles into actionable insights.</p>
+            <p>The system collects articles from multiple news sources, generates concise summaries using advanced NLP
+                models, and applies topic modeling to identify emerging themes and patterns across the media landscape.
+                Users can quickly digest information, discover trending topics, and understand the broader context of
+                major stories. This demonstrates the practical application of NLP in information curation and data
+                journalism.</p>
+        </section>
+
+        <section class="summary-section">
+            <h2>Project Summary</h2>
+            <h3>Industry</h3>
+            <p>Information Systems / Data Science / Media Analytics</p>
+            <h3>Skills</h3>
+            <div class="skills">
+                <span class="skill">Natural Language Processing</span>
+                <span class="skill">Text Summarization</span>
+                <span class="skill">Topic Modeling & Clustering</span>
+                <span class="skill">Trend Detection</span>
+                <span class="skill">Data Visualization</span>
+                <span class="skill">Dashboard Development</span>
+            </div>
+            <h3>Tools</h3>
+            <div class="tools">
+                <span class="tool">Python</span>
+                <span class="tool">spaCy</span>
+                <span class="tool">NLTK</span>
+                <span class="tool">Hugging Face Transformers</span>
+                <span class="tool">BART</span>
+                <span class="tool">T5</span>
+                <span class="tool">scikit-learn</span>
+                <span class="tool">gensim</span>
+                <span class="tool">Pandas</span>
+                <span class="tool">NumPy</span>
+                <span class="tool">Plotly</span>
+                <span class="tool">Matplotlib</span>
+                <span class="tool">Seaborn</span>
+                <span class="tool">Streamlit</span>
+                <span class="tool">Flask</span>
+                <span class="tool">SQLite</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Goals</h2>
+            <ol>
+                <li><strong>Multi-Source Article Collection:</strong> Aggregate news articles from multiple sources
+                    (NewsAPI, GDELT, RSS feeds) and cleanly parse metadata, maintaining source attribution and
+                    timestamps.</li>
+                <li><strong>High-Quality Text Summarization:</strong> Generate both extractive and abstractive summaries
+                    that capture essential information while remaining concise and readable.</li>
+                <li><strong>Accurate Topic Detection:</strong> Apply topic modeling to identify main themes and cluster
+                    articles by topic, revealing what the news landscape is focused on.</li>
+                <li><strong>Trend Analysis & Visualization:</strong> Track topic frequency over time and identify spikes
+                    in coverage, helping users spot emerging stories and sustained topics.</li>
+                <li><strong>Interactive Discovery:</strong> Build a user-friendly dashboard that allows exploration of
+                    articles by category, trending topics, and keyword search.</li>
+                <li><strong>Scalability & Performance:</strong> Handle hundreds of articles efficiently without lag or
+                    UI delays on the analysis dashboard.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Tech Stack</h2>
+            <ul>
+                <li><strong>Backend:</strong> Python (core logic), Flask or FastAPI for API, Streamlit for dashboard
+                </li>
+                <li><strong>NLP & Text Processing:</strong> spaCy (preprocessing), NLTK (tokenization), Hugging Face
+                    Transformers (BART, T5 for summarization)</li>
+                <li><strong>Topic Modeling:</strong> scikit-learn (NMF, TfidfVectorizer), gensim (LDA, Word2Vec)</li>
+                <li><strong>Data Processing:</strong> Pandas (data manipulation), NumPy (numerical operations)</li>
+                <li><strong>Data Ingestion:</strong> Requests library (API calls), feedparser (RSS feeds), BeautifulSoup
+                    (web scraping)</li>
+                <li><strong>Data Storage:</strong> SQLite (store articles, summaries, metadata, trending topics)</li>
+                <li><strong>Visualization:</strong> Plotly (interactive charts), Matplotlib, Seaborn (static plots)</li>
+                <li><strong>Deployment:</strong> Streamlit Cloud, Heroku, or AWS Lambda</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Build Plan</h2>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <ul>
+                    <li>Define scope: summarize articles and detect trends.</li>
+                    <li>Identify key features:
+                        <ul>
+                            <li>Upload or fetch articles from APIs.</li>
+                            <li>Generate summaries (short paragraph or bullet points).</li>
+                            <li>Identify trending topics across multiple articles.</li>
+                        </ul>
+                    </li>
+                    <li>Plan data schema for articles, summaries, and trends.</li>
+                    <li>Research available news APIs and RSS feeds.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Collection (2–3 days)</h4>
+                <ul>
+                    <li>Integrate news data sources:
+                        <ul>
+                            <li>NewsAPI.org (requires API key, free tier available).</li>
+                            <li>GDELT (Global Database of Events, Language and Tone).</li>
+                            <li>RSS feeds from news sites.</li>
+                        </ul>
+                    </li>
+                    <li>Collect article data (title, text, source, date, category).</li>
+                    <li>Store in SQLite with timestamps for trend tracking.</li>
+                    <li>Test data pipeline with 50+ articles.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Preprocessing (2–3 days)</h4>
+                <ul>
+                    <li>Clean article text:
+                        <ul>
+                            <li>Remove HTML tags and special characters.</li>
+                            <li>Normalize whitespace and punctuation.</li>
+                            <li>Filter out low-quality articles (e.g., very short text).</li>
+                        </ul>
+                    </li>
+                    <li>Tokenize sentences and lemmatize words using spaCy/NLTK.</li>
+                    <li>Normalize article categories (e.g., "Tech" vs "Technology").</li>
+                    <li>Store cleaned text in database.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Summarization (3–5 days)</h4>
+                <ul>
+                    <li><strong>Baseline Method (Extractive):</strong> Use TF-IDF + sentence ranking.
+                        <ul>
+                            <li>Score sentences by importance.</li>
+                            <li>Select top-N sentences for summary.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Advanced Method (Abstractive):</strong> Use pretrained models (BART, T5).
+                        <ul>
+                            <li>Fine-tune on news summarization if desired.</li>
+                            <li>Generate summaries of variable length (short, medium, detailed).</li>
+                        </ul>
+                    </li>
+                    <li>Store summaries in database alongside original articles.</li>
+                    <li>Evaluate summary quality on sample articles.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Trend Analysis (3–4 days)</h4>
+                <ul>
+                    <li>Apply topic modeling:
+                        <ul>
+                            <li>Latent Dirichlet Allocation (LDA) using gensim.</li>
+                            <li>Non-negative Matrix Factorization (NMF) using scikit-learn.</li>
+                            <li>Extract 10-20 topics from article corpus.</li>
+                        </ul>
+                    </li>
+                    <li>Track topic frequency over time:
+                        <ul>
+                            <li>Count articles per topic per day/week.</li>
+                            <li>Detect spikes in coverage (sudden surges).</li>
+                        </ul>
+                    </li>
+                    <li>Identify and highlight trending keywords.</li>
+                    <li>Validate topic coherence (do clusters make sense?).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Visualization (2–3 days)</h4>
+                <ul>
+                    <li>Build key visualizations:
+                        <ul>
+                            <li>Line chart showing topic frequency over time.</li>
+                            <li>Word cloud of trending keywords (sized by frequency).</li>
+                            <li>Bar chart of top categories (Tech, Finance, Politics, etc.).</li>
+                            <li>Heatmap of topic trends by day/week.</li>
+                        </ul>
+                    </li>
+                    <li>Create interactive plots with Plotly.</li>
+                    <li>Add filters for date range and category selection.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Dashboard Integration (2–3 days)</h4>
+                <ul>
+                    <li>Build Streamlit app with tabs:
+                        <ul>
+                            <li><strong>Article Feed:</strong> Display articles with summaries, source, date.</li>
+                            <li><strong>Trends:</strong> Show topic frequency charts and trending keywords.</li>
+                            <li><strong>Visualizations:</strong> Word clouds, heatmaps, category breakdowns.</li>
+                            <li><strong>Search:</strong> Filter by keyword, category, or date range.</li>
+                        </ul>
+                    </li>
+                    <li>Add interactive features:
+                        <ul>
+                            <li>Search bar for finding articles by keyword.</li>
+                            <li>Date range picker for trend analysis.</li>
+                            <li>Category filter (Technology, Finance, Politics, etc.).</li>
+                            <li>Export option for summaries and trends as CSV/PDF.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 7: Demo and Deployment (2–4 days)</h4>
+                <ul>
+                    <li>Host locally or on Streamlit Cloud.</li>
+                    <li>Prepare demo with 50+ articles from multiple categories:
+                        <ul>
+                            <li>Show article feed with generated summaries.</li>
+                            <li>Display trending topics and keyword frequencies.</li>
+                            <li>Demonstrate trend detection (spikes in coverage over time).</li>
+                        </ul>
+                    </li>
+                    <li>Record demo video showing:
+                        <ul>
+                            <li>Article collection and summarization process.</li>
+                            <li>Trend visualization and discovery flow.</li>
+                            <li>Search and filtering capabilities.</li>
+                        </ul>
+                    </li>
+                    <li>Deploy to Heroku or AWS for public access.</li>
+                    <li>Create documentation and networking materials.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data Sources and Evaluation</h2>
+            <h3>Data</h3>
+            <ul>
+                <li>NewsAPI.org (provides access to news articles from 30,000+ sources).</li>
+                <li>GDELT Project (real-time global news monitoring).</li>
+                <li>RSS feeds from major news outlets (BBC, CNN, NYT, etc.).</li>
+                <li>Kaggle news datasets (for backup training data).</li>
+            </ul>
+            <h3>Evaluation Metrics</h3>
+            <ul>
+                <li><strong>Summarization Quality:</strong> Assess whether summaries capture key information (manual
+                    review + ROUGE scores).</li>
+                <li><strong>Topic Coherence:</strong> Validate that detected topics are meaningful and related (use
+                    coherence score from gensim).</li>
+                <li><strong>Trend Detection Accuracy:</strong> Verify that spikes correspond to real news events.</li>
+                <li><strong>Dashboard Performance:</strong> Ensure quick response times with 100+ articles loaded.</li>
+                <li><strong>User Usability:</strong> Test search, filters, and visualization interactivity.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Demo and Networking Tips</h2>
+            <h3>Pitch</h3>
+            <p><strong>"I built a news summarizer that condenses articles and detects emerging trends — helping you
+                    digest information faster and spot patterns in the media landscape."</strong></p>
+            <h3>Demo Walkthrough</h3>
+            <ol>
+                <li>Open Streamlit dashboard.</li>
+                <li>Show article feed with automatically generated summaries from multiple news sources.</li>
+                <li>Display trending topics and their frequencies (line chart over time).</li>
+                <li>Show word cloud of most-mentioned keywords (e.g., "AI", "cybersecurity", "climate").</li>
+                <li>Demonstrate search functionality (filter by keyword or category).</li>
+                <li>Show trend spikes (sudden surge in coverage of a topic).</li>
+                <li>Export summaries or trends as CSV.</li>
+            </ol>
+            <h3>Networking Impact</h3>
+            <ul>
+                <li>Universally appealing—relevant to journalists, researchers, and information workers.</li>
+                <li>Demonstrates expertise in NLP, topic modeling, and information curation.</li>
+                <li>Shows understanding of real-world challenges (information overload, trend detection).</li>
+                <li>Potential business application: could be sold to media companies, research firms, or content
+                    platforms.</li>
+                <li>Visually engaging demo with charts and word clouds that capture attention.</li>
+            </ul>
+        </section>
+
+        <section class="checklist">
+            <h2>Quick Implementation Checklist</h2>
+            <ol>
+                <li>Set up NewsAPI integration and test data collection.</li>
+                <li>Preprocess articles (clean text, tokenization, lemmatization).</li>
+                <li>Implement extractive summarization (TF-IDF + ranking).</li>
+                <li>Implement abstractive summarization (BART/T5 models).</li>
+                <li>Apply topic modeling (LDA or NMF) to article corpus.</li>
+                <li>Implement trend tracking (topic frequency over time).</li>
+                <li>Create visualizations (line chart, word cloud, heatmap, bar chart).</li>
+                <li>Build Streamlit dashboard with all tabs (Feed, Trends, Search).</li>
+                <li>Add interactive filters (date range, category, keyword search).</li>
+                <li>Test with 50+ articles from multiple categories.</li>
+                <li>Optimize performance for dashboard responsiveness.</li>
+                <li>Deploy to Streamlit Cloud or Heroku.</li>
+                <li>Record demo video and prepare networking materials.</li>
+            </ol>
+        </section>
+    </div>
+</body>
+
+</html>

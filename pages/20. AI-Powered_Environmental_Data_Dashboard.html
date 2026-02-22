@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Environmental Data Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-left: 6px solid #27ae60;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #27ae60;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #27ae60;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #27ae60;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #27ae60;
+            font-size: 1.1em;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        ul,
+        ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+            color: #27ae60;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            background: #d5f4e6;
+            color: #27ae60;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+            border: 1px solid #27ae60;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tool {
+            background: #d5f4e6;
+            color: #27ae60;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+            border: 1px solid #27ae60;
+        }
+
+        .checklist {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .checklist ol {
+            margin-left: 25px;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .overview {
+            background: #e8f8f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .summary-section {
+            background: #e8f8f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #27ae60;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>20. AI-Powered Environmental Data Dashboard</h1>
+            <p>A web-based dashboard that collects environmental data and visualizes trends to help communities and
+                researchers understand sustainability metrics.</p>
+        </header>
+
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>The AI-Powered Environmental Data Dashboard is a data science solution designed to monitor and visualize
+                environmental metrics critical to sustainability. By aggregating data from multiple environmental
+                sources
+                and applying intelligent analysis, the dashboard helps communities, researchers, and individuals
+                understand environmental conditions and track progress toward eco-friendly goals.</p>
+            <p>The system collects real-time environmental data (air quality, temperature, water usage, energy
+                consumption), applies time-series analysis and anomaly detection to identify concerning patterns, and
+                presents insights through an intuitive, interactive dashboard. Users can track sustainability metrics
+                against standards (WHO air quality guidelines, energy efficiency targets), identify trends, and receive
+                alerts when thresholds are exceeded. This demonstrates the practical application of data science to
+                environmental challenges.</p>
+        </section>
+
+        <section class="summary-section">
+            <h2>Project Summary</h2>
+            <h3>Industry</h3>
+            <p>Environmental Science / Data Science / Information Systems</p>
+            <h3>Skills</h3>
+            <div class="skills">
+                <span class="skill">Data Collection & Integration</span>
+                <span class="skill">Data Preprocessing</span>
+                <span class="skill">Time-Series Analysis</span>
+                <span class="skill">Anomaly Detection</span>
+                <span class="skill">Data Visualization</span>
+                <span class="skill">Dashboard Design</span>
+                <span class="skill">API Integration</span>
+            </div>
+            <h3>Tools</h3>
+            <div class="tools">
+                <span class="tool">Python</span>
+                <span class="tool">Pandas</span>
+                <span class="tool">NumPy</span>
+                <span class="tool">scikit-learn</span>
+                <span class="tool">Plotly</span>
+                <span class="tool">Matplotlib</span>
+                <span class="tool">Seaborn</span>
+                <span class="tool">Streamlit</span>
+                <span class="tool">Flask</span>
+                <span class="tool">SQLite</span>
+                <span class="tool">OpenWeatherMap API</span>
+                <span class="tool">AQICN API</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Goals</h2>
+            <ol>
+                <li><strong>Real-Time Environmental Monitoring:</strong> Collect and display current environmental data
+                    (air quality, temperature, humidity, water usage, energy consumption) from multiple sources with
+                    automatic updates.</li>
+                <li><strong>Historical Trend Analysis:</strong> Store and analyze historical environmental data to
+                    identify long-term patterns, seasonal variations, and secular trends.</li>
+                <li><strong>Anomaly Detection:</strong> Automatically detect and alert users to unusual environmental
+                    conditions (pollution spikes, unusual temperature drops, excessive energy consumption).</li>
+                <li><strong>Sustainability Metrics:</strong> Compute meaningful sustainability indicators and compare
+                    against established standards (WHO air quality guidelines, energy efficiency benchmarks).</li>
+                <li><strong>Interactive Visualization:</strong> Present complex environmental data in clear, accessible
+                    charts that support exploration and insight discovery.</li>
+                <li><strong>Scalability & Accessibility:</strong> Design the dashboard to handle multiple locations and
+                    large datasets while remaining responsive and user-friendly.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Tech Stack</h2>
+            <ul>
+                <li><strong>Backend:</strong> Python (core logic), Flask or FastAPI for API, Streamlit for dashboard
+                </li>
+                <li><strong>Data Processing:</strong> Pandas (data manipulation), NumPy (numerical operations)</li>
+                <li><strong>Machine Learning:</strong> scikit-learn (anomaly detection, clustering, preprocessing)</li>
+                <li><strong>Data Ingestion:</strong> Requests library (API calls), feedparser (RSS feeds)</li>
+                <li><strong>Data Storage:</strong> SQLite (store environmental timeseries data, historical records)</li>
+                <li><strong>Visualization:</strong> Plotly (interactive charts), Matplotlib, Seaborn (static plots)</li>
+                <li><strong>External APIs:</strong> OpenWeatherMap (weather data), AQICN (air quality), utility company
+                    APIs (optional)</li>
+                <li><strong>Deployment:</strong> Streamlit Cloud, Heroku, or AWS EC2</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Build Plan</h2>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <ul>
+                    <li>Define scope: track air quality, temperature, water usage, or energy consumption.</li>
+                    <li>Identify key features:
+                        <ul>
+                            <li>Real-time air quality index (AQI).</li>
+                            <li>Historical temperature trends.</li>
+                            <li>Anomaly detection for water/energy spikes.</li>
+                        </ul>
+                    </li>
+                    <li>Research available APIs and data sources.</li>
+                    <li>Plan database schema for timeseries environmental data.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Collection (2–3 days)</h4>
+                <ul>
+                    <li>Integrate external APIs:
+                        <ul>
+                            <li>OpenWeatherMap (weather + temperature data).</li>
+                            <li>AQICN (Air Quality Index for multiple cities).</li>
+                            <li>Optional: Utility APIs for water/energy usage.</li>
+                        </ul>
+                    </li>
+                    <li>Generate synthetic datasets for water/energy usage (if APIs unavailable).</li>
+                    <li>Set up automated data collection pipeline (scheduled API calls).</li>
+                    <li>Store data in SQLite with timestamps for historical tracking.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Preprocessing (2–3 days)</h4>
+                <ul>
+                    <li>Clean and validate environmental data:
+                        <ul>
+                            <li>Remove invalid readings (negative temperatures, impossible AQI values).</li>
+                            <li>Handle missing data (interpolation or forward-fill).</li>
+                            <li>Normalize data to common scales (e.g., 0-100 for AQI).</li>
+                        </ul>
+                    </li>
+                    <li>Create derived features:
+                        <ul>
+                            <li>Daily, weekly, and monthly aggregates.</li>
+                            <li>Moving averages (7-day, 30-day).</li>
+                            <li>Percent change from baseline.</li>
+                        </ul>
+                    </li>
+                    <li>Handle outliers using statistical methods (z-score, IQR).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Analysis (3–4 days)</h4>
+                <ul>
+                    <li>Apply anomaly detection:
+                        <ul>
+                            <li>Isolation Forest for multivariate anomalies.</li>
+                            <li>Z-score method for univariate outliers.</li>
+                            <li>Alert on detected anomalies with severity levels.</li>
+                        </ul>
+                    </li>
+                    <li>Compute sustainability metrics:
+                        <ul>
+                            <li>Average AQI (compare against WHO guideline: 50 μg/m³).</li>
+                            <li>Energy efficiency score (kWh per unit area per month).</li>
+                            <li>Water usage vs baseline.</li>
+                        </ul>
+                    </li>
+                    <li>Perform trend analysis (linear regression, seasonal decomposition).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Visualization (3–4 days)</h4>
+                <ul>
+                    <li>Build key charts:
+                        <ul>
+                            <li>Line chart of AQI over time (with alert zones).</li>
+                            <li>Bar chart of monthly water/energy usage (vs baseline).</li>
+                            <li>Heatmap of temperature variations by day/hour.</li>
+                            <li>Gauge charts for current values (AQI, temperature).</li>
+                        </ul>
+                    </li>
+                    <li>Create interactive plots with Plotly.</li>
+                    <li>Add filters and drill-down capabilities (date range, location, metric).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <ul>
+                    <li>Build Streamlit app with tabs:
+                        <ul>
+                            <li><strong>Air Quality:</strong> Real-time AQI, historical trends, health alerts.</li>
+                            <li><strong>Energy/Water Usage:</strong> Monthly charts, anomaly highlights, efficiency
+                                score.</li>
+                            <li><strong>Temperature Trends:</strong> Heatmaps, seasonal analysis, extrema detection.
+                            </li>
+                            <li><strong>Sustainability Score:</strong> Summary metrics and progress toward goals.</li>
+                        </ul>
+                    </li>
+                    <li>Add interactive features:
+                        <ul>
+                            <li>Location/city selector.</li>
+                            <li>Date range picker.</li>
+                            <li>Metric comparison (current vs baseline).</li>
+                            <li>Export data as CSV/PDF.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul>
+                    <li>Host locally or on Streamlit Cloud.</li>
+                    <li>Prepare demo with 1–2 cities' data:
+                        <ul>
+                            <li>Show real-time AQI and health impact messages.</li>
+                            <li>Display temperature trends and seasonal patterns.</li>
+                            <li>Highlight detected anomalies in energy usage.</li>
+                            <li>Show sustainability score progress.</li>
+                        </ul>
+                    </li>
+                    <li>Record demo video showing:
+                        <ul>
+                            <li>Data collection from multiple APIs.</li>
+                            <li>Real-time visualizations and anomaly alerts.</li>
+                            <li>Interactive exploration of historical trends.</li>
+                        </ul>
+                    </li>
+                    <li>Deploy to Heroku or AWS for public access.</li>
+                    <li>Create documentation highlighting environmental impact focus.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data Sources and Evaluation</h2>
+            <h3>Data</h3>
+            <ul>
+                <li>OpenWeatherMap API (provides weather data for 200,000+ cities, free tier available).</li>
+                <li>AQICN API (Air Quality Index data from 30,000+ monitoring stations globally).</li>
+                <li>Synthetic water/energy usage datasets (realistic patterns based on utility consumption benchmarks).
+                </li>
+                <li>Historical datasets from Kaggle (climate data, energy consumption records).</li>
+            </ul>
+            <h3>Evaluation Metrics</h3>
+            <ul>
+                <li><strong>Accuracy of Anomaly Detection:</strong> Validate that detected anomalies correspond to real
+                    environmental events or significant deviations.</li>
+                <li><strong>Sustainability Metric Validity:</strong> Verify that computed metrics are meaningful and
+                    actionable (compare against WHO/EPA standards).</li>
+                <li><strong>Visualization Clarity:</strong> Ensure charts effectively communicate trends and anomalies
+                    to
+                    non-technical users.</li>
+                <li><strong>Dashboard Performance:</strong> Test responsiveness with 1+ year of historical data for
+                    multiple locations.</li>
+                <li><strong>Data Quality:</strong> Assess completeness and accuracy of API data (missing values, gaps in
+                    timeseries).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Demo and Networking Tips</h2>
+            <h3>Pitch</h3>
+            <p><strong>"I built an environmental dashboard that tracks air quality, energy, and water usage — helping
+                    communities monitor sustainability and identify problems in real time."</strong></p>
+            <h3>Demo Walkthrough</h3>
+            <ol>
+                <li>Open Streamlit dashboard.</li>
+                <li>Show Air Quality tab with real-time AQI for multiple cities.</li>
+                <li>Display historical AQI trends and health impact warnings.</li>
+                <li>Show Energy/Water Usage tab with monthly charts and anomaly highlights.</li>
+                <li>Demonstrate anomaly detection (spike in usage with explanation).</li>
+                <li>Display sustainability score and progress toward goals.</li>
+                <li>Show temperature trends with seasonal heatmap.</li>
+                <li>Export data as CSV and show data integration capabilities.</li>
+            </ol>
+            <h3>Networking Impact</h3>
+            <ul>
+                <li>Timely and socially impactful—resonates with environmentally conscious audiences.</li>
+                <li>Demonstrates data science applied to real-world sustainability challenges.</li>
+                <li>Relevant to municipal government, environmental NGOs, universities, and corporate sustainability
+                    teams.</li>
+                <li>Potential partnership opportunities: partner with cities for monitoring, sell to utility companies,
+                    integrate with smart home systems.</li>
+                <li>Visually engaging with charts and gauges that communicate urgency and impact.</li>
+            </ul>
+        </section>
+
+        <section class="checklist">
+            <h2>Quick Implementation Checklist</h2>
+            <ol>
+                <li>Connect to OpenWeatherMap and AQICN APIs.</li>
+                <li>Generate synthetic water and energy usage datasets.</li>
+                <li>Preprocess and clean environmental data.</li>
+                <li>Implement anomaly detection (Isolation Forest, Z-score).</li>
+                <li>Compute sustainability metrics (AQI average, energy efficiency).</li>
+                <li>Create visualizations (line, bar, heatmap, gauge charts).</li>
+                <li>Build Streamlit dashboard with all tabs.</li>
+                <li>Add location and date range filters.</li>
+                <li>Implement automated data collection pipeline.</li>
+                <li>Test with data for multiple cities and long time periods.</li>
+                <li>Deploy to Streamlit Cloud or Heroku.</li>
+                <li>Record demo video emphasizing environmental impact.</li>
+                <li>Prepare networking pitch focusing on sustainability solutions.</li>
+            </ol>
+        </section>
+    </div>
+</body>
+
+</html>

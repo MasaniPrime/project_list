@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Health & Fitness Recommendation System - Project Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .project-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #e91e63;
+        }
+
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #e91e63;
+            margin-bottom: 10px;
+        }
+
+        .project-header p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h3 {
+            font-size: 1.5em;
+            color: #e91e63;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e91e63;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .phase {
+            border-left: 4px solid #e91e63;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            padding-left: 20px;
+        }
+
+        .phase h4 {
+            color: #e91e63;
+            margin-bottom: 8px;
+        }
+
+        .phase p {
+            margin-bottom: 10px;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .phase li {
+            margin-bottom: 5px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #e91e63;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="project-header">
+            <h1>AI-Powered Health & Fitness Recommendation System</h1>
+            <p>A personalized recommendation engine that analyzes user input (fitness goals, activity levels, dietary
+                preferences) and generates tailored workout routines, nutrition suggestions, and progress tracking. This
+                project demonstrates how machine learning can be applied to lifestyle optimization in a safe,
+                educational, and practical way.</p>
+            <div class="badges">
+                <span class="skill-dataprepro">Data Preprocessing</span>
+                <span class="skill-recommendation">Recommendation Systems</span>
+                <span class="skill-machinelearning">Machine Learning</span>
+                <span class="skill-dataviz">Data Visualization</span>
+                <span class="skill-userprofiling">User Profiling</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-scikit">scikit-learn</span>
+                <span class="tool-tensorflow">TensorFlow</span>
+                <span class="tool-pandas">Pandas</span>
+                <span class="tool-numpy">NumPy</span>
+                <span class="tool-plotly">Plotly</span>
+                <span class="tool-matplotlib">Matplotlib</span>
+                <span class="tool-streamlit">Streamlit</span>
+                <span class="tool-sqlite">SQLite</span>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="content-section">
+            <h3>Overview</h3>
+            <p>Personal health and fitness are deeply individual — what works for one person may not work for another.
+                This project teaches you to build a recommendation engine that learns user preferences, fitness levels,
+                and goals, then suggests personalized workout routines and nutrition plans.</p>
+            <p>You'll implement both rule-based and machine learning approaches, giving users flexibility and showing
+                how recommendation systems work in practice. This is the technology behind fitness apps like
+                MyFitnessPal
+                and Peloton, adapted for educational purposes.</p>
+        </div>
+
+        <!-- Summary -->
+        <div class="content-section">
+            <h3>Project Summary</h3>
+            <p><strong>Industry:</strong> Health Tech / Data Science / Information Systems</p>
+            <p style="margin-bottom: 15px;"><strong>Skills You'll Develop:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Data preprocessing and user profiling</li>
+                <li>Recommendation system design (collaborative filtering, content-based)</li>
+                <li>Machine learning model development</li>
+                <li>Dashboard design for user interaction</li>
+                <li>Visualization of progress and recommendations</li>
+            </ul>
+            <p style="margin-bottom: 15px;"><strong>Key Tools:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li><strong>Python</strong> — Backend and ML logic</li>
+                <li><strong>scikit-learn / TensorFlow / PyTorch</strong> — Recommendation models</li>
+                <li><strong>Pandas / NumPy</strong> — Data handling and processing</li>
+                <li><strong>Plotly / Matplotlib / Seaborn</strong> — Visualizations and charts</li>
+                <li><strong>Flask / Streamlit</strong> — Dashboard interface</li>
+                <li><strong>SQLite</strong> — Store user profiles and progress data</li>
+            </ul>
+        </div>
+
+        <!-- Goals -->
+        <div class="content-section">
+            <h3>Goals</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Goal 1:</strong> Build a user profile system capturing fitness goals, activity level, and
+                    dietary preferences.</li>
+                <li><strong>Goal 2:</strong> Implement a baseline rule-based recommendation engine.</li>
+                <li><strong>Goal 3:</strong> Develop ML-based recommendation using collaborative filtering or
+                    content-based matching.</li>
+                <li><strong>Goal 4:</strong> Create visualizations for workout progress and nutrition tracking.</li>
+                <li><strong>Goal 5:</strong> Build an interactive dashboard for personalized recommendations.</li>
+                <li><strong>Goal 6:</strong> Deploy and demonstrate with synthetic but realistic user scenarios.</li>
+            </ul>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="content-section">
+            <h3>Tech Stack</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Data Handling:</strong> Pandas and NumPy for user profiles and workout data</li>
+                <li><strong>Recommendation Models:</strong> scikit-learn for baseline, TensorFlow for neural
+                    collaborative filtering</li>
+                <li><strong>Database:</strong> SQLite for storing user profiles, workouts, and feedback</li>
+                <li><strong>Visualization:</strong> Plotly for interactive charts, Matplotlib/Seaborn for static
+                    analysis</li>
+                <li><strong>Dashboard:</strong> Streamlit for rapid UI development</li>
+                <li><strong>Deployment:</strong> Streamlit Cloud, Heroku, or local server</li>
+            </ul>
+        </div>
+
+        <!-- Build Plan -->
+        <div class="content-section">
+            <h3>Step-by-Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <p>Define scope and features:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Clarify that this is general wellness guidance, not medical advice</li>
+                    <li>Define fitness goals: strength, cardio, flexibility, weight loss, muscle gain</li>
+                    <li>Plan workout types: strength training, cardio, yoga, HIIT, etc.</li>
+                    <li>Plan nutrition categories: balanced diet, high protein, low carb, vegetarian, etc.</li>
+                    <li>Decide on tracking metrics: workouts completed, calories burned, weight, mood</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Collection (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Gather fitness data:
+                        <ul style="margin-left: 20px;">
+                            <li>Curate workout exercises (name, type, difficulty, duration, calories burned)</li>
+                            <li>Compile nutrition guidelines (from WHO, USDA, or reputable sources)</li>
+                            <li>Create exercise difficulty mapping (beginner → intermediate → advanced)</li>
+                        </ul>
+                    </li>
+                    <li>Create synthetic user profiles:
+                        <ul style="margin-left: 20px;">
+                            <li>Variables: age, gender, starting fitness level, goals, dietary preferences</li>
+                            <li>Generate 50–100 realistic profiles</li>
+                        </ul>
+                    </li>
+                    <li>Design database schema:
+                        <ul style="margin-left: 20px;">
+                            <li>Users table (profile information)</li>
+                            <li>Workouts table (exercise library)</li>
+                            <li>Nutrition table (meal/nutrition plans)</li>
+                            <li>UserProgress table (workout history, feedback)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Preprocessing (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Normalize user inputs:
+                        <ul style="margin-left: 20px;">
+                            <li>Map natural language goals (e.g., "get stronger") to standardized categories</li>
+                            <li>Encode categorical data (fitness level, dietary preference)</li>
+                            <li>Handle missing values in user profiles</li>
+                        </ul>
+                    </li>
+                    <li>Feature engineering:
+                        <ul style="margin-left: 20px;">
+                            <li>Create workout difficulty scores</li>
+                            <li>Compute nutritional profiles for meal plans</li>
+                            <li>Build similarity metrics between users and items</li>
+                        </ul>
+                    </li>
+                    <li>Data cleaning:
+                        <ul style="margin-left: 20px;">
+                            <li>Remove duplicates in exercise library</li>
+                            <li>Validate ranges (e.g., calories burned > 0)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Recommendation Engine (3–5 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Baseline (Rule-Based):</strong>
+                        <ul style="margin-left: 20px;">
+                            <li>If user goal = "strength" → suggest weight training exercises</li>
+                            <li>If user goal = "cardio" → suggest running, cycling, HIIT</li>
+                            <li>If dietary preference = "vegetarian" → filter nutrition to vegetarian meals</li>
+                            <li>Adjust difficulty based on fitness level</li>
+                        </ul>
+                    </li>
+                    <li><strong>Advanced (Collaborative Filtering):</strong>
+                        <ul style="margin-left: 20px;">
+                            <li>Build user-item interaction matrix (users × workouts)</li>
+                            <li>Use Matrix Factorization or KNN to find similar users</li>
+                            <li>Recommend workouts that similar users liked</li>
+                            <li>Incorporate user feedback as ratings</li>
+                        </ul>
+                    </li>
+                    <li><strong>Personalization:</strong>
+                        <ul style="margin-left: 20px;">
+                            <li>Track user feedback on recommendations ("Helpful?" yes/no)</li>
+                            <li>Update recommendations based on feedback</li>
+                            <li>Re-rank recommendations to prioritize successful ones</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Visualization (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build visualization components:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Progress Chart:</strong> Line chart showing workouts completed over time</li>
+                            <li><strong>Nutrition Pie Chart:</strong> Breakdown of macronutrients (protein, carbs, fats)
+                            </li>
+                            <li><strong>Weekly Activity Summary:</strong> Bar chart of workouts by type</li>
+                            <li><strong>Goal Progress:</strong> Progress bar toward stated fitness goals</li>
+                            <li><strong>Recommendation Ranking:</strong> Display top 5 recommended workouts + nutrition
+                                plans</li>
+                        </ul>
+                    </li>
+                    <li>Customize colors and styling for health/fitness theme</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build Streamlit app with tabs:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Profile Setup:</strong> User enters age, fitness level, goals, dietary
+                                preferences</li>
+                            <li><strong>Recommendations:</strong> Display suggested workouts and nutrition plans</li>
+                            <li><strong>Progress Tracking:</strong> Show charts and progress toward goals</li>
+                            <li><strong>Feedback:</strong> Rate recommendations ("Was this helpful?")</li>
+                            <li><strong>About:</strong> Explain the system and disclaimers</li>
+                        </ul>
+                    </li>
+                    <li>Add interactive controls:
+                        <ul style="margin-left: 20px;">
+                            <li>Sliders for fitness level and goal intensity</li>
+                            <li>Checkboxes for dietary restrictions</li>
+                            <li>Buttons to log workout completion</li>
+                            <li>Feedback buttons ("Helpful" / "Not helpful")</li>
+                        </ul>
+                    </li>
+                    <li>Provide educational disclaimers throughout</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Prepare demo scenarios:
+                        <ul style="margin-left: 20px;">
+                            <li>User A: Beginner wanting weight loss (cardio + nutrition focus)</li>
+                            <li>User B: Intermediate wanting muscle gain (strength training + high protein)</li>
+                            <li>User C: Advanced wanting flexibility (yoga + balanced nutrition)</li>
+                        </ul>
+                    </li>
+                    <li>Test system:
+                        <ul style="margin-left: 20px;">
+                            <li>Verify recommendations align with user goals</li>
+                            <li>Test feedback loop (ratings improve future recommendations)</li>
+                            <li>Validate visualizations are clear and informative</li>
+                            <li>Check dashboard responsiveness</li>
+                        </ul>
+                    </li>
+                    <li>Deploy options:
+                        <ul style="margin-left: 20px;">
+                            <li>Streamlit Cloud (easiest)</li>
+                            <li>Heroku or Render (more control)</li>
+                            <li>Local server (for personal use)</li>
+                        </ul>
+                    </li>
+                    <li>Record demo video showing:
+                        <ul style="margin-left: 20px;">
+                            <li>User creates profile with fitness goal</li>
+                            <li>System generates personalized workout recommendations</li>
+                            <li>Switch to different user profile, see different recommendations</li>
+                            <li>Log workouts and see progress over time</li>
+                            <li>View nutrition plan tailored to dietary preferences</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Sources & Evaluation -->
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <p><strong>Data Sources:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>WHO nutrition guidelines</li>
+                <li>USDA nutrition database</li>
+                <li>Public fitness exercise databases</li>
+                <li>Synthetic user data (realistic but generated for privacy)</li>
+            </ul>
+            <p><strong>Evaluation Metrics:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Recommendation accuracy: Do recommendations align with stated goals?</li>
+                <li>User satisfaction: Qualitative feedback on recommendation quality</li>
+                <li>Dashboard responsiveness: Page loads and interactions are fast</li>
+                <li>Visualization clarity: Charts are easy to interpret</li>
+                <li>Feedback loop effectiveness: Ratings improve future recommendations</li>
+            </ul>
+        </div>
+
+        <!-- Demo & Networking Tips -->
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <p><strong>Pitch line:</strong><br>
+                "I built a health & fitness recommender — it tailors workouts and nutrition suggestions to your goals
+                and tracks progress visually. It's like having a personalized fitness coach powered by machine
+                learning."
+            </p>
+            <p style="margin-top: 15px;"><strong>Demo walkthrough:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Show the Profile Setup tab and create a user profile (e.g., "beginner, weight loss goal")</li>
+                <li>View the Recommendations tab — show personalized workout suggestions</li>
+                <li>Switch to a different profile (e.g., "intermediate, muscle gain") and show different recommendations
+                </li>
+                <li>View the Progress Tracking tab and discuss metrics</li>
+                <li>Show nutrition plan tailored to dietary preferences</li>
+                <li>Rate a recommendation as "helpful" and explain how feedback improves suggestions</li>
+            </ul>
+            <p><strong>Networking impact:</strong> Highly relatable (everyone cares about fitness!), practical, and
+                demonstrates recommendation systems and ML skills. Great conversation starter and applicable to health
+                tech companies, fitness startups, and data science roles.</p>
+        </div>
+
+        <!-- Checklist -->
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <ul class="checklist">
+                <li>Collect fitness and nutrition datasets</li>
+                <li>Design SQLite schema for users, workouts, nutrition, progress</li>
+                <li>Create synthetic user profiles</li>
+                <li>Implement data preprocessing pipeline</li>
+                <li>Build baseline rule-based recommender</li>
+                <li>Implement collaborative filtering recommender</li>
+                <li>Create progress tracking charts (line, pie, bar)</li>
+                <li>Build Streamlit dashboard with tabs</li>
+                <li>Add user profile input form</li>
+                <li>Add recommendation display and ranking</li>
+                <li>Implement feedback system</li>
+                <li>Test with 3+ synthetic user scenarios</li>
+                <li>Validate recommendation accuracy</li>
+                <li>Deploy to Streamlit Cloud or local server</li>
+                <li>Record demo video and prepare pitch</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

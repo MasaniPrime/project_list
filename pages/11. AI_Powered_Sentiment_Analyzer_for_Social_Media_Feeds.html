@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Sentiment Analyzer for Social Media Feeds - Project Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .project-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #9b59b6;
+        }
+
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #9b59b6;
+            margin-bottom: 10px;
+        }
+
+        .project-header p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h3 {
+            font-size: 1.5em;
+            color: #9b59b6;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #9b59b6;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .phase {
+            border-left: 4px solid #9b59b6;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            padding-left: 20px;
+        }
+
+        .phase h4 {
+            color: #9b59b6;
+            margin-bottom: 8px;
+        }
+
+        .phase p {
+            margin-bottom: 10px;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .phase li {
+            margin-bottom: 5px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #9b59b6;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #9b59b6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="project-header">
+            <h1>AI-Powered Sentiment Analyzer for Social Media Feeds</h1>
+            <p>A sophisticated NLP tool that analyzes sentiment across social media platforms, tracking public opinion
+                on specific topics, hashtags, or accounts. Using advanced transformer models and interactive
+                visualizations, it reveals sentiment trends, identifies influential posts, and generates actionable
+                insights from unstructured social data — all within a user-friendly dashboard.</p>
+            <div class="badges">
+                <span class="skill-nlp">Natural Language Processing</span>
+                <span class="skill-sentimentanalysis">Sentiment Analysis</span>
+                <span class="skill-dataviz">Data Visualization</span>
+                <span class="skill-dataengineering">Data Engineering</span>
+                <span class="skill-trending">Trend Analysis</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-transformers">Transformers</span>
+                <span class="tool-spacy">spaCy</span>
+                <span class="tool-nltk">NLTK</span>
+                <span class="tool-textblob">TextBlob</span>
+                <span class="tool-sqlite">SQLite</span>
+                <span class="tool-plotly">Plotly</span>
+                <span class="tool-streamlit">Streamlit</span>
+                <span class="tool-apis">APIs (Twitter/X, Reddit, YouTube)</span>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="content-section">
+            <h3>Overview</h3>
+            <p>Social media is a goldmine of unfiltered public opinion, but analyzing millions of posts manually is
+                impossible. This project teaches you to harness social data at scale using APIs, preprocess raw text,
+                apply state-of-the-art sentiment models, and visualize trends that would otherwise remain hidden.</p>
+            <p>You'll build a dashboard that tracks sentiment shifts around events, identifies controversial topics,
+                and surfaces the most impactful posts — all in real time. This is practical work that companies do to
+                monitor brand perception, track campaigns, and understand audience reactions.</p>
+        </div>
+
+        <!-- Summary -->
+        <div class="content-section">
+            <h3>Project Summary</h3>
+            <p><strong>Industry:</strong> Data Science / Information Systems / Social Media Analytics</p>
+            <p style="margin-bottom: 15px;"><strong>Skills You'll Develop:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Natural Language Processing (NLP)</li>
+                <li>Sentiment analysis and text classification</li>
+                <li>Data collection via APIs or scraping</li>
+                <li>Data visualization and trend analysis</li>
+                <li>Dashboard development for interactive insights</li>
+            </ul>
+            <p style="margin-bottom: 15px;"><strong>Key Tools:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li><strong>Python</strong> — Backend and NLP processing</li>
+                <li><strong>Tweepy / PRAW / YouTube API</strong> — Data collection from social platforms</li>
+                <li><strong>spaCy / NLTK / TextBlob</strong> — Sentiment analysis</li>
+                <li><strong>Hugging Face Transformers</strong> — Advanced sentiment models (BERT, DistilBERT)</li>
+                <li><strong>Pandas / NumPy</strong> — Data handling and processing</li>
+                <li><strong>Plotly / Seaborn / Matplotlib</strong> — Visualizations</li>
+                <li><strong>Streamlit / Flask</strong> — Dashboard interface</li>
+            </ul>
+        </div>
+
+        <!-- Goals -->
+        <div class="content-section">
+            <h3>Goals</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Goal 1:</strong> Connect to social media APIs (Twitter/X, Reddit, YouTube) and collect posts
+                    at scale.</li>
+                <li><strong>Goal 2:</strong> Preprocess raw social media text (remove noise, normalize, tokenize).</li>
+                <li><strong>Goal 3:</strong> Apply sentiment analysis using both baseline (VADER/TextBlob) and advanced
+                    (BERT) models.</li>
+                <li><strong>Goal 4:</strong> Visualize sentiment trends, distributions, and word clouds.</li>
+                <li><strong>Goal 5:</strong> Build an interactive dashboard with search, filtering, and trend tracking.
+                </li>
+                <li><strong>Goal 6:</strong> Deploy and demonstrate real-world sentiment analysis capability.</li>
+            </ul>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="content-section">
+            <h3>Tech Stack</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Data Collection:</strong> Tweepy (Twitter/X API), PRAW (Reddit API), YouTube API</li>
+                <li><strong>Text Processing:</strong> spaCy, NLTK, Pandas</li>
+                <li><strong>NLP/Sentiment:</strong> TextBlob, VADER, Transformers (BERT/DistilBERT)</li>
+                <li><strong>Database:</strong> SQLite for storing posts and sentiment labels</li>
+                <li><strong>Visualization:</strong> Plotly (interactive charts), Wordcloud library</li>
+                <li><strong>Dashboard:</strong> Streamlit</li>
+                <li><strong>Deployment:</strong> Streamlit Cloud, Heroku, or local hosting</li>
+            </ul>
+        </div>
+
+        <!-- Build Plan -->
+        <div class="content-section">
+            <h3>Step-by-Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <p>Define scope and identify target data sources:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Choose analysis focus: specific topic, hashtag, or account</li>
+                    <li>Example use cases:
+                        <ul style="margin-left: 20px;">
+                            <li>"Track sentiment around a product launch."</li>
+                            <li>"Visualize public opinion on a trending hashtag."</li>
+                            <li>"Monitor sentiment for a brand or influencer."</li>
+                        </ul>
+                    </li>
+                    <li>Decide which platform(s) to monitor: Twitter/X, Reddit, YouTube, or combinations</li>
+                    <li>Plan dashboard sections and key metrics to display</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Collection (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Set up API credentials for chosen platforms:
+                        <ul style="margin-left: 20px;">
+                            <li>Twitter/X via Tweepy</li>
+                            <li>Reddit via PRAW</li>
+                            <li>YouTube via official API</li>
+                        </ul>
+                    </li>
+                    <li>Write Python scripts to collect posts by keyword or hashtag</li>
+                    <li>Capture metadata: timestamp, author, likes/shares, URL</li>
+                    <li>Store raw text and metadata in SQLite database</li>
+                    <li>Implement rate limiting to respect API constraints</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Preprocessing (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Clean raw text:
+                        <ul style="margin-left: 20px;">
+                            <li>Remove URLs, mentions, hashtags (or keep selectively)</li>
+                            <li>Remove emojis or convert to text descriptors</li>
+                            <li>Remove special characters and extra whitespace</li>
+                        </ul>
+                    </li>
+                    <li>Apply NLP preprocessing:
+                        <ul style="margin-left: 20px;">
+                            <li>Tokenization using spaCy or NLTK</li>
+                            <li>Stopword removal (customize for domain)</li>
+                            <li>Lemmatization or stemming</li>
+                            <li>Lowercasing</li>
+                        </ul>
+                    </li>
+                    <li>Create preprocessing pipeline and apply to all posts</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Sentiment Analysis (3–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Baseline approach:</strong>
+                        <ul style="margin-left: 20px;">
+                            <li>Use TextBlob for quick sentiment scoring (polarity: -1 to +1)</li>
+                            <li>Use VADER for social media-specific sentiment (handles abbreviations, emojis)</li>
+                            <li>Assign labels: Positive, Neutral, Negative based on thresholds</li>
+                        </ul>
+                    </li>
+                    <li><strong>Advanced approach:</strong>
+                        <ul style="margin-left: 20px;">
+                            <li>Fine-tune BERT or DistilBERT on sentiment classification task</li>
+                            <li>Or use pre-trained sentiment models from HuggingFace Hub</li>
+                            <li>Generate confidence scores for each prediction</li>
+                        </ul>
+                    </li>
+                    <li>Store predictions in database: text, sentiment label, confidence, timestamp</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Visualization (3–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Create interactive charts using Plotly:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Line chart:</strong> Sentiment trends over time (hourly/daily averages)</li>
+                            <li><strong>Pie chart:</strong> Distribution of positive, neutral, negative posts</li>
+                            <li><strong>Bar chart:</strong> Sentiment by source or account</li>
+                            <li><strong>Scatter plot:</strong> Posts colored by sentiment (x=time, y=engagement)</li>
+                        </ul>
+                    </li>
+                    <li>Generate word clouds:
+                        <ul style="margin-left: 20px;">
+                            <li>Separate clouds for positive vs negative words</li>
+                            <li>Most frequent terms in each sentiment category</li>
+                        </ul>
+                    </li>
+                    <li>Color scheme: Green (positive), Gray (neutral), Red (negative)</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build Streamlit app with multiple tabs:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Data Feed:</strong> Display recent posts with sentiment labels, color-coded</li>
+                            <li><strong>Visualizations:</strong> All charts and word clouds from Phase 4</li>
+                            <li><strong>Trends:</strong> Sentiment spikes around events, anomaly detection</li>
+                            <li><strong>Search:</strong> Filter by keyword, hashtag, date range, sentiment</li>
+                        </ul>
+                    </li>
+                    <li>Add interactive controls:
+                        <ul style="margin-left: 20px;">
+                            <li>Date range picker for analysis period</li>
+                            <li>Search bar for keywords</li>
+                            <li>Dropdown for sentiment model (baseline vs advanced)</li>
+                            <li>Refresh button to fetch new data</li>
+                        </ul>
+                    </li>
+                    <li>Ensure responsive design and fast load times</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Prepare demo dataset: collect tweets/posts about a major tech product or event</li>
+                    <li>Host on Streamlit Cloud or local development server</li>
+                    <li>Test all interactive features: tabs, search, filters, date ranges</li>
+                    <li>Verify responsiveness (dashboard updates within 2–3 seconds)</li>
+                    <li>Record demo video showing:
+                        <ul style="margin-left: 20px;">
+                            <li>Sentiment trends over a time period</li>
+                            <li>Word cloud highlights for positive/negative terms</li>
+                            <li>Sentiment spikes around key events or announcements</li>
+                            <li>Search functionality filtering posts by keyword</li>
+                            <li>Switching between baseline and advanced models</li>
+                        </ul>
+                    </li>
+                    <li>Write comprehensive README with API setup instructions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Sources & Evaluation -->
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <p><strong>Data Sources:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Twitter/X API (real-time tweets on specific keywords)</li>
+                <li>Reddit API via PRAW (subreddit discussions)</li>
+                <li>YouTube API (comments on videos)</li>
+                <li>Kaggle datasets for sentiment ground truth (SemEval, Twitter Sentiment datasets)</li>
+            </ul>
+            <p><strong>Evaluation Metrics:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Sentiment classification accuracy (≥80% on test set)</li>
+                <li>Dashboard responsiveness (data load/refresh &lt; 2–3 seconds)</li>
+                <li>Visualization clarity and user interpretability</li>
+                <li>API stability and rate limit handling</li>
+                <li>Word cloud quality (meaningful terms, good visual balance)</li>
+            </ul>
+        </div>
+
+        <!-- Demo & Networking Tips -->
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <p><strong>Pitch line:</strong><br>
+                "I built a sentiment analyzer that tracks public opinion on social media — you can see how sentiment
+                shifts around events in real time, and understand what people are actually saying."
+            </p>
+            <p style="margin-top: 15px;"><strong>Demo walkthrough:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Open the dashboard and show the data feed of recent posts with sentiment labels</li>
+                <li>Display the sentiment trend line — highlight spikes around major announcements or events</li>
+                <li>Show the pie chart: what percentage of posts are positive vs negative</li>
+                <li>Display word clouds for positive and negative sentiments separately</li>
+                <li>Use the search bar to filter posts by keyword (e.g., "iPhone" or "climate")</li>
+                <li>Toggle between VADER and BERT models to show model differences</li>
+                <li>Highlight the most engaging negative posts (highest likes/retweets) to show controversy</li>
+            </ul>
+            <p><strong>Networking impact:</strong> Relatable, visually engaging, and directly applicable to marketing,
+                brand monitoring, or product teams. Shows real-world NLP skills and the ability to turn raw social data
+                into actionable business insights.</p>
+        </div>
+
+        <!-- Checklist -->
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <ul class="checklist">
+                <li>Define analysis scope (topic, hashtag, or account)</li>
+                <li>Set up API credentials (Twitter/X, Reddit, YouTube)</li>
+                <li>Write data collection scripts</li>
+                <li>Implement text preprocessing pipeline</li>
+                <li>Apply baseline sentiment analysis (TextBlob/VADER)</li>
+                <li>Fine-tune or load advanced sentiment model (BERT)</li>
+                <li>Create line chart for sentiment trends</li>
+                <li>Create pie chart for sentiment distribution</li>
+                <li>Generate word clouds for positive/negative terms</li>
+                <li>Build Streamlit dashboard with tabs</li>
+                <li>Add search and filtering functionality</li>
+                <li>Implement date range picker</li>
+                <li>Test with 1000+ posts</li>
+                <li>Deploy to Streamlit Cloud or local server</li>
+                <li>Record demo video and prepare networking pitch</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

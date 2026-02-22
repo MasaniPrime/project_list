@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Document Summarizer - Project Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .project-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #f39c12;
+        }
+
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .project-header p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h3 {
+            font-size: 1.5em;
+            color: #f39c12;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f39c12;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .phase {
+            border-left: 4px solid #f39c12;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            padding-left: 20px;
+        }
+
+        .phase h4 {
+            color: #f39c12;
+            margin-bottom: 8px;
+        }
+
+        .phase p {
+            margin-bottom: 10px;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .phase li {
+            margin-bottom: 5px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="project-header">
+            <h1>AI-Powered Document Summarizer</h1>
+            <p>An intelligent tool that automatically condenses lengthy documents into clear, concise summaries using
+                state-of-the-art NLP models. Supporting multiple input formats (PDF, DOCX, TXT) and output styles
+                (bullet points, paragraphs, executive summaries), this project demonstrates how AI can transform
+                complex documents into actionable insights for professionals, researchers, and students.</p>
+            <div class="badges">
+                <span class="skill-nlp">Natural Language Processing</span>
+                <span class="skill-summarization">Text Summarization</span>
+                <span class="skill-filehandling">File Handling & Parsing</span>
+                <span class="skill-dataviz">Data Visualization</span>
+                <span class="skill-productivity">Productivity Tools</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-transformers">Transformers (BART, T5)</span>
+                <span class="tool-spacy">spaCy</span>
+                <span class="tool-nltk">NLTK</span>
+                <span class="tool-pypdf">PyPDF2</span>
+                <span class="tool-docx">python-docx</span>
+                <span class="tool-streamlit">Streamlit</span>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="content-section">
+            <h3>Overview</h3>
+            <p>In the age of information overload, professionals spend hours reading dense reports, research papers,
+                and meeting transcripts. This project teaches you to build an AI summarizer that automatically extracts
+                the most important information and condenses it into readable formats.</p>
+            <p>You'll master both extractive summarization (selecting key sentences) and abstractive summarization
+                (generating new, concise sentences), giving users flexibility in how they want their information
+                packaged. This is the technology behind productivity tools like Notion AI summary features and
+                professional document services.</p>
+        </div>
+
+        <!-- Goals -->
+        <div class="content-section">
+            <h3>Goals</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Goal 1:</strong> Build multi-format document parser (PDF, DOCX, TXT) with robust error
+                    handling.</li>
+                <li><strong>Goal 2:</strong> Preprocess and clean extracted text for NLP processing.</li>
+                <li><strong>Goal 3:</strong> Implement extractive summarization using TF-IDF and sentence ranking.</li>
+                <li><strong>Goal 4:</strong> Integrate abstractive summarization using transformer models (BART, T5).
+                </li>
+                <li><strong>Goal 5:</strong> Build interactive dashboard with multiple output formats.</li>
+                <li><strong>Goal 6:</strong> Deploy and demonstrate real-time document processing capability.</li>
+            </ul>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="content-section">
+            <h3>Tech Stack</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Document Parsing:</strong> PyPDF2 (PDFs), python-docx (DOCX), built-in file I/O (TXT)</li>
+                <li><strong>Text Processing:</strong> spaCy, NLTK for tokenization and preprocessing</li>
+                <li><strong>Summarization:</strong> Transformers library (BART, T5, DistilBERT) for abstractive
+                    summarization</li>
+                <li><strong>TF-IDF & Ranking:</strong> scikit-learn for extractive summarization baseline</li>
+                <li><strong>Dashboard:</strong> Streamlit for user interface</li>
+                <li><strong>Data Handling:</strong> Pandas for organizing summary outputs</li>
+                <li><strong>Deployment:</strong> Streamlit Cloud, Heroku, or local server</li>
+            </ul>
+        </div>
+
+        <!-- Build Plan -->
+        <div class="content-section">
+            <h3>Step-by-Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <p>Define scope and use cases:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Identify target documents: academic papers, business reports, or meeting transcripts</li>
+                    <li>Decide output formats:
+                        <ul style="margin-left: 20px;">
+                            <li>Bullet-point summary (key takeaways)</li>
+                            <li>Short paragraph (2–3 sentences)</li>
+                            <li>Executive summary (detailed but concise)</li>
+                        </ul>
+                    </li>
+                    <li>Plan dashboard sections: upload, processing, output display</li>
+                    <li>Consider use cases for students, researchers, and business professionals</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Document Ingestion (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build file parsers:
+                        <ul style="margin-left: 20px;">
+                            <li>PDF extraction using PyPDF2 or pdfplumber</li>
+                            <li>DOCX parsing using python-docx</li>
+                            <li>TXT file reading (straightforward)</li>
+                        </ul>
+                    </li>
+                    <li>Implement text cleaning:
+                        <ul style="margin-left: 20px;">
+                            <li>Remove headers, footers, and page numbers</li>
+                            <li>Handle multi-column layouts</li>
+                            <li>Preserve important formatting (section titles, lists)</li>
+                        </ul>
+                    </li>
+                    <li>Create error handling for corrupted or unsupported files</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: Preprocessing (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Tokenize text:
+                        <ul style="margin-left: 20px;">
+                            <li>Sentence-level tokenization using spaCy</li>
+                            <li>Paragraph segmentation</li>
+                        </ul>
+                    </li>
+                    <li>Normalize text:
+                        <ul style="margin-left: 20px;">
+                            <li>Lowercasing (where appropriate)</li>
+                            <li>Remove special characters and excessive whitespace</li>
+                            <li>Handle contractions and abbreviations</li>
+                        </ul>
+                    </li>
+                    <li>Segment long documents:
+                        <ul style="margin-left: 20px;">
+                            <li>Split into chunks (e.g., 512 tokens) for processing</li>
+                            <li>Maintain context across chunks</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Summarization Models (3–5 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Extractive Summarization (baseline):</strong>
+                        <ul style="margin-left: 20px;">
+                            <li>Compute TF-IDF scores for sentences using scikit-learn</li>
+                            <li>Rank sentences by importance</li>
+                            <li>Select top N sentences while preserving order</li>
+                            <li>Quick, interpretable, and doesn't require GPU</li>
+                        </ul>
+                    </li>
+                    <li><strong>Abstractive Summarization (advanced):</strong>
+                        <ul style="margin-left: 20px;">
+                            <li>Load pretrained models from Hugging Face Hub:
+                                <ul style="margin-left: 20px;">
+                                    <li>BART (facebook/bart-large-cnn)</li>
+                                    <li>T5 (google/flan-t5-base)</li>
+                                    <li>DistilBART (lighter versions)</li>
+                                </ul>
+                            </li>
+                            <li>Fine-tune on domain-specific documents (optional)</li>
+                            <li>Generate novel, coherent summaries</li>
+                        </ul>
+                    </li>
+                    <li>Allow user to choose between both methods</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Visualization and Output (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Display summary in multiple formats:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Bullet-Point Mode:</strong> Key takeaways as a list</li>
+                            <li><strong>Paragraph Mode:</strong> 2–3 sentence concise summary</li>
+                            <li><strong>Executive Mode:</strong> Detailed but condensed summary (5–10 sentences)</li>
+                        </ul>
+                    </li>
+                    <li>Add visualization elements:
+                        <ul style="margin-left: 20px;">
+                            <li>Show original vs. summary word count (compression ratio)</li>
+                            <li>Highlight key sentences in the original text</li>
+                            <li>Display confidence scores (optional)</li>
+                        </ul>
+                    </li>
+                    <li>Export options:
+                        <ul style="margin-left: 20px;">
+                            <li>Download summary as TXT</li>
+                            <li>Export as DOCX with formatting</li>
+                            <li>Copy to clipboard</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build Streamlit app with tabs:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Upload Document:</strong> Drag-drop or file selector for PDF/DOCX/TXT</li>
+                            <li><strong>Summary Output:</strong> Display summary in chosen format</li>
+                            <li><strong>Settings:</strong> Choose extractive vs abstractive, summary length</li>
+                            <li><strong>About:</strong> Explain how the tool works</li>
+                        </ul>
+                    </li>
+                    <li>Add interactive controls:
+                        <ul style="margin-left: 20px;">
+                            <li>Dropdown for summarization type</li>
+                            <li>Slider for summary length (% of original)</li>
+                            <li>Radio buttons for output format</li>
+                            <li>Download buttons for exporting</li>
+                        </ul>
+                    </li>
+                    <li>Provide feedback:
+                        <ul style="margin-left: 20px;">
+                            <li>Progress indicator during processing</li>
+                            <li>Processing time display</li>
+                            <li>Error messages for invalid files</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Prepare demo documents:
+                        <ul style="margin-left: 20px;">
+                            <li>Sample academic paper (5–10 pages)</li>
+                            <li>Business report (3–5 pages)</li>
+                            <li>Meeting transcript (2–3 pages)</li>
+                        </ul>
+                    </li>
+                    <li>Test robustness:
+                        <ul style="margin-left: 20px;">
+                            <li>Verify parsing works for various PDF formats</li>
+                            <li>Test processing time (&lt;10 seconds for medium documents)</li>
+                            <li>Validate extractive and abstractive summaries for quality</li>
+                            <li>Check export functionality (TXT, DOCX)</li>
+                        </ul>
+                    </li>
+                    <li>Deploy options:
+                        <ul style="margin-left: 20px;">
+                            <li>Streamlit Cloud (easiest, free tier)</li>
+                            <li>Heroku (more control, small monthly cost)</li>
+                            <li>AWS/GCP (for production use)</li>
+                        </ul>
+                    </li>
+                    <li>Record demo video showing:
+                        <ul style="margin-left: 20px;">
+                            <li>Upload a PDF or DOCX file</li>
+                            <li>Generate extractive summary (bullet points)</li>
+                            <li>Switch to abstractive mode and generate paragraph summary</li>
+                            <li>Adjust summary length slider and see results update</li>
+                            <li>Download summary as TXT or DOCX</li>
+                        </ul>
+                    </li>
+                    <li>Write comprehensive README with:
+                        <ul style="margin-left: 20px;">
+                            <li>Supported file formats</li>
+                            <li>Installation instructions</li>
+                            <li>Configuration options</li>
+                            <li>Performance notes (model size, processing time)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Sources & Evaluation -->
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <p><strong>Data Sources:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Public domain research papers (arXiv, JSTOR)</li>
+                <li>Business reports (SEC filings, company reports)</li>
+                <li>Meeting transcripts (publicly available)</li>
+                <li>News articles and long-form content</li>
+            </ul>
+            <p><strong>Evaluation Metrics:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>ROUGE Score: Comparison against human-written summaries</li>
+                <li>Readability: Grammar and coherence of generated text</li>
+                <li>Compression ratio: Original length vs. summary length</li>
+                <li>Processing time: &lt;10 seconds for medium-length documents</li>
+                <li>File format support: Successful parsing of various PDF/DOCX versions</li>
+                <li>User satisfaction: Qualitative feedback on summary usefulness</li>
+            </ul>
+        </div>
+
+        <!-- Demo & Networking Tips -->
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <p><strong>Pitch line:</strong><br>
+                "I built an AI summarizer that condenses long documents into clear, concise summaries — saving time
+                for professionals, researchers, and students. It supports multiple input formats and output styles."
+            </p>
+            <p style="margin-top: 15px;"><strong>Demo walkthrough:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Open the dashboard and show the Upload Document tab</li>
+                <li>Upload a sample academic paper (PDF)</li>
+                <li>Show the extractive summary in bullet-point format (quick processing)</li>
+                <li>Switch to abstractive mode and generate a 3-sentence paragraph summary</li>
+                <li>Adjust the summary length slider and watch the output update</li>
+                <li>Export the summary as DOCX and show the formatted file</li>
+                <li>Try with a different document type (business report or transcript) to show versatility</li>
+            </ul>
+            <p><strong>Networking impact:</strong> Universally useful, relatable to professionals in any field, and
+                demonstrates advanced NLP skills. Stands out as a genuine productivity tool that could be monetized or
+                used as a portfolio piece for NLP/ML jobs.</p>
+        </div>
+
+        <!-- Checklist -->
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <ul class="checklist">
+                <li>Build PDF parser with PyPDF2 or pdfplumber</li>
+                <li>Build DOCX parser with python-docx</li>
+                <li>Implement text cleaning (headers, footers, formatting)</li>
+                <li>Tokenize text into sentences with spaCy</li>
+                <li>Remove stopwords and normalize text</li>
+                <li>Implement TF-IDF extractive summarizer</li>
+                <li>Load and integrate BART or T5 model</li>
+                <li>Implement abstractive summarization</li>
+                <li>Create output format options (bullet, paragraph, executive)</li>
+                <li>Build Streamlit app with upload tab</li>
+                <li>Add summarization method selector</li>
+                <li>Add summary length slider</li>
+                <li>Implement export as TXT and DOCX</li>
+                <li>Test with 5+ different documents</li>
+                <li>Deploy to Streamlit Cloud or Heroku</li>
+                <li>Record demo video and prepare pitch</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

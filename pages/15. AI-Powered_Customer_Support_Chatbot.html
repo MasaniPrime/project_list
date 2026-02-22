@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Customer Support Chatbot - Project Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .project-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #00bcd4;
+        }
+
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #00bcd4;
+            margin-bottom: 10px;
+        }
+
+        .project-header p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .badges {
+            margin: 1.5rem 0;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h3 {
+            font-size: 1.5em;
+            color: #00bcd4;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #00bcd4;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .phase {
+            border-left: 4px solid #00bcd4;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            padding-left: 20px;
+        }
+
+        .phase h4 {
+            color: #00bcd4;
+            margin-bottom: 8px;
+        }
+
+        .phase p {
+            margin-bottom: 10px;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .phase li {
+            margin-bottom: 5px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #00bcd4;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="project-header">
+            <h1>AI-Powered Customer Support Chatbot</h1>
+            <p>A conversational AI chatbot designed to assist customers by answering FAQs, handling basic
+                troubleshooting, and escalating complex issues to human support. Integrating NLP for intent
+                recognition and contextual responses, this project can be deployed on websites or messaging platforms
+                to provide 24/7 customer support automation.</p>
+            <div class="badges">
+                <span class="skill-nlp">Natural Language Processing</span>
+                <span class="skill-conversational">Conversational AI</span>
+                <span class="skill-intentclassification">Intent Classification</span>
+                <span class="skill-backend">Backend Integration</span>
+                <span class="skill-uxui">UX/UI Design</span>
+                <span class="tool-python">Python</span>
+                <span class="tool-rasa">Rasa</span>
+                <span class="tool-dialogflow">Dialogflow</span>
+                <span class="tool-spacy">spaCy</span>
+                <span class="tool-nltk">NLTK</span>
+                <span class="tool-transformers">Transformers</span>
+                <span class="tool-flask">Flask</span>
+                <span class="tool-streamlit">Streamlit</span>
+                <span class="tool-sqlite">SQLite</span>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="content-section">
+            <h3>Overview</h3>
+            <p>Customer support is expensive — every interaction requires a human agent. This project teaches you to
+                build a chatbot that handles routine inquiries automatically, freeing up support teams for complex
+                issues. You'll combine NLP for understanding user intent, conversational design to guide conversations,
+                and smart escalation to route difficult cases to humans.</p>
+            <p>This is the technology behind Intercom, Drift, and other customer support platforms. By building this
+                project, you'll understand how companies automate customer service while maintaining a human touch.</p>
+        </div>
+
+        <!-- Summary -->
+        <div class="content-section">
+            <h3>Project Summary</h3>
+            <p><strong>Industry:</strong> Information Systems / Customer Service / AI Technology</p>
+            <p style="margin-bottom: 15px;"><strong>Skills You'll Develop:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Natural Language Processing (NLP)</li>
+                <li>Conversational AI design and intent classification</li>
+                <li>Backend integration with support systems</li>
+                <li>API handling for FAQs and ticketing systems</li>
+                <li>UX design for chatbot interfaces</li>
+            </ul>
+            <p style="margin-bottom: 15px;"><strong>Key Tools:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li><strong>Python</strong> — Backend logic and orchestration</li>
+                <li><strong>Rasa / Dialogflow / Microsoft Bot Framework</strong> — Chatbot frameworks</li>
+                <li><strong>spaCy / NLTK</strong> — NLP preprocessing and tokenization</li>
+                <li><strong>Hugging Face Transformers</strong> — Intent detection and contextual responses</li>
+                <li><strong>Flask / Streamlit</strong> — Demo interface and web deployment</li>
+                <li><strong>SQLite / Firebase</strong> — Store FAQs and conversation logs</li>
+            </ul>
+        </div>
+
+        <!-- Goals -->
+        <div class="content-section">
+            <h3>Goals</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Goal 1:</strong> Build an NLP pipeline for intent classification and entity extraction.
+                </li>
+                <li><strong>Goal 2:</strong> Create a chatbot that answers FAQs and handles troubleshooting queries.
+                </li>
+                <li><strong>Goal 3:</strong> Implement conversation state management and context awareness.</li>
+                <li><strong>Goal 4:</strong> Add escalation logic to route complex issues to support agents.</li>
+                <li><strong>Goal 5:</strong> Build a conversational UI for testing and demos.</li>
+                <li><strong>Goal 6:</strong> Deploy and demonstrate real customer service scenarios.</li>
+            </ul>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="content-section">
+            <h3>Tech Stack</h3>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li><strong>Chatbot Framework:</strong> Rasa (open-source), Dialogflow (Google), or Microsoft Bot
+                    Framework</li>
+                <li><strong>NLP:</strong> spaCy and NLTK for text processing, Hugging Face Transformers for intent
+                    classification</li>
+                <li><strong>Backend:</strong> Python with Flask or FastAPI for custom logic</li>
+                <li><strong>Database:</strong> SQLite for FAQs and conversation history, Firebase for cloud storage
+                    (optional)</li>
+                <li><strong>Frontend/UI:</strong> Streamlit for demo interface, custom HTML/CSS for production</li>
+                <li><strong>Integration:</strong> APIs for ticketing systems (Zendesk, Freshdesk), CRM systems</li>
+                <li><strong>Deployment:</strong> Streamlit Cloud, Heroku, AWS, or self-hosted</li>
+            </ul>
+        </div>
+
+        <!-- Build Plan -->
+        <div class="content-section">
+            <h3>Step-by-Step Build Plan</h3>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <p>Define chatbot scope and conversational flows:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Identify target use cases:
+                        <ul style="margin-left: 20px;">
+                            <li>Frequently asked questions (account, billing, product)</li>
+                            <li>Basic troubleshooting (password reset, refunds, technical issues)</li>
+                            <li>Escalation triggers (complex complaints, requests for human agent)</li>
+                        </ul>
+                    </li>
+                    <li>Design example customer queries and expected responses</li>
+                    <li>Plan conversation flows (happy path + error handling)</li>
+                    <li>Design escalation criteria and ticket creation</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Data Collection (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Gather FAQ data:
+                        <ul style="margin-left: 20px;">
+                            <li>Create FAQ pairs (question → answer) covering main support categories</li>
+                            <li>Example categories: Account, Billing, Technical, Shipping, Refunds</li>
+                            <li>Generate 50–100 synthetic customer queries</li>
+                        </ul>
+                    </li>
+                    <li>Curate training data for intent classification:
+                        <ul style="margin-left: 20px;">
+                            <li>Intents: password_reset, check_order, refund, billing_issue, escalate, fallback</li>
+                            <li>Collect example utterances for each intent (5-10 variations)</li>
+                        </ul>
+                    </li>
+                    <li>Design database schema:
+                        <ul style="margin-left: 20px;">
+                            <li>FAQs table (question, answer, category)</li>
+                            <li>ConversationLog table (user_id, query, intent, response, timestamp)</li>
+                            <li>Escalations table (ticket_id, user_id, reason, status)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: NLP Preprocessing (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build text processing pipeline using spaCy:
+                        <ul style="margin-left: 20px;">
+                            <li>Tokenization and lowercasing</li>
+                            <li>Stopword removal</li>
+                            <li>Lemmatization</li>
+                        </ul>
+                    </li>
+                    <li>Create intent categories:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>FAQ:</strong> "How do I...?" queries → return stored answer</li>
+                            <li><strong>Troubleshooting:</strong> "I can't..." → guide through steps</li>
+                            <li><strong>Escalation:</strong> "I want to speak to someone" → escalate</li>
+                            <li><strong>Fallback:</strong> Unknown queries → ask for clarification</li>
+                        </ul>
+                    </li>
+                    <li>Train intent classifier:
+                        <ul style="margin-left: 20px;">
+                            <li>Use scikit-learn SVM or logistic regression for baseline</li>
+                            <li>Or fine-tune a BERT model from Hugging Face for better accuracy</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Chatbot Logic (3–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Choose framework (Rasa recommended for simplicity and flexibility):
+                        <ul style="margin-left: 20px;">
+                            <li>Define stories (conversation flows)</li>
+                            <li>Define intents and entities</li>
+                            <li>Define actions (custom responses, API calls)</li>
+                        </ul>
+                    </li>
+                    <li>Implement response logic:
+                        <ul style="margin-left: 20px;">
+                            <li>FAQ intent → Query SQLite and return answer</li>
+                            <li>Troubleshooting intent → Follow step-by-step guide</li>
+                            <li>Escalation intent → Create ticket and log in database</li>
+                            <li>Fallback intent → Polite refusal + offer alternatives</li>
+                        </ul>
+                    </li>
+                    <li>Add error handling:
+                        <ul style="margin-left: 20px;">
+                            <li>Handle ambiguous queries gracefully</li>
+                            <li>Provide suggestions if no match found</li>
+                            <li>Offer escalation if frustration detected</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Context Handling (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Maintain conversation state:
+                        <ul style="margin-left: 20px;">
+                            <li>Track user's current context (e.g., discussing billing → follow-ups stay in billing)
+                            </li>
+                            <li>Remember user info across turns (name, order number)</li>
+                            <li>Detect topic changes and reset context</li>
+                        </ul>
+                    </li>
+                    <li>Implement slot-filling:
+                        <ul style="margin-left: 20px;">
+                            <li>If user needs password reset, chatbot asks "What email is your account?"</li>
+                            <li>Verify slots and confirm before proceeding</li>
+                        </ul>
+                    </li>
+                    <li>Add multi-turn conversations:
+                        <ul style="margin-left: 20px;">
+                            <li>Follow-up questions based on user's previous message</li>
+                            <li>Clarification dialogs ("Did you mean...?")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Build Streamlit app with:
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Chat Window:</strong> Real-time conversation display</li>
+                            <li><strong>FAQ Panel:</strong> Quick access to common answers</li>
+                            <li><strong>Escalation Log:</strong> View tickets created during chat</li>
+                            <li><strong>Analytics:</strong> Intent distribution, user satisfaction ratings</li>
+                        </ul>
+                    </li>
+                    <li>Add interactive features:
+                        <ul style="margin-left: 20px;">
+                            <li>Text input for customer queries</li>
+                            <li>Buttons for preset questions</li>
+                            <li>"Speak to agent" button (escalation)</li>
+                            <li>Feedback forms ("Was this helpful?")</li>
+                        </ul>
+                    </li>
+                    <li>Ensure responsive design for mobile and desktop</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul style="margin-left: 20px;">
+                    <li>Prepare demo scenarios:
+                        <ul style="margin-left: 20px;">
+                            <li>Scenario A: Simple FAQ ("How do I reset my password?")</li>
+                            <li>Scenario B: Troubleshooting ("I can't log in")</li>
+                            <li>Scenario C: Escalation ("I want to speak to someone about my refund")</li>
+                        </ul>
+                    </li>
+                    <li>Test chatbot:
+                        <ul style="margin-left: 20px;">
+                            <li>Verify intent classification accuracy (≥85%)</li>
+                            <li>Test conversation flows for naturalness</li>
+                            <li>Validate escalation ticket creation</li>
+                            <li>Check error handling (graceful fallbacks)</li>
+                        </ul>
+                    </li>
+                    <li>Deploy options:
+                        <ul style="margin-left: 20px;">
+                            <li>Streamlit Cloud (demo/development)</li>
+                            <li>Heroku or Render (production)</li>
+                            <li>AWS Lambda + API Gateway (serverless)</li>
+                            <li>Rasa Cloud (if using Rasa)</li>
+                        </ul>
+                    </li>
+                    <li>Record demo video showing:
+                        <ul style="margin-left: 20px;">
+                            <li>Customer asks FAQ question → chatbot answers</li>
+                            <li>Customer describes troubleshooting issue → chatbot guides through steps</li>
+                            <li>Customer requests escalation → ticket created and logged</li>
+                            <li>Chatbot provides feedback form</li>
+                        </ul>
+                    </li>
+                    <li>Write README with:
+                        <ul style="margin-left: 20px;">
+                            <li>Setup instructions (install Rasa/dependencies)</li>
+                            <li>How to add new FAQs and intents</li>
+                            <li>Integration guide for real support systems</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Sources & Evaluation -->
+        <div class="content-section">
+            <h3>Data Sources and Evaluation</h3>
+            <p><strong>Data Sources:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Public FAQ datasets from company websites (public domains)</li>
+                <li>Synthetic customer support queries (generated for demonstration)</li>
+                <li>NLU training data from Rasa examples or public datasets</li>
+            </ul>
+            <p><strong>Evaluation Metrics:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Intent classification accuracy: ≥85% on test set</li>
+                <li>Conversation naturalness: Human feedback on response quality</li>
+                <li>Escalation accuracy: Correctly routes complex issues to humans</li>
+                <li>Response time: Replies within 1–2 seconds</li>
+                <li>Fallback rate: Minimize "I didn't understand" triggers</li>
+                <li>User satisfaction: Rating feedback after conversations</li>
+            </ul>
+        </div>
+
+        <!-- Demo & Networking Tips -->
+        <div class="content-section">
+            <h3>Demo and Networking Tips</h3>
+            <p><strong>Pitch line:</strong><br>
+                "I built a customer support chatbot that answers FAQs, troubleshoots issues, and escalates complex
+                cases — saving time for both users and support teams. It's powered by NLP and designed to feel
+                conversational."
+            </p>
+            <p style="margin-top: 15px;"><strong>Demo walkthrough:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Show the chat interface and ask the chatbot "How do I reset my password?"</li>
+                <li>Demonstrate a troubleshooting flow: "I can't log in" → chatbot asks for details and guides through
+                    recovery steps</li>
+                <li>Show an escalation scenario: "I want to speak to someone" → ticket is created and logged</li>
+                <li>Highlight intent classification: show what intent was detected for each user query</li>
+                <li>Mention handling context: follow-up questions that reference earlier conversation</li>
+                <li>Show feedback mechanism: "Was this helpful?"</li>
+            </ul>
+            <p><strong>Networking impact:</strong> Highly business-relevant, demonstrates practical NLP and
+                conversational
+                AI skills. Applicable to customer service teams, tech support, e-commerce, and SaaS companies. Shows you
+                understand both the technology and the business value of automation.</p>
+        </div>
+
+        <!-- Checklist -->
+        <div class="content-section">
+            <h3>Quick Implementation Checklist</h3>
+            <ul class="checklist">
+                <li>Define chatbot scope and use cases</li>
+                <li>Collect FAQs and support queries</li>
+                <li>Build SQLite schema for FAQs and logs</li>
+                <li>Preprocess text with spaCy</li>
+                <li>Train intent classifier (scikit-learn or BERT)</li>
+                <li>Set up Rasa or custom chatbot framework</li>
+                <li>Implement FAQ lookup logic</li>
+                <li>Implement troubleshooting dialog flows</li>
+                <li>Add escalation and ticket creation</li>
+                <li>Implement context management</li>
+                <li>Build Streamlit chat interface</li>
+                <li>Add logging and analytics dashboard</li>
+                <li>Test intent classification accuracy</li>
+                <li>Test conversational flows</li>
+                <li>Deploy to Streamlit Cloud or Heroku</li>
+                <li>Record demo video and prepare pitch</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

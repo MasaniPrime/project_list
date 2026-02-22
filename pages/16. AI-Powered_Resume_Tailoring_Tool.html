@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Resume Tailoring Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-left: 6px solid #16a085;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #16a085;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #16a085;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #16a085;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #16a085;
+            font-size: 1.1em;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        ul,
+        ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .phase {
+            background: #f9f9f9;
+            border-left: 4px solid #16a085;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .phase h4 {
+            margin-top: 0;
+            color: #16a085;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            background: #e8f8f5;
+            color: #16a085;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+            border: 1px solid #16a085;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tool {
+            background: #e8f8f5;
+            color: #16a085;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+            border: 1px solid #16a085;
+        }
+
+        .checklist {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .checklist ol {
+            margin-left: 25px;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #16a085;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        a {
+            color: #16a085;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .overview {
+            background: #f0f9f7;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #16a085;
+        }
+
+        .summary-section {
+            background: #f0f9f7;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #16a085;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>16. AI-Powered Resume Tailoring Tool</h1>
+            <p>A smart application that analyzes job descriptions and automatically tailors resumes to highlight the
+                most relevant skills and experiences.</p>
+        </header>
+
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>The AI-Powered Resume Tailoring Tool is a career tech solution that helps job seekers quickly adapt their
+                resumes for different roles, improving their chances of passing applicant tracking systems (ATS) and
+                impressing recruiters. By combining NLP techniques with resume parsing and semantic similarity matching,
+                this tool identifies the most relevant skills and experiences for each job description and automatically
+                highlights or rebuilds resume sections to maximize relevance.</p>
+            <p>Users upload their resume and paste a job description. The system extracts key keywords, measures
+                semantic
+                similarity between resume content and job requirements, and generates a tailored resume version with an
+                ATS compatibility score. This demonstrates the practical application of NLP in HR technology.</p>
+        </section>
+
+        <section class="summary-section">
+            <h2>Project Summary</h2>
+            <h3>Industry</h3>
+            <p>HR Tech / Data Science / Information Systems</p>
+            <h3>Skills</h3>
+            <div class="skills">
+                <span class="skill">Natural Language Processing (NLP)</span>
+                <span class="skill">Text Extraction & Parsing</span>
+                <span class="skill">Semantic Similarity & Keyword Matching</span>
+                <span class="skill">Resume Formatting & Optimization</span>
+                <span class="skill">Web App Development</span>
+            </div>
+            <h3>Tools</h3>
+            <div class="tools">
+                <span class="tool">Python</span>
+                <span class="tool">spaCy</span>
+                <span class="tool">NLTK</span>
+                <span class="tool">Hugging Face Transformers</span>
+                <span class="tool">SBERT (Semantic Search)</span>
+                <span class="tool">pdfminer.six</span>
+                <span class="tool">PyMuPDF</span>
+                <span class="tool">python-docx</span>
+                <span class="tool">Flask</span>
+                <span class="tool">Streamlit</span>
+                <span class="tool">SQLite</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Goals</h2>
+            <ol>
+                <li><strong>Efficient Resume Parsing:</strong> Successfully extract text from various resume formats
+                    (PDF, DOCX, TXT) while preserving meaningful structure.</li>
+                <li><strong>Semantic Keyword Matching:</strong> Identify relevant skills and experiences from both
+                    resume and job description using semantic similarity scoring.</li>
+                <li><strong>ATS-Compliant Optimization:</strong> Improve resume ATS scores by highlighting
+                    keyword-rich sections and removing ATS-unfriendly formatting.</li>
+                <li><strong>Automated Tailoring:</strong> Generate customized resumes that emphasize matching skills
+                    and experiences for specific job postings.</li>
+                <li><strong>User-Friendly Dashboard:</strong> Provide an intuitive interface for non-technical users to
+                    upload resumes and receive tailored output.</li>
+                <li><strong>Actionable Insights:</strong> Provide feedback on missing skills and suggest additions to
+                    improve job fit.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Tech Stack</h2>
+            <ul>
+                <li><strong>Backend:</strong> Python (Flask or FastAPI for API), Streamlit (for dashboard)</li>
+                <li><strong>NLP & Text Processing:</strong> spaCy, NLTK, Hugging Face Transformers, SBERT (Sentence
+                    Transformers)</li>
+                <li><strong>Document Parsing:</strong> pdfminer.six, PyMuPDF, python-docx</li>
+                <li><strong>Data Storage:</strong> SQLite (store resumes, job descriptions, matching scores)</li>
+                <li><strong>Visualization:</strong> Plotly or Matplotlib (match score charts)</li>
+                <li><strong>Deployment:</strong> Streamlit Cloud, Heroku, or AWS Lambda</li>
+                <li><strong>Frontend:</strong> HTML5 / CSS3 / JavaScript (basic UI for file uploads)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Build Plan</h2>
+
+            <div class="phase">
+                <h4>Phase 0: Planning (1–2 days)</h4>
+                <ul>
+                    <li>Define scope: tailor resumes for job descriptions by highlighting relevant skills.</li>
+                    <li>Example features:
+                        <ul>
+                            <li>Upload resume + paste job description.</li>
+                            <li>Generate tailored version with highlighted keywords.</li>
+                            <li>Provide ATS compatibility score.</li>
+                        </ul>
+                    </li>
+                    <li>Create wireframes for Streamlit dashboard.</li>
+                    <li>Plan database schema for storing resumes and job descriptions.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 1: Resume & Job Parsing (2–3 days)</h4>
+                <ul>
+                    <li>Build parser for resumes (PDF/DOCX/TXT).
+                        <ul>
+                            <li>Use PyMuPDF or pdfminer.six for PDF extraction.</li>
+                            <li>Use python-docx for DOCX parsing.</li>
+                            <li>Extract raw text while preserving section headers.</li>
+                        </ul>
+                    </li>
+                    <li>Extract text from job descriptions (paste + file upload support).</li>
+                    <li>Normalize text (remove formatting, extra whitespace, tokenize sentences).</li>
+                    <li>Test parsers with 5–10 sample resumes and job postings.</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 2: NLP Preprocessing (2–3 days)</h4>
+                <ul>
+                    <li>Tokenize and lemmatize text using spaCy.
+                        <ul>
+                            <li>Remove stop words, special characters.</li>
+                            <li>Perform POS tagging to identify nouns (skills, roles).</li>
+                        </ul>
+                    </li>
+                    <li>Extract skills, keywords, and role-specific phrases.
+                        <ul>
+                            <li>Use spaCy's Named Entity Recognition (NER) for job titles.</li>
+                            <li>Build dictionary of common job-related terms (e.g., "Python", "leadership",
+                                "project management").</li>
+                        </ul>
+                    </li>
+                    <li>Create a skills taxonomy (e.g., technical, soft, industry-specific).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 3: Matching & Scoring (3–4 days)</h4>
+                <ul>
+                    <li>Use semantic similarity (SBERT) to compare resume vs job description.
+                        <ul>
+                            <li>Encode resume and job description into embeddings.</li>
+                            <li>Compute cosine similarity between resume sections and job requirements.</li>
+                        </ul>
+                    </li>
+                    <li>Compute match score (percentage of overlap).
+                        <ul>
+                            <li>Identify matching skills (direct and contextually similar).</li>
+                            <li>Identify missing skills from the job posting.</li>
+                        </ul>
+                    </li>
+                    <li>Highlight missing skills and suggest additions.</li>
+                    <li>Generate ATS score (estimate likelihood of passing ATS screening).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 4: Resume Tailoring (2–3 days)</h4>
+                <ul>
+                    <li>Automatically insert missing keywords into resume sections (skills, experience).
+                        <ul>
+                            <li>Modify skills section to include high-match keywords.</li>
+                            <li>Reorder experience bullets to emphasize relevant achievements.</li>
+                        </ul>
+                    </li>
+                    <li>Ensure formatting remains professional.
+                        <ul>
+                            <li>Preserve structure (sections, bullet points, fonts).</li>
+                            <li>Avoid overloading with jargon.</li>
+                        </ul>
+                    </li>
+                    <li>Provide downloadable tailored resume (TXT/DOCX/PDF).</li>
+                    <li>Create side-by-side comparison view (original vs tailored).</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 5: Dashboard Integration (2–3 days)</h4>
+                <ul>
+                    <li>Build Streamlit app with tabs:
+                        <ul>
+                            <li><strong>Upload Resume:</strong> File upload widget (PDF/DOCX).</li>
+                            <li><strong>Paste Job Description:</strong> Text box for job posting.</li>
+                            <li><strong>Tailored Resume Output:</strong> Editable preview of tailored resume.</li>
+                            <li><strong>ATS Score & Analysis:</strong> Match percentage + missing skills + suggestions.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Add features:
+                        <ul>
+                            <li>Download tailored resume as DOCX or PDF.</li>
+                            <li>View detailed skill matching breakdown (which skills match, which are missing).</li>
+                            <li>Store history of past tailoring sessions in SQLite.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <h4>Phase 6: Demo and Deployment (2–4 days)</h4>
+                <ul>
+                    <li>Host locally or on Streamlit Cloud.</li>
+                    <li>Prepare demo with 2–3 job postings from different industries.
+                        <ul>
+                            <li>Demonstrate tailoring a generic resume to each job posting.</li>
+                            <li>Show ATS score improvement before/after tailoring.</li>
+                        </ul>
+                    </li>
+                    <li>Record demo video showing the tailoring process end-to-end.</li>
+                    <li>Create networking pitch and documentation.</li>
+                    <li>Deploy to Heroku or AWS for public access.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data Sources and Evaluation</h2>
+            <h3>Data</h3>
+            <ul>
+                <li>Public job postings (Kaggle datasets: "Jobs Postings" dataset, LinkedIn samples).</li>
+                <li>Sample resumes (create synthetic or use public CV examples).</li>
+                <li>Skills taxonomy (curated list of common job-related skills).</li>
+            </ul>
+            <h3>Evaluation Metrics</h3>
+            <ul>
+                <li><strong>Accuracy of Skill Extraction:</strong> How accurately does the system identify skills from
+                    both resume and job description?</li>
+                <li><strong>Match Score Validity:</strong> Does the tailored resume actually align better with the job
+                    description? (Manual evaluation with domain experts.)</li>
+                <li><strong>ATS Compatibility:</strong> Test tailored resume with online ATS checkers (e.g., Jobscan)
+                    to validate improvements.</li>
+                <li><strong>User Satisfaction:</strong> Collect feedback from job seekers using the tool.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Demo and Networking Tips</h2>
+            <h3>Pitch</h3>
+            <p><strong>"I built a resume tailoring tool that adapts your CV to job descriptions — boosting ATS scores
+                    and recruiter relevance."</strong></p>
+            <h3>Demo Walkthrough</h3>
+            <ol>
+                <li>Open Streamlit dashboard.</li>
+                <li>Upload a generic resume (or use a prepared sample).</li>
+                <li>Paste a job description from LinkedIn or a job board.</li>
+                <li>Show tailored output with highlighted keywords and match score.</li>
+                <li>Compare original resume vs tailored version side-by-side.</li>
+                <li>Download the tailored resume as DOCX/PDF.</li>
+            </ol>
+            <h3>Networking Impact</h3>
+            <ul>
+                <li>Highly practical and career-relevant for any audience.</li>
+                <li>Demonstrates expertise in NLP, HR tech, and full-stack application development.</li>
+                <li>Appeals to founders, recruiters, and career coaches as a potential business idea.</li>
+                <li>Shows understanding of real-world pain points (ATS optimization, job hunting efficiency).</li>
+            </ul>
+        </section>
+
+        <section class="checklist">
+            <h2>Quick Implementation Checklist</h2>
+            <ol>
+                <li>Build resume/job description parsers (PDF, DOCX, TXT).</li>
+                <li>Preprocess text with spaCy (tokenization, lemmatization, NER).</li>
+                <li>Implement semantic similarity scoring using SBERT.</li>
+                <li>Generate match score and identify missing skills.</li>
+                <li>Create resume tailoring logic (insert keywords, reorder bullets).</li>
+                <li>Generate downloadable tailored resume (DOCX/PDF format).</li>
+                <li>Build Streamlit dashboard with all UI components.</li>
+                <li>Integrate SQLite for storing resumes and job descriptions.</li>
+                <li>Test with sample resumes and job postings.</li>
+                <li>Deploy to Streamlit Cloud or Heroku.</li>
+                <li>Record demo video and prepare networking materials.</li>
+                <li>Test ATS compatibility with online tools (Jobscan).</li>
+            </ol>
+        </section>
+    </div>
+</body>
+
+</html>
