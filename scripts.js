@@ -24,12 +24,15 @@ window.onclick = function (event) {
 let activeCategory = null;
 
 function filterProjects(category) {
-    const cards = document.querySelectorAll('.card');
+    const whiteCards = document.querySelectorAll('.card');
+    const blackCards = document.querySelectorAll('.featured-project-card');
     const buttons = document.querySelectorAll('nav button');
+
+    const allCards = [...whiteCards, ...blackCards];
 
     // If the same category is clicked again, reset to show all
     if (activeCategory === category) {
-        cards.forEach(card => card.style.display = 'block');
+        allCards.forEach(card => card.style.display = 'block');
         activeCategory = null;
 
         // Remove active styling from all buttons
@@ -38,7 +41,7 @@ function filterProjects(category) {
     }
 
     // Otherwise filter by category
-    cards.forEach(card => {
+    allCards.forEach(card => {
         if (card.getAttribute('data-category') === category) {
             card.style.display = 'block';
         } else {
@@ -58,3 +61,5 @@ function filterProjects(category) {
         }
     });
 }
+
+

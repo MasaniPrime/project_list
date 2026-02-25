@@ -18,22 +18,20 @@
             <button onclick="filterProjects('cybersecurity')">Cybersecurity</button>
             <button onclick="filterProjects('webdev')">Web Dev</button>
             <button onclick="filterProjects('outofthebox')">Out of the box</button>
+            <button onclick="filterProjects('rookie')">Rookie</button>
         </nav>
     </header>
 
-    <section class="projects">
-        <!-- AI-Powered Resume Analyzer -->
-        <a href="pages/1. AI_Powered_Resume_Analyzer.html" rel="noopener noreferrer"
+
+    <section>
+        <!-- <a href="pages/unlisted1. Data_Vis.html" rel="noopener noreferrer"
             style="text-decoration: none; color: inherit;">
             <div class="card" data-category="data">
-                <h3>1. AI-Powered Resume Analyzer</h3>
-                <p>A tool that ingests resumes (PDF/DOCX/TXT), extracts skills and experience using NLP, and compares
-                    them against job descriptions to generate a compatibility score, highlight missing skills, and
-                    suggest tailored rewrites.</p>
+                <h3>1. Public Data Visualization Dashboard</h3>
+                <p>A tool that visualizes public datasets in an interactive dashboard using web technologies.</p>
                 <div class="badges">
-                    <span class="skill-nlp">NLP</span>
-                    <span class="skill-dataparsing">Text Extraction</span>
-                    <span class="skill-modeleval">Semantic Similarity</span>
+                    <span class="skill-dashboards">Dashboards</span>
+                    <span class="skill-dataviz">Data Visualization</span>
                     <span class="tool-python">Python</span>
                     <span class="tool-spacy">spaCy</span>
                     <span class="tool-transformers">Transformers</span>
@@ -43,487 +41,595 @@
             </div>
         </a>
 
-        <!-- Fake News Detector -->
-        <a href="pages/2. Fake_News_Detector.html" rel="noopener noreferrer"
+        <a href="pages/unlisted2. Data_Reporting.html" rel="noopener noreferrer"
             style="text-decoration: none; color: inherit;">
             <div class="card" data-category="data">
-                <h3>2. Fake News Detector</h3>
-                <p>A machine learning tool that analyzes online articles or social media posts to classify them as
-                    credible or suspicious. It uses natural language processing to detect linguistic patterns,
-                    sentiment, and metadata signals that often distinguish misinformation from reliable reporting.</p>
+                <h3>2. Data Reporting Pipeline</h3>
+                <p>A tool that automates the process of pulling data from a public API, cleaning it, and generating recurring summary reports.</p>
                 <div class="badges">
-                    <span class="skill-nlp">NLP</span>
-                    <span class="skill-classification">Classification</span>
-                    <span class="skill-modeleval">Model Evaluation</span>
-                    <span class="skill-dataviz">Visualization</span>
+                    <span class="skill-api">API Usage</span>
+                    <span class="skill-dataparsing">Data Cleaning</span>
+                    <span class="skill-automation">Automation</span>
                     <span class="tool-python">Python</span>
-                    <span class="tool-scikit">scikit-learn</span>
-                    <span class="tool-transformers">Transformers</span>
-                    <span class="tool-spacy">spaCy</span>
-                    <span class="tool-pandas">Pandas</span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Real-Time Weather & Pollution GIS Dashboard -->
-        <a href="pages/3. Real-Time_Weather_&_Pollution_GIS_Dashboard.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>3. Real-Time Weather & Pollution GIS Dashboard</h3>
-                <p>An interactive dashboard that integrates live weather and air quality data from public APIs, overlays
-                    it on a geographic map, and allows users to explore conditions by city or region. It provides visual
-                    alerts for poor air quality and trend charts for pollution and weather metrics.</p>
-                <div class="badges">
-                    <span class="skill-gis">GIS</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="skill-datafusion">Data Integration</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-apis">APIs</span>
-                    <span class="tool-flask">Flask</span>
                     <span class="tool-pandas">Pandas</span>
                     <span class="tool-sqlite">SQLite</span>
                 </div>
             </div>
-        </a>
+        </a> -->
 
-        <!-- Cyber Attack Simulation Dashboard -->
-        <a href="pages/4. Cyber_Attack_Simulation_Dashboard.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="cybersecurity">
-                <h3>4. Cyber Attack Simulation Dashboard</h3>
-                <p>An interactive dashboard that simulates common cyber threats such as brute-force login attempts,
-                    phishing campaigns, and ransomware spread. It generates synthetic attack data, visualizes
-                    progression in real time, and provides educational insights into detection and mitigation
-                    strategies.</p>
-                <div class="badges">
-                    <span class="skill-cyberstrategy">Cybersecurity</span>
-                    <span class="skill-simulation">Simulation</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-sqlite">SQLite</span>
-                    <span class="tool-javascript">JavaScript</span>
+
+        <section class="featured-projects-grid">
+
+            <!-- <section class="projects"> -->
+            <a href="pages/unlisted1. Data_Vis.html" rel="noopener noreferrer" class="featured-project-link">
+                <div class="featured-project-card" data-category="rookie">
+                    <h3 class="featured-project-title">1. Public Data Visualization Dashboard</h3>
+                    <p class="featured-project-desc">
+                        A tool that visualizes public datasets in an interactive dashboard using web technologies.
+                    </p>
+                    <div class="featured-badges">
+                        <span class="fp-badge fp-skill-dashboards">Dashboards</span>
+                        <span class="fp-badge fp-skill-dataviz">Data Visualization</span>
+                        <span class="fp-badge fp-tool-python">Python</span>
+                        <span class="fp-badge fp-tool-spacy">spaCy</span>
+                        <span class="fp-badge fp-tool-transformers">Transformers</span>
+                        <span class="fp-badge fp-tool-flask">Flask</span>
+                        <span class="fp-badge fp-tool-sqlite">SQLite</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- Personal Finance Tracker with Predictive Analytics -->
-        <a href="pages/5. Personal Finance_Tracker_with_Predictive_Analytics.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>5. Personal Finance Tracker with Predictive Analytics</h3>
-                <p>A data-driven application that helps users track their expenses and income, visualize spending
-                    patterns, and forecast future financial trends using predictive models. It provides insights into
-                    budgeting, savings goals, and potential overspending risks.</p>
-                <div class="badges">
-                    <span class="skill-timeseries">Time-Series Forecasting</span>
-                    <span class="skill-regression">Regression</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-pandas">Pandas</span>
-                    <span class="tool-prophet">Prophet</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-sqlite">SQLite</span>
+            <a href="pages/unlisted2. Data_Reporting.html" rel="noopener noreferrer" class="featured-project-link">
+                <div class="featured-project-card" data-category="rookie">
+                    <h3 class="featured-project-title">2. Data Reporting Pipeline</h3>
+                    <p class="featured-project-desc">
+                        A tool that automates the process of pulling data from a public API, cleaning it, and generating
+                        recurring summary reports.
+                    </p>
+                    <div class="featured-badges">
+                        <span class="fp-badge fp-skill-api">API Usage</span>
+                        <span class="fp-badge fp-skill-dataparsing">Data Cleaning</span>
+                        <span class="fp-badge fp-skill-automation">Automation</span>
+                        <span class="fp-badge fp-tool-python">Python</span>
+                        <span class="fp-badge fp-tool-pandas">Pandas</span>
+                        <span class="fp-badge fp-tool-sqlite">SQLite</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+            <!-- </section> -->
 
-        <!-- Voice-Controlled Data Dashboard -->
-        <a href="pages/6. Voice-Controlled_Data_Dashboard.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>6. Voice-Controlled Data Dashboard</h3>
-                <p>An interactive dashboard that responds to voice commands, allowing users to query datasets, filter
-                    results, and generate visualizations hands-free. It combines speech recognition with data
-                    visualization to create a futuristic, accessible interface.</p>
-                <div class="badges">
-                    <span class="skill-speechtotext">Speech-to-Text</span>
-                    <span class="skill-nlp">NLP</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="skill-collaboration">Accessibility</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-pandas">Pandas</span>
-                    <span class="tool-javascript">JavaScript</span>
+        </section>
+
+        <section class="projects">
+            <!-- AI-Powered Resume Analyzer -->
+            <a href="pages/1. AI_Powered_Resume_Analyzer.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>1. AI-Powered Resume Analyzer</h3>
+                    <p>A tool that ingests resumes (PDF/DOCX/TXT), extracts skills and experience using NLP, and
+                        compares
+                        them against job descriptions to generate a compatibility score, highlight missing skills, and
+                        suggest tailored rewrites.</p>
+                    <div class="badges">
+                        <span class="skill-nlp">NLP</span>
+                        <span class="skill-dataparsing">Text Extraction</span>
+                        <span class="skill-modeleval">Semantic Similarity</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-spacy">spaCy</span>
+                        <span class="tool-transformers">Transformers</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- AI Chatbot for Career Guidance -->
-        <a href="pages/7. AI_Chatbot_for_Career_Guidance.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>7. AI Chatbot for Career Guidance</h3>
-                <p>A conversational AI chatbot that helps job seekers by analyzing job postings, answering
-                    career-related questions, and suggesting tailored advice on resumes, skills, and interview
-                    preparation. It leverages NLP and machine learning to provide personalized guidance in real time.
-                </p>
-                <div class="badges">
-                    <span class="skill-nlp">NLP</span>
-                    <span class="skill-conversational">Conversational AI</span>
-                    <span class="skill-textclass">Text Classification</span>
-                    <span class="skill-semantics">Semantic Similarity</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-rasa">Rasa</span>
-                    <span class="tool-spacy">spaCy</span>
-                    <span class="tool-transformers">Transformers</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-streamlit">Streamlit</span>
-                    <span class="tool-sqlite">SQLite</span>
+            <!-- Fake News Detector -->
+            <a href="pages/2. Fake_News_Detector.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>2. Fake News Detector</h3>
+                    <p>A machine learning tool that analyzes online articles or social media posts to classify them as
+                        credible or suspicious. It uses natural language processing to detect linguistic patterns,
+                        sentiment, and metadata signals that often distinguish misinformation from reliable reporting.
+                    </p>
+                    <div class="badges">
+                        <span class="skill-nlp">NLP</span>
+                        <span class="skill-classification">Classification</span>
+                        <span class="skill-modeleval">Model Evaluation</span>
+                        <span class="skill-dataviz">Visualization</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-scikit">scikit-learn</span>
+                        <span class="tool-transformers">Transformers</span>
+                        <span class="tool-spacy">spaCy</span>
+                        <span class="tool-pandas">Pandas</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- Interactive Astronomy Visualization -->
-        <a href="pages/8. Interactive_Astronomy_Visualization.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>8. Interactive Astronomy Visualization</h3>
-                <p>A web-based interactive tool that visualizes planetary systems, star maps, or galaxies. Users can
-                    explore celestial bodies, zoom into regions of interest, and toggle overlays like constellations,
-                    distances, or orbital paths. It combines astronomy data with engaging visualizations to make space
-                    exploration accessible and educational.</p>
-                <div class="badges">
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="skill-interactive">Interactive Design</span>
-                    <span class="skill-3dgraphics">3D Graphics</span>
-                    <span class="skill-geo">Geospatial Data</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-javascript">JavaScript</span>
-                    <span class="tool-d3js">D3.js</span>
-                    <span class="tool-threejs">Three.js</span>
-                    <span class="tool-apis">APIs</span>
-                    <span class="tool-flask">Flask</span>
+            <!-- Real-Time Weather & Pollution GIS Dashboard -->
+            <a href="pages/3. Real-Time_Weather_&_Pollution_GIS_Dashboard.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>3. Real-Time Weather & Pollution GIS Dashboard</h3>
+                    <p>An interactive dashboard that integrates live weather and air quality data from public APIs,
+                        overlays
+                        it on a geographic map, and allows users to explore conditions by city or region. It provides
+                        visual
+                        alerts for poor air quality and trend charts for pollution and weather metrics.</p>
+                    <div class="badges">
+                        <span class="skill-gis">GIS</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="skill-datafusion">Data Integration</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-apis">APIs</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-pandas">Pandas</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- Smart Portfolio Site -->
-        <a href="pages/9. Smart_Portfolio_Site.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="webdev">
-                <h3>9. Smart Portfolio Site</h3>
-                <p>A personal portfolio website that showcases projects in an interactive catalogue. Users can filter
-                    projects by category, toggle views, and explore polished badges with refined colors and styling. It
-                    demonstrates both technical competence and design sensibility, making it a strong networking tool.
-                </p>
-                <div class="badges">
-                    <span class="skill-webdesign">Web Design</span>
-                    <span class="skill-frontend">Frontend Development</span>
-                    <span class="skill-ux">UX/UI Design</span>
-                    <span class="skill-responsive">Responsive Design</span>
-                    <span class="skill-filtering">Dynamic Filtering</span>
-                    <span class="tool-html">HTML5</span>
-                    <span class="tool-css">CSS3</span>
-                    <span class="tool-javascript">JavaScript</span>
-                    <span class="tool-react">React</span>
-                    <span class="tool-vue">Vue.js</span>
-                    <span class="tool-bootstrap">Bootstrap</span>
-                    <span class="tool-tailwind">TailwindCSS</span>
-                    <span class="tool-github">GitHub Pages</span>
-                    <span class="tool-netlify">Netlify</span>
-                    <span class="tool-figma">Figma</span>
+            <!-- Cyber Attack Simulation Dashboard -->
+            <a href="pages/4. Cyber_Attack_Simulation_Dashboard.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="cybersecurity">
+                    <h3>4. Cyber Attack Simulation Dashboard</h3>
+                    <p>An interactive dashboard that simulates common cyber threats such as brute-force login attempts,
+                        phishing campaigns, and ransomware spread. It generates synthetic attack data, visualizes
+                        progression in real time, and provides educational insights into detection and mitigation
+                        strategies.</p>
+                    <div class="badges">
+                        <span class="skill-cyberstrategy">Cybersecurity</span>
+                        <span class="skill-simulation">Simulation</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-sqlite">SQLite</span>
+                        <span class="tool-javascript">JavaScript</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- IoT Device Vulnerability Scanner (Simulated) -->
-        <a href="pages/10. IoT_Device_Vulnerability_Scanner_(Simulated).html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="cybersecurity">
-                <h3>10. IoT Device Vulnerability Scanner (Simulated)</h3>
-                <p>A simulated tool that scans a local network for IoT devices (smart bulbs, cameras, routers, etc.),
-                    identifies potential vulnerabilities, and visualizes them in a dashboard. Instead of performing real
-                    penetration testing, it generates synthetic data to demonstrate how insecure IoT devices can be
-                    flagged and secured.</p>
-                <div class="badges">
-                    <span class="skill-cybersecurity">Cybersecurity</span>
-                    <span class="skill-simulation">Simulation</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="skill-networkscanning">Network Scanning</span>
-                    <span class="skill-educational">Educational</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-fastapi">FastAPI</span>
-                    <span class="tool-sqlite">SQLite</span>
-                    <span class="tool-plotly">Plotly</span>
-                    <span class="tool-d3js">D3.js</span>
-                    <span class="tool-streamlit">Streamlit</span>
+            <!-- Personal Finance Tracker with Predictive Analytics -->
+            <a href="pages/5. Personal Finance_Tracker_with_Predictive_Analytics.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>5. Personal Finance Tracker with Predictive Analytics</h3>
+                    <p>A data-driven application that helps users track their expenses and income, visualize spending
+                        patterns, and forecast future financial trends using predictive models. It provides insights
+                        into
+                        budgeting, savings goals, and potential overspending risks.</p>
+                    <div class="badges">
+                        <span class="skill-timeseries">Time-Series Forecasting</span>
+                        <span class="skill-regression">Regression</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-pandas">Pandas</span>
+                        <span class="tool-prophet">Prophet</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- AI-Powered Sentiment Analyzer for Social Media Feeds -->
-        <a href="pages/11. AI_Powered_Sentiment_Analyzer_for_Social_Media_Feeds.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>11. AI-Powered Sentiment Analyzer for Social Media Feeds</h3>
-                <p>A sophisticated NLP tool that analyzes sentiment across social media platforms, tracking public
-                    opinion on specific topics, hashtags, or accounts. With interactive visualizations and advanced
-                    transformer models, it reveals sentiment trends, identifies influential posts, and generates
-                    actionable insights from unstructured social data.</p>
-                <div class="badges">
-                    <span class="skill-nlp">Natural Language Processing</span>
-                    <span class="skill-sentimentanalysis">Sentiment Analysis</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="skill-trendanalysis">Trend Analysis</span>
-                    <span class="skill-dataengineering">Data Engineering</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-transformers">Transformers</span>
-                    <span class="tool-textblob">TextBlob</span>
-                    <span class="tool-spacy">spaCy</span>
-                    <span class="tool-nltk">NLTK</span>
-                    <span class="tool-sqlite">SQLite</span>
-                    <span class="tool-plotly">Plotly</span>
-                    <span class="tool-streamlit">Streamlit</span>
+            <!-- Voice-Controlled Data Dashboard -->
+            <a href="pages/6. Voice-Controlled_Data_Dashboard.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>6. Voice-Controlled Data Dashboard</h3>
+                    <p>An interactive dashboard that responds to voice commands, allowing users to query datasets,
+                        filter
+                        results, and generate visualizations hands-free. It combines speech recognition with data
+                        visualization to create a futuristic, accessible interface.</p>
+                    <div class="badges">
+                        <span class="skill-speechtotext">Speech-to-Text</span>
+                        <span class="skill-nlp">NLP</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="skill-collaboration">Accessibility</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-pandas">Pandas</span>
+                        <span class="tool-javascript">JavaScript</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- Real-Time Stock Market Visualization with Alerts -->
-        <a href="pages/12. Real-Time_Stock_Market_Visualization_with_Alerts.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>12. Real-Time Stock Market Visualization with Alerts</h3>
-                <p>An interactive dashboard that streams live stock market data, visualizes price movements, and
-                    triggers alerts when thresholds are crossed (e.g., sudden drops, breakout gains). Combines real-time
-                    data streaming, financial analytics, and interactive visualization
-                    to provide actionable market insights.</p>
-                <div class="badges">
-                    <span class="skill-apiintegration">API Integration</span>
-                    <span class="skill-timeseries">Time-Series Handling</span>
-                    <span class="skill-realtimemonitoring">Real-Time Monitoring</span>
-                    <span class="skill-alertsystems">Alert Systems</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="skill-financialanalytics">Financial Analytics</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-alphavantage">Alpha Vantage</span>
-                    <span class="tool-yahoofinance">Yahoo Finance API</span>
-                    <span class="tool-pandas">Pandas</span>
-                    <span class="tool-numpy">NumPy</span>
-                    <span class="tool-plotly">Plotly</span>
-                    <span class="tool-matplotlib">Matplotlib</span>
-                    <span class="tool-seaborn">Seaborn</span>
-                    <span class="tool-streamlit">Streamlit</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-sqlite">SQLite</span>
+            <!-- AI Chatbot for Career Guidance -->
+            <a href="pages/7. AI_Chatbot_for_Career_Guidance.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>7. AI Chatbot for Career Guidance</h3>
+                    <p>A conversational AI chatbot that helps job seekers by analyzing job postings, answering
+                        career-related questions, and suggesting tailored advice on resumes, skills, and interview
+                        preparation. It leverages NLP and machine learning to provide personalized guidance in real
+                        time.
+                    </p>
+                    <div class="badges">
+                        <span class="skill-nlp">NLP</span>
+                        <span class="skill-conversational">Conversational AI</span>
+                        <span class="skill-textclass">Text Classification</span>
+                        <span class="skill-semantics">Semantic Similarity</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-rasa">Rasa</span>
+                        <span class="tool-spacy">spaCy</span>
+                        <span class="tool-transformers">Transformers</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- AI-Powered Document Summarizer -->
-        <a href="pages/13. AI-Powered_Document_Summarizer.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>13. AI-Powered Document Summarizer</h3>
-                <p>A tool that ingests long documents (PDFs, Word files, or plain text), applies natural language
-                    processing to extract key points, and generates concise summaries. It can be tailored for different
-                    contexts such as executive summaries, academic abstracts, or bullet-point notes.</p>
-                <div class="badges">
-                    <span class="skill-nlp">Natural Language Processing</span>
-                    <span class="skill-summarization">Text Summarization</span>
-                    <span class="skill-filehandling">File Handling & Parsing</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="skill-productivity">Productivity Tools</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-transformers">Transformers (BART, T5)</span>
-                    <span class="tool-spacy">spaCy</span>
-                    <span class="tool-nltk">NLTK</span>
-                    <span class="tool-pymupdf">pdfminer.six / PyMuPDF</span>
-                    <span class="tool-docx">python-docx</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-streamlit">Streamlit</span>
-                    <span class="tool-pandas">Pandas</span>
-                    <span class="tool-numpy">NumPy</span>
+            <!-- Interactive Astronomy Visualization -->
+            <a href="pages/8. Interactive_Astronomy_Visualization.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>8. Interactive Astronomy Visualization</h3>
+                    <p>A web-based interactive tool that visualizes planetary systems, star maps, or galaxies. Users can
+                        explore celestial bodies, zoom into regions of interest, and toggle overlays like
+                        constellations,
+                        distances, or orbital paths. It combines astronomy data with engaging visualizations to make
+                        space
+                        exploration accessible and educational.</p>
+                    <div class="badges">
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="skill-interactive">Interactive Design</span>
+                        <span class="skill-3dgraphics">3D Graphics</span>
+                        <span class="skill-geo">Geospatial Data</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-javascript">JavaScript</span>
+                        <span class="tool-d3js">D3.js</span>
+                        <span class="tool-threejs">Three.js</span>
+                        <span class="tool-apis">APIs</span>
+                        <span class="tool-flask">Flask</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- AI-Powered Health & Fitness Recommendation System -->
-        <a href="pages/14. AI-Powered_Health_&_Fitness_Recommendation_System.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>14. AI-Powered Health & Fitness Recommendation System</h3>
-                <p>A personalized recommendation engine that analyzes user input (fitness goals, activity levels,
-                    dietary preferences) and generates tailored workout routines and nutrition suggestions. Tracks
-                    progress over time and demonstrates how machine learning can be applied to lifestyle optimization
-                    in a safe, educational way.</p>
-                <div class="badges">
-                    <span class="skill-dataprepro">Data Preprocessing</span>
-                    <span class="skill-recommendation">Recommendation Systems</span>
-                    <span class="skill-machinelearning">Machine Learning</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="skill-userprofiling">User Profiling</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-scikit">scikit-learn</span>
-                    <span class="tool-tensorflow">TensorFlow</span>
-                    <span class="tool-pandas">Pandas</span>
-                    <span class="tool-numpy">NumPy</span>
-                    <span class="tool-plotly">Plotly</span>
-                    <span class="tool-matplotlib">Matplotlib</span>
-                    <span class="tool-streamlit">Streamlit</span>
-                    <span class="tool-sqlite">SQLite</span>
+            <!-- Smart Portfolio Site -->
+            <a href="pages/9. Smart_Portfolio_Site.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="webdev">
+                    <h3>9. Smart Portfolio Site</h3>
+                    <p>A personal portfolio website that showcases projects in an interactive catalogue. Users can
+                        filter
+                        projects by category, toggle views, and explore polished badges with refined colors and styling.
+                        It
+                        demonstrates both technical competence and design sensibility, making it a strong networking
+                        tool.
+                    </p>
+                    <div class="badges">
+                        <span class="skill-webdesign">Web Design</span>
+                        <span class="skill-frontend">Frontend Development</span>
+                        <span class="skill-ux">UX/UI Design</span>
+                        <span class="skill-responsive">Responsive Design</span>
+                        <span class="skill-filtering">Dynamic Filtering</span>
+                        <span class="tool-html">HTML5</span>
+                        <span class="tool-css">CSS3</span>
+                        <span class="tool-javascript">JavaScript</span>
+                        <span class="tool-react">React</span>
+                        <span class="tool-vue">Vue.js</span>
+                        <span class="tool-bootstrap">Bootstrap</span>
+                        <span class="tool-tailwind">TailwindCSS</span>
+                        <span class="tool-github">GitHub Pages</span>
+                        <span class="tool-netlify">Netlify</span>
+                        <span class="tool-figma">Figma</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- AI-Powered Customer Support Chatbot -->
-        <a href="pages/15. AI-Powered_Customer_Support_Chatbot.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>15. AI-Powered Customer Support Chatbot</h3>
-                <p>A conversational AI chatbot designed to assist customers by answering FAQs, handling basic
-                    troubleshooting, and escalating complex issues to human support. Integrates NLP for intent
-                    recognition and contextual responses, and can be deployed on websites or messaging platforms for
-                    24/7 customer support automation.</p>
-                <div class="badges">
-                    <span class="skill-nlp">Natural Language Processing</span>
-                    <span class="skill-conversational">Conversational AI</span>
-                    <span class="skill-intentclassification">Intent Classification</span>
-                    <span class="skill-backend">Backend Integration</span>
-                    <span class="skill-uxui">UX/UI Design</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-rasa">Rasa</span>
-                    <span class="tool-dialogflow">Dialogflow</span>
-                    <span class="tool-spacy">spaCy</span>
-                    <span class="tool-nltk">NLTK</span>
-                    <span class="tool-transformers">Transformers</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-streamlit">Streamlit</span>
-                    <span class="tool-sqlite">SQLite</span>
+            <!-- IoT Device Vulnerability Scanner (Simulated) -->
+            <a href="pages/10. IoT_Device_Vulnerability_Scanner_(Simulated).html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="cybersecurity">
+                    <h3>10. IoT Device Vulnerability Scanner (Simulated)</h3>
+                    <p>A simulated tool that scans a local network for IoT devices (smart bulbs, cameras, routers,
+                        etc.),
+                        identifies potential vulnerabilities, and visualizes them in a dashboard. Instead of performing
+                        real
+                        penetration testing, it generates synthetic data to demonstrate how insecure IoT devices can be
+                        flagged and secured.</p>
+                    <div class="badges">
+                        <span class="skill-cybersecurity">Cybersecurity</span>
+                        <span class="skill-simulation">Simulation</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="skill-networkscanning">Network Scanning</span>
+                        <span class="skill-educational">Educational</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-fastapi">FastAPI</span>
+                        <span class="tool-sqlite">SQLite</span>
+                        <span class="tool-plotly">Plotly</span>
+                        <span class="tool-d3js">D3.js</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- AI-Powered Resume Tailoring Tool -->
-        <a href="pages/16. AI-Powered_Resume_Tailoring_Tool.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>16. AI-Powered Resume Tailoring Tool</h3>
-                <p>A smart application that analyzes job descriptions and automatically tailors resumes to highlight the
-                    most relevant skills and experiences. Helps job seekers quickly adapt their resumes for different
-                    roles, improving chances of passing applicant tracking systems (ATS) and impressing recruiters with
-                    data-driven optimization.</p>
-                <div class="badges">
-                    <span class="skill-nlp">Natural Language Processing</span>
-                    <span class="skill-textextraction">Text Extraction & Parsing</span>
-                    <span class="skill-semanticsimilarity">Semantic Similarity</span>
-                    <span class="skill-resumeformatting">Resume Formatting</span>
-                    <span class="skill-webapp">Web App Development</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-spacy">spaCy</span>
-                    <span class="tool-nltk">NLTK</span>
-                    <span class="tool-transformers">Transformers</span>
-                    <span class="tool-sbert">SBERT</span>
-                    <span class="tool-pdfminer">pdfminer.six</span>
-                    <span class="tool-pymupdf">PyMuPDF</span>
-                    <span class="tool-docx">python-docx</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-streamlit">Streamlit</span>
-                    <span class="tool-sqlite">SQLite</span>
+            <!-- AI-Powered Sentiment Analyzer for Social Media Feeds -->
+            <a href="pages/11. AI_Powered_Sentiment_Analyzer_for_Social_Media_Feeds.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>11. AI-Powered Sentiment Analyzer for Social Media Feeds</h3>
+                    <p>A sophisticated NLP tool that analyzes sentiment across social media platforms, tracking public
+                        opinion on specific topics, hashtags, or accounts. With interactive visualizations and advanced
+                        transformer models, it reveals sentiment trends, identifies influential posts, and generates
+                        actionable insights from unstructured social data.</p>
+                    <div class="badges">
+                        <span class="skill-nlp">Natural Language Processing</span>
+                        <span class="skill-sentimentanalysis">Sentiment Analysis</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="skill-trendanalysis">Trend Analysis</span>
+                        <span class="skill-dataengineering">Data Engineering</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-transformers">Transformers</span>
+                        <span class="tool-textblob">TextBlob</span>
+                        <span class="tool-spacy">spaCy</span>
+                        <span class="tool-nltk">NLTK</span>
+                        <span class="tool-sqlite">SQLite</span>
+                        <span class="tool-plotly">Plotly</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- AI-Powered Fraud Detection System (Simulated) -->
-        <a href="pages/17. AI-Powered_Fraud_Detection_System_(Simulated).html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>17. AI-Powered Fraud Detection System (Simulated)</h3>
-                <p>A machine learning–based system that simulates financial transactions and detects suspicious activity
-                    patterns such as unusually large transfers and abnormal spending behavior. Uses synthetic data for
-                    demonstration while showcasing anomaly detection, classification models, and real-time alerting for
-                    fraud prevention in FinTech applications.</p>
-                <div class="badges">
-                    <span class="skill-datapreprocessing">Data Preprocessing</span>
-                    <span class="skill-featureengineering">Feature Engineering</span>
-                    <span class="skill-anomalydetection">Anomaly Detection</span>
-                    <span class="skill-classification">Classification Models</span>
-                    <span class="skill-simulation">Simulation & Synthetic Data</span>
-                    <span class="skill-dashboarddesign">Dashboard Design</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-pandas">Pandas</span>
-                    <span class="tool-numpy">NumPy</span>
-                    <span class="tool-scikit">scikit-learn</span>
-                    <span class="tool-pycaret">PyCaret</span>
-                    <span class="tool-matplotlib">Matplotlib</span>
-                    <span class="tool-seaborn">Seaborn</span>
-                    <span class="tool-plotly">Plotly</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-streamlit">Streamlit</span>
-                    <span class="tool-sqlite">SQLite</span>
+            <!-- Real-Time Stock Market Visualization with Alerts -->
+            <a href="pages/12. Real-Time_Stock_Market_Visualization_with_Alerts.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>12. Real-Time Stock Market Visualization with Alerts</h3>
+                    <p>An interactive dashboard that streams live stock market data, visualizes price movements, and
+                        triggers alerts when thresholds are crossed (e.g., sudden drops, breakout gains). Combines
+                        real-time
+                        data streaming, financial analytics, and interactive visualization
+                        to provide actionable market insights.</p>
+                    <div class="badges">
+                        <span class="skill-apiintegration">API Integration</span>
+                        <span class="skill-timeseries">Time-Series Handling</span>
+                        <span class="skill-realtimemonitoring">Real-Time Monitoring</span>
+                        <span class="skill-alertsystems">Alert Systems</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="skill-financialanalytics">Financial Analytics</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-alphavantage">Alpha Vantage</span>
+                        <span class="tool-yahoofinance">Yahoo Finance API</span>
+                        <span class="tool-pandas">Pandas</span>
+                        <span class="tool-numpy">NumPy</span>
+                        <span class="tool-plotly">Plotly</span>
+                        <span class="tool-matplotlib">Matplotlib</span>
+                        <span class="tool-seaborn">Seaborn</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- AI-Powered Personal Learning Assistant -->
-        <a href="pages/18. AI-Powered_Personal_Learning_Assistant.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>18. AI-Powered Personal Learning Assistant</h3>
-                <p>A smart assistant that helps learners study more effectively by generating quizzes, flashcards, and
-                    summaries from uploaded notes or textbooks. Adapts to learner progress, identifies weak areas, and
-                    provides personalized study recommendations using NLP and adaptive learning algorithms.</p>
-                <div class="badges">
-                    <span class="skill-nlp">Natural Language Processing</span>
-                    <span class="skill-textsummarization">Text Summarization</span>
-                    <span class="skill-questiongeneration">Question Generation</span>
-                    <span class="skill-adaptivelearning">Adaptive Learning</span>
-                    <span class="skill-dashboarddev">Dashboard Development</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-spacy">spaCy</span>
-                    <span class="tool-nltk">NLTK</span>
-                    <span class="tool-transformers">Transformers</span>
-                    <span class="tool-t5">T5</span>
-                    <span class="tool-bart">BART</span>
-                    <span class="tool-scikit">scikit-learn</span>
-                    <span class="tool-streamlit">Streamlit</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-sqlite">SQLite</span>
+            <!-- AI-Powered Document Summarizer -->
+            <a href="pages/13. AI-Powered_Document_Summarizer.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>13. AI-Powered Document Summarizer</h3>
+                    <p>A tool that ingests long documents (PDFs, Word files, or plain text), applies natural language
+                        processing to extract key points, and generates concise summaries. It can be tailored for
+                        different
+                        contexts such as executive summaries, academic abstracts, or bullet-point notes.</p>
+                    <div class="badges">
+                        <span class="skill-nlp">Natural Language Processing</span>
+                        <span class="skill-summarization">Text Summarization</span>
+                        <span class="skill-filehandling">File Handling & Parsing</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="skill-productivity">Productivity Tools</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-transformers">Transformers (BART, T5)</span>
+                        <span class="tool-spacy">spaCy</span>
+                        <span class="tool-nltk">NLTK</span>
+                        <span class="tool-pymupdf">pdfminer.six / PyMuPDF</span>
+                        <span class="tool-docx">python-docx</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                        <span class="tool-pandas">Pandas</span>
+                        <span class="tool-numpy">NumPy</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- AI-Powered News Summarization & Trend Analyzer -->
-        <a href="pages/19. AI-Powered_News_Summarization_&_Trend_Analyzer.html" rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit;">
-            <div class="card" data-category="data">
-                <h3>19. AI-Powered News Summarization & Trend Analyzer</h3>
-                <p>A tool that collects news articles from multiple sources, summarizes them into concise insights, and
-                    identifies emerging trends across topics. Helps users quickly digest information and spot patterns
-                    in public discourse using NLP, topic modeling, and trend detection algorithms.</p>
-                <div class="badges">
-                    <span class="skill-nlp">Natural Language Processing</span>
-                    <span class="skill-textsummarization">Text Summarization</span>
-                    <span class="skill-topicmodeling">Topic Modeling</span>
-                    <span class="skill-clusteringanalysis">Clustering Analysis</span>
-                    <span class="skill-trenddetection">Trend Detection</span>
-                    <span class="skill-dataviz">Data Visualization</span>
-                    <span class="skill-dashboarddev">Dashboard Development</span>
-                    <span class="tool-python">Python</span>
-                    <span class="tool-spacy">spaCy</span>
-                    <span class="tool-nltk">NLTK</span>
-                    <span class="tool-transformers">Transformers</span>
-                    <span class="tool-bart">BART</span>
-                    <span class="tool-t5">T5</span>
-                    <span class="tool-scikit">scikit-learn</span>
-                    <span class="tool-gensim">gensim</span>
-                    <span class="tool-pandas">Pandas</span>
-                    <span class="tool-numpy">NumPy</span>
-                    <span class="tool-plotly">Plotly</span>
-                    <span class="tool-matplotlib">Matplotlib</span>
-                    <span class="tool-seaborn">Seaborn</span>
-                    <span class="tool-streamlit">Streamlit</span>
-                    <span class="tool-flask">Flask</span>
-                    <span class="tool-sqlite">SQLite</span>
+            <!-- AI-Powered Health & Fitness Recommendation System -->
+            <a href="pages/14. AI-Powered_Health_&_Fitness_Recommendation_System.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>14. AI-Powered Health & Fitness Recommendation System</h3>
+                    <p>A personalized recommendation engine that analyzes user input (fitness goals, activity levels,
+                        dietary preferences) and generates tailored workout routines and nutrition suggestions. Tracks
+                        progress over time and demonstrates how machine learning can be applied to lifestyle
+                        optimization
+                        in a safe, educational way.</p>
+                    <div class="badges">
+                        <span class="skill-dataprepro">Data Preprocessing</span>
+                        <span class="skill-recommendation">Recommendation Systems</span>
+                        <span class="skill-machinelearning">Machine Learning</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="skill-userprofiling">User Profiling</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-scikit">scikit-learn</span>
+                        <span class="tool-tensorflow">TensorFlow</span>
+                        <span class="tool-pandas">Pandas</span>
+                        <span class="tool-numpy">NumPy</span>
+                        <span class="tool-plotly">Plotly</span>
+                        <span class="tool-matplotlib">Matplotlib</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <!-- Originals -->
-        <!-- <a href="pages/61. AI_supported_report_compiler.html" rel="noopener noreferrer"
+            <!-- AI-Powered Customer Support Chatbot -->
+            <a href="pages/15. AI-Powered_Customer_Support_Chatbot.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>15. AI-Powered Customer Support Chatbot</h3>
+                    <p>A conversational AI chatbot designed to assist customers by answering FAQs, handling basic
+                        troubleshooting, and escalating complex issues to human support. Integrates NLP for intent
+                        recognition and contextual responses, and can be deployed on websites or messaging platforms for
+                        24/7 customer support automation.</p>
+                    <div class="badges">
+                        <span class="skill-nlp">Natural Language Processing</span>
+                        <span class="skill-conversational">Conversational AI</span>
+                        <span class="skill-intentclassification">Intent Classification</span>
+                        <span class="skill-backend">Backend Integration</span>
+                        <span class="skill-uxui">UX/UI Design</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-rasa">Rasa</span>
+                        <span class="tool-dialogflow">Dialogflow</span>
+                        <span class="tool-spacy">spaCy</span>
+                        <span class="tool-nltk">NLTK</span>
+                        <span class="tool-transformers">Transformers</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AI-Powered Resume Tailoring Tool -->
+            <a href="pages/16. AI-Powered_Resume_Tailoring_Tool.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>16. AI-Powered Resume Tailoring Tool</h3>
+                    <p>A smart application that analyzes job descriptions and automatically tailors resumes to highlight
+                        the
+                        most relevant skills and experiences. Helps job seekers quickly adapt their resumes for
+                        different
+                        roles, improving chances of passing applicant tracking systems (ATS) and impressing recruiters
+                        with
+                        data-driven optimization.</p>
+                    <div class="badges">
+                        <span class="skill-nlp">Natural Language Processing</span>
+                        <span class="skill-textextraction">Text Extraction & Parsing</span>
+                        <span class="skill-semanticsimilarity">Semantic Similarity</span>
+                        <span class="skill-resumeformatting">Resume Formatting</span>
+                        <span class="skill-webapp">Web App Development</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-spacy">spaCy</span>
+                        <span class="tool-nltk">NLTK</span>
+                        <span class="tool-transformers">Transformers</span>
+                        <span class="tool-sbert">SBERT</span>
+                        <span class="tool-pdfminer">pdfminer.six</span>
+                        <span class="tool-pymupdf">PyMuPDF</span>
+                        <span class="tool-docx">python-docx</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AI-Powered Fraud Detection System (Simulated) -->
+            <a href="pages/17. AI-Powered_Fraud_Detection_System_(Simulated).html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>17. AI-Powered Fraud Detection System (Simulated)</h3>
+                    <p>A machine learning–based system that simulates financial transactions and detects suspicious
+                        activity
+                        patterns such as unusually large transfers and abnormal spending behavior. Uses synthetic data
+                        for
+                        demonstration while showcasing anomaly detection, classification models, and real-time alerting
+                        for
+                        fraud prevention in FinTech applications.</p>
+                    <div class="badges">
+                        <span class="skill-datapreprocessing">Data Preprocessing</span>
+                        <span class="skill-featureengineering">Feature Engineering</span>
+                        <span class="skill-anomalydetection">Anomaly Detection</span>
+                        <span class="skill-classification">Classification Models</span>
+                        <span class="skill-simulation">Simulation & Synthetic Data</span>
+                        <span class="skill-dashboarddesign">Dashboard Design</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-pandas">Pandas</span>
+                        <span class="tool-numpy">NumPy</span>
+                        <span class="tool-scikit">scikit-learn</span>
+                        <span class="tool-pycaret">PyCaret</span>
+                        <span class="tool-matplotlib">Matplotlib</span>
+                        <span class="tool-seaborn">Seaborn</span>
+                        <span class="tool-plotly">Plotly</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AI-Powered Personal Learning Assistant -->
+            <a href="pages/18. AI-Powered_Personal_Learning_Assistant.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>18. AI-Powered Personal Learning Assistant</h3>
+                    <p>A smart assistant that helps learners study more effectively by generating quizzes, flashcards,
+                        and
+                        summaries from uploaded notes or textbooks. Adapts to learner progress, identifies weak areas,
+                        and
+                        provides personalized study recommendations using NLP and adaptive learning algorithms.</p>
+                    <div class="badges">
+                        <span class="skill-nlp">Natural Language Processing</span>
+                        <span class="skill-textsummarization">Text Summarization</span>
+                        <span class="skill-questiongeneration">Question Generation</span>
+                        <span class="skill-adaptivelearning">Adaptive Learning</span>
+                        <span class="skill-dashboarddev">Dashboard Development</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-spacy">spaCy</span>
+                        <span class="tool-nltk">NLTK</span>
+                        <span class="tool-transformers">Transformers</span>
+                        <span class="tool-t5">T5</span>
+                        <span class="tool-bart">BART</span>
+                        <span class="tool-scikit">scikit-learn</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AI-Powered News Summarization & Trend Analyzer -->
+            <a href="pages/19. AI-Powered_News_Summarization_&_Trend_Analyzer.html" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="card" data-category="data">
+                    <h3>19. AI-Powered News Summarization & Trend Analyzer</h3>
+                    <p>A tool that collects news articles from multiple sources, summarizes them into concise insights,
+                        and
+                        identifies emerging trends across topics. Helps users quickly digest information and spot
+                        patterns
+                        in public discourse using NLP, topic modeling, and trend detection algorithms.</p>
+                    <div class="badges">
+                        <span class="skill-nlp">Natural Language Processing</span>
+                        <span class="skill-textsummarization">Text Summarization</span>
+                        <span class="skill-topicmodeling">Topic Modeling</span>
+                        <span class="skill-clusteringanalysis">Clustering Analysis</span>
+                        <span class="skill-trenddetection">Trend Detection</span>
+                        <span class="skill-dataviz">Data Visualization</span>
+                        <span class="skill-dashboarddev">Dashboard Development</span>
+                        <span class="tool-python">Python</span>
+                        <span class="tool-spacy">spaCy</span>
+                        <span class="tool-nltk">NLTK</span>
+                        <span class="tool-transformers">Transformers</span>
+                        <span class="tool-bart">BART</span>
+                        <span class="tool-t5">T5</span>
+                        <span class="tool-scikit">scikit-learn</span>
+                        <span class="tool-gensim">gensim</span>
+                        <span class="tool-pandas">Pandas</span>
+                        <span class="tool-numpy">NumPy</span>
+                        <span class="tool-plotly">Plotly</span>
+                        <span class="tool-matplotlib">Matplotlib</span>
+                        <span class="tool-seaborn">Seaborn</span>
+                        <span class="tool-streamlit">Streamlit</span>
+                        <span class="tool-flask">Flask</span>
+                        <span class="tool-sqlite">SQLite</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Originals -->
+            <!-- <a href="pages/61. AI_supported_report_compiler.html" rel="noopener noreferrer"
             style="text-decoration: none; color: inherit;">
             <div class="card" data-category="webdev">
                 <h3>61. AI Supported Report Compiler.html</h3>
@@ -548,9 +654,9 @@
                 </div>
             </div>
         </a> -->
-    </section>
+        </section>
 
-    <script src="scripts.js"></script>
+        <script src="scripts.js"></script>
 
 </body>
 

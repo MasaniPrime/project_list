@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project B – Data Automation Pipeline</title>
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --card: #141414;
+      --text: #f2f2f2;
+      --muted: #9ca3af;
+      --accent: #f97316;
+      --accent2: #a78bfa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: black;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: auto;
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      max-width: 900px;
+    }
+
+    header {
+      padding: 3rem 2rem;
+      border-bottom: 1px solid #222;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.3rem 0.7rem;
+      background: rgba(249, 115, 22, 0.15);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .card>div {
+      border-radius: 12px;
+      padding: 1.5rem;
+      align-content: center;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent2);
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.5rem 0 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      color: var(--muted);
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+      align-content: center;
+    }
+
+    .step {
+      border: 1px dashed #2a2a2a;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      background: #0f0f0f;
+      align-content: center;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid #222;
+      font-size: 0.85rem;
+    }
+
+    .quote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+      margin-top: 1rem;
+      color: #d1d5db;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <span class="tag">Beginner-Friendly</span>
+      <span class="tag">Highly In-Demand Skillset</span>
+      <h1>Simple Data Automation & Reporting Pipeline</h1>
+      <p style="color:#9ca3af; max-width: 700px;">
+        Build a small automated pipeline that pulls data from a public API, cleans it, and generates recurring summary
+        reports.
+      </p>
+    </header>
+
+    <main>
+      <section class="grid">
+        <div class="card">
+          <h3>🎯 Project Objective</h3>
+          <p>
+            Create an automated data pipeline that extracts data from an API, processes it, and outputs a recurring
+            report.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>💡 Why This Works</h3>
+          <ul>
+            <li>Shows automation skills</li>
+            <li>Demonstrates pipelines</li>
+            <li>Teaches reproducibility</li>
+            <li>Signals engineering thinking</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>🛠 Skills Covered</h3>
+          <ul>
+            <li>API usage</li>
+            <li>Python scripting</li>
+            <li>Data automation</li>
+            <li>Scheduled workflows</li>
+            <li>Reporting</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>📦 Tech Stack</h3>
+          <ul>
+            <li>Python</li>
+            <li>requests, pandas</li>
+            <li>VS Code / Jupyter</li>
+            <li>GitHub</li>
+            <li>Public APIs</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>🔁 Example Pipeline</h3>
+        <div class="pipeline">
+          <div class="step">API Call</div>
+          <div class="step">Raw JSON / CSV</div>
+          <div class="step">Cleaning & Normalization</div>
+          <div class="step">Metrics & Aggregations</div>
+          <div class="step">Automated Report</div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <h3>📁 Final Deliverables</h3>
+          <ul>
+            <li>Python scripts</li>
+            <li>Cleaned datasets</li>
+            <li>Generated reports</li>
+            <li>GitHub repository</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🗣 How to Talk About It</h3>
+          <div class="quote">
+            “I built a small automated data pipeline that pulls data from an API, processes it, and generates recurring
+            reports.”
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Project B – Data Automation Pipeline · Minimal Portfolio Template
+    </footer>
+  </div>
+</body>
+
+</html>
